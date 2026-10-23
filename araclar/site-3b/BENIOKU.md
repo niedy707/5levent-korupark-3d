@@ -66,3 +66,11 @@ Uydu görüntüsü: halka yol C bloklarının önünde podyum kotunda (+51,65) i
 OSM halka çizgisi burada havuz güvertesine düşüyordu (≈5 m güney) — `uret.py` bu parçayı duvarın kuzeyine alır, yol profili güney
 kolunda +51,65'tir. Duvar, kafe cam cephesi, korkuluk, asansör kulesi ve merdiven `DUVAR` (Ek-5 s.35 pafta pikselinden).
 Arazi ızgarası 3 m: duvar çizgisinde basamak yapmasın diye havuz kotu duvarın ~3 m kuzeyinden başlar, aradaki şerit podyum kotunda düz döşemedir.
+
+## Public GitHub kopyası (24.10.2026)
+
+<https://github.com/niedy707/5levent-korupark-3d> — kullanıcı kararıyla public. **Kaynak burasıdır; kopya elle düzenlenmez.**
+Değişiklikten sonra: `bash araclar/site-3b/yayin-kopyala.sh` (dosyaları `~/Projects/5levent-korupark-3d`'ye kopyalar, yorumlardaki
+kişi adını "kullanıcı"ya çevirir, ad/e-posta/IP/anahtar denetimi yapar; denetim düşerse durur) → o klasörde commit + push
+(yazar `mail@5-levent.com`). README/LICENSE kaynağı `yayin/`. Kopyada Yönetim Planı PDF'i yok: `plan_ic.py` PDF yoksa
+`kaynak/plan-meta.json` + hazır `plan-sNN` dosyalarıyla çalışır (kopyadan `uret.py` aynı `model.json`'u üretir, 24.10.2026'da denendi).
