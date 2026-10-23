@@ -1,0 +1,195 @@
+{
+  "_aciklama": "Hangi bina katı hangi otopark kotuna bakıyor. Kaynak: Yönetim Planı Ek-3 krokileri; blok plan sayfalarından çıkarıldı 31.08.2026.",
+  "renkler": {
+    "Turuncu": {
+      "kot": "+57.65"
+    },
+    "Yeşil": {
+      "kot": "+54.65"
+    },
+    "Kırmızı": {
+      "kot": "+51.65"
+    },
+    "Mavi": {
+      "kot": "+48.15"
+    },
+    "Mor": {
+      "kot": "+45.15"
+    }
+  },
+  "bloklar": {
+    "A": {
+      "-1": {
+        "renk": "Turuncu",
+        "kot": "+57.65",
+        "zemin": "#fed7aa",
+        "yazi": "#9a3412"
+      },
+      "-2": {
+        "renk": "Yeşil",
+        "kot": "+54.65",
+        "zemin": "#bbf7d0",
+        "yazi": "#14532d"
+      }
+    },
+    "B1": {
+      "-1": {
+        "renk": "Turuncu",
+        "kot": "+57.65",
+        "zemin": "#fed7aa",
+        "yazi": "#9a3412"
+      },
+      "-2": {
+        "renk": "Yeşil",
+        "kot": "+54.65",
+        "zemin": "#bbf7d0",
+        "yazi": "#14532d"
+      }
+    },
+    "B2": {
+      "0": {
+        "renk": "Turuncu",
+        "kot": "+57.65",
+        "zemin": "#fed7aa",
+        "yazi": "#9a3412"
+      },
+      "-1": {
+        "renk": "Yeşil",
+        "kot": "+54.65",
+        "zemin": "#bbf7d0",
+        "yazi": "#14532d"
+      },
+      "-2": {
+        "renk": "Kırmızı",
+        "kot": "+51.65",
+        "zemin": "#ffaaaa",
+        "yazi": "#7f1d1d"
+      }
+    },
+    "B3": {
+      "1": {
+        "renk": "Turuncu",
+        "kot": "+57.65",
+        "zemin": "#fed7aa",
+        "yazi": "#9a3412"
+      },
+      "0": {
+        "renk": "Yeşil",
+        "kot": "+54.65",
+        "zemin": "#bbf7d0",
+        "yazi": "#14532d"
+      },
+      "-1": {
+        "renk": "Kırmızı",
+        "kot": "+51.65",
+        "zemin": "#ffaaaa",
+        "yazi": "#7f1d1d"
+      },
+      "-2": {
+        "renk": "Mavi",
+        "kot": "+48.15",
+        "zemin": "#bfdbfe",
+        "yazi": "#1e3a5f"
+      }
+    },
+    "C1": {
+      "2": {
+        "renk": "Turuncu",
+        "kot": "+57.65",
+        "zemin": "#fed7aa",
+        "yazi": "#9a3412"
+      },
+      "1": {
+        "renk": "Yeşil",
+        "kot": "+54.65",
+        "zemin": "#bbf7d0",
+        "yazi": "#14532d"
+      },
+      "0": {
+        "renk": "Kırmızı",
+        "kot": "+51.65",
+        "zemin": "#ffaaaa",
+        "yazi": "#7f1d1d"
+      },
+      "-1": {
+        "renk": "Mavi",
+        "kot": "+48.15",
+        "zemin": "#bfdbfe",
+        "yazi": "#1e3a5f"
+      },
+      "-2": {
+        "renk": "Mor",
+        "kot": "+45.15",
+        "zemin": "#e9d5ff",
+        "yazi": "#4a1d96",
+        "not": "Sosyal Tesis & Havuz"
+      }
+    },
+    "C2": {
+      "2": {
+        "renk": "Turuncu",
+        "kot": "+57.65",
+        "zemin": "#fed7aa",
+        "yazi": "#9a3412"
+      },
+      "1": {
+        "renk": "Yeşil",
+        "kot": "+54.65",
+        "zemin": "#bbf7d0",
+        "yazi": "#14532d"
+      },
+      "0": {
+        "renk": "Kırmızı",
+        "kot": "+51.65",
+        "zemin": "#ffaaaa",
+        "yazi": "#7f1d1d"
+      },
+      "-1": {
+        "renk": "Mavi",
+        "kot": "+48.15",
+        "zemin": "#bfdbfe",
+        "yazi": "#1e3a5f"
+      },
+      "-2": {
+        "renk": "Mor",
+        "kot": "+45.15",
+        "zemin": "#e9d5ff",
+        "yazi": "#4a1d96",
+        "not": "Sosyal Tesis & Havuz"
+      }
+    },
+    "C3": {
+      "2": {
+        "renk": "Turuncu",
+        "kot": "+57.65",
+        "zemin": "#fed7aa",
+        "yazi": "#9a3412"
+      },
+      "1": {
+        "renk": "Yeşil",
+        "kot": "+54.65",
+        "zemin": "#bbf7d0",
+        "yazi": "#14532d"
+      },
+      "0": {
+        "renk": "Kırmızı",
+        "kot": "+51.65",
+        "zemin": "#ffaaaa",
+        "yazi": "#7f1d1d"
+      },
+      "-1": {
+        "renk": "Mavi",
+        "kot": "+48.15",
+        "zemin": "#bfdbfe",
+        "yazi": "#1e3a5f"
+      },
+      "-2": {
+        "renk": "Mor",
+        "kot": "+45.15",
+        "zemin": "#e9d5ff",
+        "yazi": "#4a1d96",
+        "not": "Sosyal Tesis & Havuz"
+      }
+    }
+  }
+}

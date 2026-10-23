@@ -1,0 +1,5147 @@
+[
+ {
+  "daire": "A-2",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "857"
+  ]
+ },
+ {
+  "daire": "A-3",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "858"
+  ]
+ },
+ {
+  "daire": "A-4",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "859"
+  ]
+ },
+ {
+  "daire": "A-5",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ASMAKAT",
+  "yerler": [
+   "860"
+  ]
+ },
+ {
+  "daire": "A-6",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ASMAKAT",
+  "yerler": [
+   "861"
+  ]
+ },
+ {
+  "daire": "A-7",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "ASMAKAT",
+  "yerler": [
+   "1031"
+  ]
+ },
+ {
+  "daire": "A-8",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ASMAKAT",
+  "yerler": [
+   "1030"
+  ]
+ },
+ {
+  "daire": "A-9",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "1029"
+  ]
+ },
+ {
+  "daire": "A-10",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "1028"
+  ]
+ },
+ {
+  "daire": "A-11",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "1026",
+   "1027"
+  ]
+ },
+ {
+  "daire": "A-12",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "1025"
+  ]
+ },
+ {
+  "daire": "A-13",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "1024"
+  ]
+ },
+ {
+  "daire": "A-14",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "1023"
+  ]
+ },
+ {
+  "daire": "A-16",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "1021"
+  ]
+ },
+ {
+  "daire": "A-17",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "1038"
+  ]
+ },
+ {
+  "daire": "A-18",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "1037"
+  ]
+ },
+ {
+  "daire": "A-19",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "1036"
+  ]
+ },
+ {
+  "daire": "A-20",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "1035"
+  ]
+ },
+ {
+  "daire": "A-21",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "1034"
+  ]
+ },
+ {
+  "daire": "A-22",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "1033"
+  ]
+ },
+ {
+  "daire": "A-23",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "983"
+  ]
+ },
+ {
+  "daire": "A-24",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "982"
+  ]
+ },
+ {
+  "daire": "A-26",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "980"
+  ]
+ },
+ {
+  "daire": "A-27",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "979"
+  ]
+ },
+ {
+  "daire": "A-28",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "978"
+  ]
+ },
+ {
+  "daire": "A-30",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "976"
+  ]
+ },
+ {
+  "daire": "A-32",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "974"
+  ]
+ },
+ {
+  "daire": "A-34",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "994"
+  ]
+ },
+ {
+  "daire": "A-35",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "993"
+  ]
+ },
+ {
+  "daire": "A-36",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "992"
+  ]
+ },
+ {
+  "daire": "A-37",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "991"
+  ]
+ },
+ {
+  "daire": "A-38",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "990"
+  ]
+ },
+ {
+  "daire": "A-39",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "989"
+  ]
+ },
+ {
+  "daire": "A-40",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "988"
+  ]
+ },
+ {
+  "daire": "A-41",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "987"
+  ]
+ },
+ {
+  "daire": "A-42",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "986"
+  ]
+ },
+ {
+  "daire": "A-43",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "985"
+  ]
+ },
+ {
+  "daire": "A-44",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "984"
+  ]
+ },
+ {
+  "daire": "A-45",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "878"
+  ]
+ },
+ {
+  "daire": "A-46",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "877"
+  ]
+ },
+ {
+  "daire": "A-47",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "876"
+  ]
+ },
+ {
+  "daire": "A-48",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "875"
+  ]
+ },
+ {
+  "daire": "A-49",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "874"
+  ]
+ },
+ {
+  "daire": "A-50",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "873"
+  ]
+ },
+ {
+  "daire": "A-52",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "871"
+  ]
+ },
+ {
+  "daire": "A-53",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "870"
+  ]
+ },
+ {
+  "daire": "A-55",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "868"
+  ]
+ },
+ {
+  "daire": "A-56",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "867"
+  ]
+ },
+ {
+  "daire": "A-57",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "1111"
+  ]
+ },
+ {
+  "daire": "A-59",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "1113"
+  ]
+ },
+ {
+  "daire": "A-60",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "1041"
+  ]
+ },
+ {
+  "daire": "A-61",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "1042"
+  ]
+ },
+ {
+  "daire": "A-62",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "995"
+  ]
+ },
+ {
+  "daire": "A-63",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "996"
+  ]
+ },
+ {
+  "daire": "A-66",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "1105"
+  ]
+ },
+ {
+  "daire": "A-67",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "1104"
+  ]
+ },
+ {
+  "daire": "A-68",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "1103"
+  ]
+ },
+ {
+  "daire": "A-69",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "1102"
+  ]
+ },
+ {
+  "daire": "A-70",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "1101"
+  ]
+ },
+ {
+  "daire": "A-71",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "1109"
+  ]
+ },
+ {
+  "daire": "A-72",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1110"
+  ]
+ },
+ {
+  "daire": "A-73",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1238"
+  ]
+ },
+ {
+  "daire": "A-74",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1239"
+  ]
+ },
+ {
+  "daire": "A-75",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1240"
+  ]
+ },
+ {
+  "daire": "A-76",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1241"
+  ]
+ },
+ {
+  "daire": "A-77",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1242"
+  ]
+ },
+ {
+  "daire": "A-78",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1243"
+  ]
+ },
+ {
+  "daire": "A-79",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1244"
+  ]
+ },
+ {
+  "daire": "A-80",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "1245"
+  ]
+ },
+ {
+  "daire": "A-81",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "1246"
+  ]
+ },
+ {
+  "daire": "A-82",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "1247"
+  ]
+ },
+ {
+  "daire": "A-83",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "1248"
+  ]
+ },
+ {
+  "daire": "A-84",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "1262"
+  ]
+ },
+ {
+  "daire": "A-85",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "1019"
+  ]
+ },
+ {
+  "daire": "A-86",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "1018"
+  ]
+ },
+ {
+  "daire": "A-87",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "848"
+  ]
+ },
+ {
+  "daire": "A-88",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "849"
+  ]
+ },
+ {
+  "daire": "A-89",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "850"
+  ]
+ },
+ {
+  "daire": "A-90",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "851"
+  ]
+ },
+ {
+  "daire": "A-91",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "852"
+  ]
+ },
+ {
+  "daire": "A-92",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "853"
+  ]
+ },
+ {
+  "daire": "A-93",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "854"
+  ]
+ },
+ {
+  "daire": "A-94",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "855"
+  ]
+ },
+ {
+  "daire": "A-96",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1032"
+  ]
+ },
+ {
+  "daire": "A-97",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1118"
+  ]
+ },
+ {
+  "daire": "A-98",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1119"
+  ]
+ },
+ {
+  "daire": "A-99",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1120"
+  ]
+ },
+ {
+  "daire": "A-100",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1121"
+  ]
+ },
+ {
+  "daire": "A-101",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1122"
+  ]
+ },
+ {
+  "daire": "A-102",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1123"
+  ]
+ },
+ {
+  "daire": "A-103",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1261"
+  ]
+ },
+ {
+  "daire": "A-104",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1260"
+  ]
+ },
+ {
+  "daire": "A-105",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1259"
+  ]
+ },
+ {
+  "daire": "A-106",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1258"
+  ]
+ },
+ {
+  "daire": "A-107",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1257"
+  ]
+ },
+ {
+  "daire": "A-108",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1256"
+  ]
+ },
+ {
+  "daire": "A-109",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "960"
+  ]
+ },
+ {
+  "daire": "A-111",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "961"
+  ]
+ },
+ {
+  "daire": "A-112",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "962"
+  ]
+ },
+ {
+  "daire": "A-113",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1268"
+  ]
+ },
+ {
+  "daire": "A-114",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1267"
+  ]
+ },
+ {
+  "daire": "A-115",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1266"
+  ]
+ },
+ {
+  "daire": "A-116",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1265"
+  ]
+ },
+ {
+  "daire": "A-117",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1264"
+  ]
+ },
+ {
+  "daire": "A-118",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1263"
+  ]
+ },
+ {
+  "daire": "A-119",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1164"
+  ]
+ },
+ {
+  "daire": "A-120",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1163"
+  ]
+ },
+ {
+  "daire": "A-121",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1162"
+  ]
+ },
+ {
+  "daire": "A-122",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1161"
+  ]
+ },
+ {
+  "daire": "A-123",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1160"
+  ]
+ },
+ {
+  "daire": "A-124",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1159"
+  ]
+ },
+ {
+  "daire": "A-125",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1158"
+  ]
+ },
+ {
+  "daire": "A-126",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1157"
+  ]
+ },
+ {
+  "daire": "A-127",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1156"
+  ]
+ },
+ {
+  "daire": "A-128",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1155"
+  ]
+ },
+ {
+  "daire": "A-130",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1153"
+  ]
+ },
+ {
+  "daire": "A-131",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1152"
+  ]
+ },
+ {
+  "daire": "A-133",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1150"
+  ]
+ },
+ {
+  "daire": "A-134",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1149"
+  ]
+ },
+ {
+  "daire": "A-135",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1148"
+  ]
+ },
+ {
+  "daire": "A-136",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "1147"
+  ]
+ },
+ {
+  "daire": "A-137",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "1146"
+  ]
+ },
+ {
+  "daire": "A-138",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "1145"
+  ]
+ },
+ {
+  "daire": "A-139",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "1144"
+  ]
+ },
+ {
+  "daire": "A-140",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "1143"
+  ]
+ },
+ {
+  "daire": "A-141",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "1138"
+  ]
+ },
+ {
+  "daire": "A-142",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "1137"
+  ]
+ },
+ {
+  "daire": "A-143",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "1136"
+  ]
+ },
+ {
+  "daire": "A-144",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "1135"
+  ]
+ },
+ {
+  "daire": "A-146",
+  "etap": "2.ETAP",
+  "bb_tipi": "1+1",
+  "kat": "18.KAT",
+  "yerler": [
+   "1133"
+  ]
+ },
+ {
+  "daire": "A-147",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "1132"
+  ]
+ },
+ {
+  "daire": "A-148",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "18.KAT",
+  "yerler": [
+   "1131"
+  ]
+ },
+ {
+  "daire": "A-149",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "18.KAT",
+  "yerler": [
+   "1130"
+  ]
+ },
+ {
+  "daire": "A-153",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "19.KAT",
+  "yerler": [
+   "1115"
+  ]
+ },
+ {
+  "daire": "A-156",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "19.KAT",
+  "yerler": [
+   "1271"
+  ]
+ },
+ {
+  "daire": "A-157",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "19.KAT",
+  "yerler": [
+   "1272"
+  ]
+ },
+ {
+  "daire": "A-158",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "19.KAT",
+  "yerler": [
+   "1223"
+  ]
+ },
+ {
+  "daire": "A-159",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "19.KAT",
+  "yerler": [
+   "1224"
+  ]
+ },
+ {
+  "daire": "A-160",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "864"
+  ]
+ },
+ {
+  "daire": "A-161",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "865"
+  ]
+ },
+ {
+  "daire": "A-162",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "866"
+  ]
+ },
+ {
+  "daire": "A-163",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1124"
+  ]
+ },
+ {
+  "daire": "A-165",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1126"
+  ]
+ },
+ {
+  "daire": "A-166",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1127"
+  ]
+ },
+ {
+  "daire": "A-167",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1252"
+  ]
+ },
+ {
+  "daire": "A-168",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1253"
+  ]
+ },
+ {
+  "daire": "A-169",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1254"
+  ]
+ },
+ {
+  "daire": "A-170",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1255"
+  ]
+ },
+ {
+  "daire": "A-171",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1251"
+  ]
+ },
+ {
+  "daire": "A-172",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1250"
+  ]
+ },
+ {
+  "daire": "A-173",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1249"
+  ]
+ },
+ {
+  "daire": "A-177",
+  "etap": "2.ETAP",
+  "bb_tipi": "VA1E",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1108"
+  ]
+ },
+ {
+  "daire": "A-178",
+  "etap": "2.ETAP",
+  "bb_tipi": "KAFE",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "1237"
+  ]
+ },
+ {
+  "daire": "B1-1",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ZEMINKAT",
+  "yerler": [
+   "937"
+  ]
+ },
+ {
+  "daire": "B1-2",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "ZEMINKAT",
+  "yerler": [
+   "958",
+   "959"
+  ]
+ },
+ {
+  "daire": "B1-3",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "964",
+   "965"
+  ]
+ },
+ {
+  "daire": "B1-4",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "",
+  "yerler": [
+   "928",
+   "929"
+  ]
+ },
+ {
+  "daire": "B1-7",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "932",
+   "933"
+  ]
+ },
+ {
+  "daire": "B1-8",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "934",
+   "935"
+  ]
+ },
+ {
+  "daire": "B1-10",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "969"
+  ]
+ },
+ {
+  "daire": "B1-11",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "954"
+  ]
+ },
+ {
+  "daire": "B1-14",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "967",
+   "968"
+  ]
+ },
+ {
+  "daire": "B1-15",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "1001"
+  ]
+ },
+ {
+  "daire": "B1-16",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "1002"
+  ]
+ },
+ {
+  "daire": "B1-17",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "972"
+  ]
+ },
+ {
+  "daire": "B1-18",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "970",
+   "971"
+  ]
+ },
+ {
+  "daire": "B1-19",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "999",
+   "1000"
+  ]
+ },
+ {
+  "daire": "B1-20",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "1003"
+  ]
+ },
+ {
+  "daire": "B1-21",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "1006"
+  ]
+ },
+ {
+  "daire": "B1-24",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "4.KAT",
+  "yerler": [
+   "1011",
+   "1012"
+  ]
+ },
+ {
+  "daire": "B1-25",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "1013"
+  ]
+ },
+ {
+  "daire": "B1-26",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "847"
+  ]
+ },
+ {
+  "daire": "B1-29",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "846"
+  ]
+ },
+ {
+  "daire": "B1-33",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "836"
+  ]
+ },
+ {
+  "daire": "B1-37",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "944",
+   "945"
+  ]
+ },
+ {
+  "daire": "B1-38",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "947"
+  ]
+ },
+ {
+  "daire": "B1-41",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "938"
+  ]
+ },
+ {
+  "daire": "B1-46",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1190"
+  ]
+ },
+ {
+  "daire": "B1-47",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1170",
+   "1171"
+  ]
+ },
+ {
+  "daire": "B1-48",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1187",
+   "1188"
+  ]
+ },
+ {
+  "daire": "B1-49",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1173",
+   "1174"
+  ]
+ },
+ {
+  "daire": "B1-50",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1189"
+  ]
+ },
+ {
+  "daire": "B1-51",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "1172"
+  ]
+ },
+ {
+  "daire": "B1-52",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "",
+  "yerler": [
+   "1175",
+   "1186"
+  ]
+ },
+ {
+  "daire": "B1-53",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "1176",
+   "1177"
+  ]
+ },
+ {
+  "daire": "B1-54",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "",
+  "yerler": [
+   "1184",
+   "1185"
+  ]
+ },
+ {
+  "daire": "B1-55",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "1183"
+  ]
+ },
+ {
+  "daire": "B1-56",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "1203"
+  ]
+ },
+ {
+  "daire": "B1-60",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "1178"
+  ]
+ },
+ {
+  "daire": "B1-63",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1179",
+   "1180"
+  ]
+ },
+ {
+  "daire": "B1-64",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1206",
+   "1207"
+  ]
+ },
+ {
+  "daire": "B1-65",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1229"
+  ]
+ },
+ {
+  "daire": "B1-66",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1230"
+  ]
+ },
+ {
+  "daire": "B1-69",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1234",
+   "1235"
+  ]
+ },
+ {
+  "daire": "B1-70",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1099"
+  ]
+ },
+ {
+  "daire": "B1-71",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1210"
+  ]
+ },
+ {
+  "daire": "B1-72",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1097",
+   "1098"
+  ]
+ },
+ {
+  "daire": "B1-74",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1213",
+   "1214"
+  ]
+ },
+ {
+  "daire": "B1-75",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "14.KAT",
+  "yerler": [
+   "1231"
+  ]
+ },
+ {
+  "daire": "B1-76",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "5.KAT",
+  "yerler": [
+   "1209"
+  ]
+ },
+ {
+  "daire": "B1-77",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "1095",
+   "1096"
+  ]
+ },
+ {
+  "daire": "B1-79",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "1091",
+   "1092"
+  ]
+ },
+ {
+  "daire": "B1-80",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1090"
+  ]
+ },
+ {
+  "daire": "B1-81",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1089"
+  ]
+ },
+ {
+  "daire": "B1-82",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1087",
+   "1058"
+  ]
+ },
+ {
+  "daire": "B1-83",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1085",
+   "1086"
+  ]
+ },
+ {
+  "daire": "B1-84",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1215",
+   "1216"
+  ]
+ },
+ {
+  "daire": "B1-85",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1236"
+  ]
+ },
+ {
+  "daire": "B2-1",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "571"
+  ]
+ },
+ {
+  "daire": "B2-2",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "776",
+   "777"
+  ]
+ },
+ {
+  "daire": "B2-3",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "572",
+   "573"
+  ]
+ },
+ {
+  "daire": "B2-4",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "574",
+   "575"
+  ]
+ },
+ {
+  "daire": "B2-5",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "576"
+  ]
+ },
+ {
+  "daire": "B2-6",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "577"
+  ]
+ },
+ {
+  "daire": "B2-7",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "778",
+   "779"
+  ]
+ },
+ {
+  "daire": "B2-8",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "780",
+   "781"
+  ]
+ },
+ {
+  "daire": "B2-9",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "782",
+   "783"
+  ]
+ },
+ {
+  "daire": "B2-10",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "786"
+  ]
+ },
+ {
+  "daire": "B2-11",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "638"
+  ]
+ },
+ {
+  "daire": "B2-12",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "787",
+   "788"
+  ]
+ },
+ {
+  "daire": "B2-13",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "784",
+   "785"
+  ]
+ },
+ {
+  "daire": "B2-14",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "635",
+   "636"
+  ]
+ },
+ {
+  "daire": "B2-15",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "637"
+  ]
+ },
+ {
+  "daire": "B2-16",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "634"
+  ]
+ },
+ {
+  "daire": "B2-17",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "632",
+   "633"
+  ]
+ },
+ {
+  "daire": "B2-18",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "630",
+   "631"
+  ]
+ },
+ {
+  "daire": "B2-19",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "628",
+   "629"
+  ]
+ },
+ {
+  "daire": "B2-20",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "578"
+  ]
+ },
+ {
+  "daire": "B2-21",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "583"
+  ]
+ },
+ {
+  "daire": "B2-22",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "579",
+   "580"
+  ]
+ },
+ {
+  "daire": "B2-23",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "581",
+   "582"
+  ]
+ },
+ {
+  "daire": "B2-24",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "584",
+   "585"
+  ]
+ },
+ {
+  "daire": "B2-26",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "624"
+  ]
+ },
+ {
+  "daire": "B2-27",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "586",
+   "587"
+  ]
+ },
+ {
+  "daire": "B2-28",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "588",
+   "589"
+  ]
+ },
+ {
+  "daire": "B2-29",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "590",
+   "591"
+  ]
+ },
+ {
+  "daire": "B2-30",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "623"
+  ]
+ },
+ {
+  "daire": "B2-31",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "598"
+  ]
+ },
+ {
+  "daire": "B2-32",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "",
+  "yerler": [
+   "592",
+   "593"
+  ]
+ },
+ {
+  "daire": "B2-33",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "594",
+   "595"
+  ]
+ },
+ {
+  "daire": "B2-34",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "596",
+   "597"
+  ]
+ },
+ {
+  "daire": "B2-35",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "620"
+  ]
+ },
+ {
+  "daire": "B2-36",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "619"
+  ]
+ },
+ {
+  "daire": "B2-37",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "599",
+   "600"
+  ]
+ },
+ {
+  "daire": "B2-38",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "611",
+   "612"
+  ]
+ },
+ {
+  "daire": "B2-39",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "613",
+   "614"
+  ]
+ },
+ {
+  "daire": "B2-40",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "615"
+  ]
+ },
+ {
+  "daire": "B2-41",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "608"
+  ]
+ },
+ {
+  "daire": "B2-42",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "609",
+   "610"
+  ]
+ },
+ {
+  "daire": "B2-43",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "604",
+   "605"
+  ]
+ },
+ {
+  "daire": "B2-44",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "601",
+   "602"
+  ]
+ },
+ {
+  "daire": "B2-45",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "603"
+  ]
+ },
+ {
+  "daire": "B2-46",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "616"
+  ]
+ },
+ {
+  "daire": "B2-47",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "606",
+   "607"
+  ]
+ },
+ {
+  "daire": "B2-48",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "617",
+   "618"
+  ]
+ },
+ {
+  "daire": "B2-49",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "621",
+   "622"
+  ]
+ },
+ {
+  "daire": "B2-50",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "1077"
+  ]
+ },
+ {
+  "daire": "B2-51",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "1078"
+  ]
+ },
+ {
+  "daire": "B2-52",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "",
+  "yerler": [
+   "1079",
+   "1080"
+  ]
+ },
+ {
+  "daire": "B2-53",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "1081",
+   "1082"
+  ]
+ },
+ {
+  "daire": "B2-54",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "",
+  "yerler": [
+   "804",
+   "805"
+  ]
+ },
+ {
+  "daire": "B2-55",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "803"
+  ]
+ },
+ {
+  "daire": "B2-56",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "808"
+  ]
+ },
+ {
+  "daire": "B2-57",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "806",
+   "807"
+  ]
+ },
+ {
+  "daire": "B2-59",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "813",
+   "814"
+  ]
+ },
+ {
+  "daire": "B2-60",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "815"
+  ]
+ },
+ {
+  "daire": "B2-61",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "816"
+  ]
+ },
+ {
+  "daire": "B2-62",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "817",
+   "818"
+  ]
+ },
+ {
+  "daire": "B2-63",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "819",
+   "820"
+  ]
+ },
+ {
+  "daire": "B2-64",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "821",
+   "822"
+  ]
+ },
+ {
+  "daire": "B2-65",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "1074"
+  ]
+ },
+ {
+  "daire": "B2-66",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1069"
+  ]
+ },
+ {
+  "daire": "B2-67",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1071",
+   "1072"
+  ]
+ },
+ {
+  "daire": "B2-68",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1067",
+   "1068"
+  ]
+ },
+ {
+  "daire": "B2-69",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1056",
+   "1057"
+  ]
+ },
+ {
+  "daire": "B2-70",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "1070"
+  ]
+ },
+ {
+  "daire": "B2-71",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1066"
+  ]
+ },
+ {
+  "daire": "B2-72",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1054",
+   "1055"
+  ]
+ },
+ {
+  "daire": "B2-73",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1064",
+   "1065"
+  ]
+ },
+ {
+  "daire": "B2-74",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1062",
+   "1063"
+  ]
+ },
+ {
+  "daire": "B2-75",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1058"
+  ]
+ },
+ {
+  "daire": "B2-76",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1059"
+  ]
+ },
+ {
+  "daire": "B2-77",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1060",
+   "1061"
+  ]
+ },
+ {
+  "daire": "B2-78",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1052",
+   "1053"
+  ]
+ },
+ {
+  "daire": "B2-79",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1049",
+   "1050"
+  ]
+ },
+ {
+  "daire": "B2-81",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "826"
+  ]
+ },
+ {
+  "daire": "B2-82",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1047",
+   "1048"
+  ]
+ },
+ {
+  "daire": "B2-83",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "828"
+  ]
+ },
+ {
+  "daire": "B2-84",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "829",
+   "830"
+  ]
+ },
+ {
+  "daire": "B2-85",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "1046"
+  ]
+ },
+ {
+  "daire": "B2-86",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "825"
+  ]
+ },
+ {
+  "daire": "B2-87",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "17.KAT",
+  "yerler": [
+   "831",
+   "832"
+  ]
+ },
+ {
+  "daire": "B3-5",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "526"
+  ]
+ },
+ {
+  "daire": "B3-8",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "262"
+  ]
+ },
+ {
+  "daire": "B3-13",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "253",
+   "254"
+  ]
+ },
+ {
+  "daire": "B3-17",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "412",
+   "413"
+  ]
+ },
+ {
+  "daire": "B3-37",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "542",
+   "543"
+  ]
+ },
+ {
+  "daire": "B3-38",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "540",
+   "541"
+  ]
+ },
+ {
+  "daire": "B3-47",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "389",
+   "390"
+  ]
+ },
+ {
+  "daire": "B3-53",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "532",
+   "533"
+  ]
+ },
+ {
+  "daire": "B3-56",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "641"
+  ]
+ },
+ {
+  "daire": "B3-61",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "12.KAT",
+  "yerler": [
+   "793"
+  ]
+ },
+ {
+  "daire": "B3-67",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "13.KAT",
+  "yerler": [
+   "646",
+   "647"
+  ]
+ },
+ {
+  "daire": "B3-69",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "652"
+  ]
+ },
+ {
+  "daire": "B3-70",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "13.KAT",
+  "yerler": [
+   "802"
+  ]
+ },
+ {
+  "daire": "B3-71",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "14.KAT",
+  "yerler": [
+   "760"
+  ]
+ },
+ {
+  "daire": "B3-72",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "14.KAT",
+  "yerler": [
+   "798",
+   "799"
+  ]
+ },
+ {
+  "daire": "B3-73",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "800",
+   "801"
+  ]
+ },
+ {
+  "daire": "B3-75",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "548"
+  ]
+ },
+ {
+  "daire": "B3-77",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "550",
+   "551"
+  ]
+ },
+ {
+  "daire": "B3-80",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "764"
+  ]
+ },
+ {
+  "daire": "B3-82",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "16.KAT",
+  "yerler": [
+   "556",
+   "557"
+  ]
+ },
+ {
+  "daire": "B3-83",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "559"
+  ]
+ },
+ {
+  "daire": "B3-87",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "564",
+   "565"
+  ]
+ },
+ {
+  "daire": "B3-89",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "569",
+   "570"
+  ]
+ },
+ {
+  "daire": "B3-90",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "17.KAT",
+  "yerler": [
+   "770"
+  ]
+ },
+ {
+  "daire": "B3-91",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "18.KAT",
+  "yerler": [
+   "775"
+  ]
+ },
+ {
+  "daire": "B3-94",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "5.KAT",
+  "yerler": [
+   "773",
+   "774"
+  ]
+ },
+ {
+  "daire": "B3-96",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "",
+  "yerler": [
+   "140"
+  ]
+ },
+ {
+  "daire": "B3-98",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "",
+  "yerler": [
+   "142"
+  ]
+ },
+ {
+  "daire": "C1-2",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "168"
+  ]
+ },
+ {
+  "daire": "C1-5",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "165"
+  ]
+ },
+ {
+  "daire": "C1-6",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "169"
+  ]
+ },
+ {
+  "daire": "C1-7",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "104",
+   "105"
+  ]
+ },
+ {
+  "daire": "C1-8",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "102",
+   "103"
+  ]
+ },
+ {
+  "daire": "C1-9",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "108",
+   "109"
+  ]
+ },
+ {
+  "daire": "C1-12",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "170"
+  ]
+ },
+ {
+  "daire": "C1-14",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "173",
+   "174"
+  ]
+ },
+ {
+  "daire": "C1-21",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "118",
+   "119"
+  ]
+ },
+ {
+  "daire": "C1-22",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "177",
+   "178"
+  ]
+ },
+ {
+  "daire": "C1-24",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "181",
+   "182"
+  ]
+ },
+ {
+  "daire": "C1-26",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "123"
+  ]
+ },
+ {
+  "daire": "C1-30",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "129",
+   "130"
+  ]
+ },
+ {
+  "daire": "C1-36",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "135",
+   "136"
+  ]
+ },
+ {
+  "daire": "C1-38",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "10",
+   "10"
+  ]
+ },
+ {
+  "daire": "C1-39",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "12",
+   "13"
+  ]
+ },
+ {
+  "daire": "C1-40",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "134"
+  ]
+ },
+ {
+  "daire": "C1-41",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "6.KAT",
+  "yerler": [
+   "144"
+  ]
+ },
+ {
+  "daire": "C1-49",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "150"
+  ]
+ },
+ {
+  "daire": "C1-52",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "157",
+   "158"
+  ]
+ },
+ {
+  "daire": "C1-53",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "159",
+   "160"
+  ]
+ },
+ {
+  "daire": "C1-55",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "383"
+  ]
+ },
+ {
+  "daire": "C1-56",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "381",
+   "382"
+  ]
+ },
+ {
+  "daire": "C1-57",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "379",
+   "380"
+  ]
+ },
+ {
+  "daire": "C1-60",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "373",
+   "374"
+  ]
+ },
+ {
+  "daire": "C1-61",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "372"
+  ]
+ },
+ {
+  "daire": "C1-62",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "371"
+  ]
+ },
+ {
+  "daire": "C1-64",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "369",
+   "370"
+  ]
+ },
+ {
+  "daire": "C1-66",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "365",
+   "366"
+  ]
+ },
+ {
+  "daire": "C1-67",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "494",
+   "495"
+  ]
+ },
+ {
+  "daire": "C1-68",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "384"
+  ]
+ },
+ {
+  "daire": "C1-70",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "496",
+   "497"
+  ]
+ },
+ {
+  "daire": "C1-71",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "498",
+   "499"
+  ]
+ },
+ {
+  "daire": "C1-73",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "504",
+   "505"
+  ]
+ },
+ {
+  "daire": "C1-74",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "506",
+   "507"
+  ]
+ },
+ {
+  "daire": "C1-75",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "508"
+  ]
+ },
+ {
+  "daire": "C1-76",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "521"
+  ]
+ },
+ {
+  "daire": "C1-77",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "509",
+   "510"
+  ]
+ },
+ {
+  "daire": "C1-78",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "519",
+   "520"
+  ]
+ },
+ {
+  "daire": "C1-79",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "511",
+   "512"
+  ]
+ },
+ {
+  "daire": "C1-80",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "515",
+   "516"
+  ]
+ },
+ {
+  "daire": "C1-81",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "517",
+   "518"
+  ]
+ },
+ {
+  "daire": "C1-82",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "266"
+  ]
+ },
+ {
+  "daire": "C1-83",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "263"
+  ]
+ },
+ {
+  "daire": "C1-84",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "513",
+   "514"
+  ]
+ },
+ {
+  "daire": "C1-85",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "424",
+   "425"
+  ]
+ },
+ {
+  "daire": "C1-86",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "264",
+   "265"
+  ]
+ },
+ {
+  "daire": "C1-87",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "267",
+   "268"
+  ]
+ },
+ {
+  "daire": "C1-88",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "269",
+   "270"
+  ]
+ },
+ {
+  "daire": "C1-90",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "431"
+  ]
+ },
+ {
+  "daire": "C1-91",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "428",
+   "429"
+  ]
+ },
+ {
+  "daire": "C1-92",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "432",
+   "433"
+  ]
+ },
+ {
+  "daire": "C1-93",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "434",
+   "435"
+  ]
+ },
+ {
+  "daire": "C1-94",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "436",
+   "437"
+  ]
+ },
+ {
+  "daire": "C1-95",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "438",
+   "439"
+  ]
+ },
+ {
+  "daire": "C1-96",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "653"
+  ]
+ },
+ {
+  "daire": "C1-97",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "753"
+  ]
+ },
+ {
+  "daire": "C1-98",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "756",
+   "757"
+  ]
+ },
+ {
+  "daire": "C1-99",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "754",
+   "755"
+  ]
+ },
+ {
+  "daire": "C1-100",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "758",
+   "759"
+  ]
+ },
+ {
+  "daire": "C1-101",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "654",
+   "655"
+  ]
+ },
+ {
+  "daire": "C1-102",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "656",
+   "657"
+  ]
+ },
+ {
+  "daire": "C1-105",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "659",
+   "660"
+  ]
+ },
+ {
+  "daire": "C1-106",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "662",
+   "663"
+  ]
+ },
+ {
+  "daire": "C1-107",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "664",
+   "665"
+  ]
+ },
+ {
+  "daire": "C1-108",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "750",
+   "751"
+  ]
+ },
+ {
+  "daire": "C1-109",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "748",
+   "749"
+  ]
+ },
+ {
+  "daire": "C1-111",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "744"
+  ]
+ },
+ {
+  "daire": "C1-113",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "742",
+   "743"
+  ]
+ },
+ {
+  "daire": "C1-114",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "740",
+   "741"
+  ]
+ },
+ {
+  "daire": "C1-115",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "738",
+   "739"
+  ]
+ },
+ {
+  "daire": "C2-1",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "72",
+   "73"
+  ]
+ },
+ {
+  "daire": "C2-2",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "77"
+  ]
+ },
+ {
+  "daire": "C2-3",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "76"
+  ]
+ },
+ {
+  "daire": "C2-4",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "211",
+   "212"
+  ]
+ },
+ {
+  "daire": "C2-5",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "213",
+   "214"
+  ]
+ },
+ {
+  "daire": "C2-6",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "26"
+  ]
+ },
+ {
+  "daire": "C2-7",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "70",
+   "71"
+  ]
+ },
+ {
+  "daire": "C2-8",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "78",
+   "79"
+  ]
+ },
+ {
+  "daire": "C2-9",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "75"
+  ]
+ },
+ {
+  "daire": "C2-11",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "84",
+   "85"
+  ]
+ },
+ {
+  "daire": "C2-12",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "80",
+   "81"
+  ]
+ },
+ {
+  "daire": "C2-13",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "82",
+   "83"
+  ]
+ },
+ {
+  "daire": "C2-14",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "88",
+   "89"
+  ]
+ },
+ {
+  "daire": "C2-15",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "86",
+   "87"
+  ]
+ },
+ {
+  "daire": "C2-17",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "91"
+  ]
+ },
+ {
+  "daire": "C2-18",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "92",
+   "93"
+  ]
+ },
+ {
+  "daire": "C2-19",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "94",
+   "95"
+  ]
+ },
+ {
+  "daire": "C2-20",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "96",
+   "97"
+  ]
+ },
+ {
+  "daire": "C2-21",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "100",
+   "101"
+  ]
+ },
+ {
+  "daire": "C2-22",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "215",
+   "216"
+  ]
+ },
+ {
+  "daire": "C2-23",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "217"
+  ]
+ },
+ {
+  "daire": "C2-24",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "227"
+  ]
+ },
+ {
+  "daire": "C2-25",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "98",
+   "99"
+  ]
+ },
+ {
+  "daire": "C2-26",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "219",
+   "220"
+  ]
+ },
+ {
+  "daire": "C2-27",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "221",
+   "222"
+  ]
+ },
+ {
+  "daire": "C2-28",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "223",
+   "224"
+  ]
+ },
+ {
+  "daire": "C2-29",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "225",
+   "226"
+  ]
+ },
+ {
+  "daire": "C2-30",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "230"
+  ]
+ },
+ {
+  "daire": "C2-31",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "20"
+  ]
+ },
+ {
+  "daire": "C2-32",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "228",
+   "229"
+  ]
+ },
+ {
+  "daire": "C2-33",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "231",
+   "232"
+  ]
+ },
+ {
+  "daire": "C2-34",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "188",
+   "189"
+  ]
+ },
+ {
+  "daire": "C2-35",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "190",
+   "191"
+  ]
+ },
+ {
+  "daire": "C2-36",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "27",
+   "28"
+  ]
+ },
+ {
+  "daire": "C2-37",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "19"
+  ]
+ },
+ {
+  "daire": "C2-40",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "15"
+  ]
+ },
+ {
+  "daire": "C2-41",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "17",
+   "15"
+  ]
+ },
+ {
+  "daire": "C2-42",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "22",
+   "515"
+  ]
+ },
+ {
+  "daire": "C2-43",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "24",
+   "25"
+  ]
+ },
+ {
+  "daire": "C2-44",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "1.KAT",
+  "yerler": [
+   "23"
+  ]
+ },
+ {
+  "daire": "C2-46",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "194",
+   "195"
+  ]
+ },
+ {
+  "daire": "C2-50",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "359",
+   "360"
+  ]
+ },
+ {
+  "daire": "C2-54",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "357",
+   "358"
+  ]
+ },
+ {
+  "daire": "C2-55",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "353",
+   "354"
+  ]
+ },
+ {
+  "daire": "C2-56",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "352"
+  ]
+ },
+ {
+  "daire": "C2-57",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "347",
+   "348"
+  ]
+ },
+ {
+  "daire": "C2-58",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "349"
+  ]
+ },
+ {
+  "daire": "C2-61",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "345",
+   "346"
+  ]
+ },
+ {
+  "daire": "C2-66",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "483"
+  ]
+ },
+ {
+  "daire": "C2-70",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "477",
+   "478"
+  ]
+ },
+ {
+  "daire": "C2-71",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "479",
+   "480"
+  ]
+ },
+ {
+  "daire": "C2-74",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "482"
+  ]
+ },
+ {
+  "daire": "C2-76",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "484",
+   "485"
+  ]
+ },
+ {
+  "daire": "C2-81",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "273",
+   "274"
+  ]
+ },
+ {
+  "daire": "C2-84",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "444",
+   "445"
+  ]
+ },
+ {
+  "daire": "C2-85",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "446",
+   "447"
+  ]
+ },
+ {
+  "daire": "C2-86",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "449"
+  ]
+ },
+ {
+  "daire": "C2-88",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "450",
+   "451"
+  ]
+ },
+ {
+  "daire": "C2-89",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "668",
+   "669"
+  ]
+ },
+ {
+  "daire": "C2-91",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "737"
+  ]
+ },
+ {
+  "daire": "C2-93",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "732"
+  ]
+ },
+ {
+  "daire": "C2-96",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "728"
+  ]
+ },
+ {
+  "daire": "C2-97",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "725",
+   "726"
+  ]
+ },
+ {
+  "daire": "C2-99",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "719",
+   "720"
+  ]
+ },
+ {
+  "daire": "C2-101",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "927"
+  ]
+ },
+ {
+  "daire": "C2-102",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "925",
+   "926"
+  ]
+ },
+ {
+  "daire": "C2-103",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "923",
+   "924"
+  ]
+ },
+ {
+  "daire": "C2-104",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "922"
+  ]
+ },
+ {
+  "daire": "C2-105",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "918",
+   "919"
+  ]
+ },
+ {
+  "daire": "C2-111",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "16.KAT",
+  "yerler": [
+   "908",
+   "909"
+  ]
+ },
+ {
+  "daire": "C3-1",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "",
+  "yerler": [
+   "204",
+   "205"
+  ]
+ },
+ {
+  "daire": "C3-2",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "206"
+  ]
+ },
+ {
+  "daire": "C3-3",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "",
+  "yerler": [
+   "63"
+  ]
+ },
+ {
+  "daire": "C3-4",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "ZEMİNKAT",
+  "yerler": [
+   "61",
+   "62"
+  ]
+ },
+ {
+  "daire": "C3-5",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "57",
+   "65"
+  ]
+ },
+ {
+  "daire": "C3-6",
+  "etap": "2.ETAP",
+  "bb_tipi": "2+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "55"
+  ]
+ },
+ {
+  "daire": "C3-7",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "1.KAT",
+  "yerler": [
+   "53",
+   "54"
+  ]
+ },
+ {
+  "daire": "C3-8",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "51",
+   "52"
+  ]
+ },
+ {
+  "daire": "C3-9",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "2.KAT",
+  "yerler": [
+   "49",
+   "50"
+  ]
+ },
+ {
+  "daire": "C3-11",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "309",
+   "311"
+  ]
+ },
+ {
+  "daire": "C3-14",
+  "etap": "2.ETAP",
+  "bb_tipi": "",
+  "kat": "3.KAT",
+  "yerler": [
+   "317",
+   "318"
+  ]
+ },
+ {
+  "daire": "C3-15",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "3.KAT",
+  "yerler": [
+   "319",
+   "320"
+  ]
+ },
+ {
+  "daire": "C3-20",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "465",
+   "466"
+  ]
+ },
+ {
+  "daire": "C3-21",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "467",
+   "468"
+  ]
+ },
+ {
+  "daire": "C3-22",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "4.KAT",
+  "yerler": [
+   "469",
+   "470"
+  ]
+ },
+ {
+  "daire": "C3-23",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "462",
+   "463"
+  ]
+ },
+ {
+  "daire": "C3-24",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "460",
+   "461"
+  ]
+ },
+ {
+  "daire": "C3-25",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "458",
+   "459"
+  ]
+ },
+ {
+  "daire": "C3-26",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "456",
+   "457"
+  ]
+ },
+ {
+  "daire": "C3-27",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "454",
+   "455"
+  ]
+ },
+ {
+  "daire": "C3-28",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "5.KAT",
+  "yerler": [
+   "452",
+   "453"
+  ]
+ },
+ {
+  "daire": "C3-29",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "277",
+   "278"
+  ]
+ },
+ {
+  "daire": "C3-31",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "281",
+   "282"
+  ]
+ },
+ {
+  "daire": "C3-32",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "283",
+   "284"
+  ]
+ },
+ {
+  "daire": "C3-33",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "285",
+   "286"
+  ]
+ },
+ {
+  "daire": "C3-34",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "6.KAT",
+  "yerler": [
+   "287",
+   "288"
+  ]
+ },
+ {
+  "daire": "C3-35",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "289",
+   "290"
+  ]
+ },
+ {
+  "daire": "C3-36",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "291",
+   "292"
+  ]
+ },
+ {
+  "daire": "C3-37",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "293",
+   "294"
+  ]
+ },
+ {
+  "daire": "C3-38",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "295",
+   "296"
+  ]
+ },
+ {
+  "daire": "C3-39",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "297",
+   "298"
+  ]
+ },
+ {
+  "daire": "C3-40",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "7.KAT",
+  "yerler": [
+   "299",
+   "300"
+  ]
+ },
+ {
+  "daire": "C3-41",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "307",
+   "308"
+  ]
+ },
+ {
+  "daire": "C3-42",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "305",
+   "306"
+  ]
+ },
+ {
+  "daire": "C3-43",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "303",
+   "304"
+  ]
+ },
+ {
+  "daire": "C3-44",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "301",
+   "302"
+  ]
+ },
+ {
+  "daire": "C3-45",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "717",
+   "718"
+  ]
+ },
+ {
+  "daire": "C3-46",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "8.KAT",
+  "yerler": [
+   "715",
+   "716"
+  ]
+ },
+ {
+  "daire": "C3-47",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "713",
+   "714"
+  ]
+ },
+ {
+  "daire": "C3-48",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "711",
+   "712"
+  ]
+ },
+ {
+  "daire": "C3-49",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "709",
+   "710"
+  ]
+ },
+ {
+  "daire": "C3-50",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "670",
+   "671"
+  ]
+ },
+ {
+  "daire": "C3-51",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "672",
+   "673"
+  ]
+ },
+ {
+  "daire": "C3-52",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "9.KAT",
+  "yerler": [
+   "674",
+   "675"
+  ]
+ },
+ {
+  "daire": "C3-53",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "676",
+   "677"
+  ]
+ },
+ {
+  "daire": "C3-54",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "678",
+   "679"
+  ]
+ },
+ {
+  "daire": "C3-55",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "680",
+   "681"
+  ]
+ },
+ {
+  "daire": "C3-56",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "682",
+   "683"
+  ]
+ },
+ {
+  "daire": "C3-57",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "684",
+   "685"
+  ]
+ },
+ {
+  "daire": "C3-58",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "10.KAT",
+  "yerler": [
+   "686",
+   "687"
+  ]
+ },
+ {
+  "daire": "C3-59",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "707",
+   "708"
+  ]
+ },
+ {
+  "daire": "C3-60",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "705",
+   "706"
+  ]
+ },
+ {
+  "daire": "C3-61",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "703",
+   "704"
+  ]
+ },
+ {
+  "daire": "C3-62",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "701",
+   "702"
+  ]
+ },
+ {
+  "daire": "C3-63",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "699",
+   "700"
+  ]
+ },
+ {
+  "daire": "C3-64",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "11.KAT",
+  "yerler": [
+   "696",
+   "697"
+  ]
+ },
+ {
+  "daire": "C3-65",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "694",
+   "695"
+  ]
+ },
+ {
+  "daire": "C3-66",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "688",
+   "689"
+  ]
+ },
+ {
+  "daire": "C3-67",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "692",
+   "693"
+  ]
+ },
+ {
+  "daire": "C3-68",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "690",
+   "691"
+  ]
+ },
+ {
+  "daire": "C3-69",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "904",
+   "905"
+  ]
+ },
+ {
+  "daire": "C3-70",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "12.KAT",
+  "yerler": [
+   "902",
+   "903"
+  ]
+ },
+ {
+  "daire": "C3-71",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "900",
+   "901"
+  ]
+ },
+ {
+  "daire": "C3-72",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "898",
+   "899"
+  ]
+ },
+ {
+  "daire": "C3-73",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "896",
+   "897"
+  ]
+ },
+ {
+  "daire": "C3-74",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "894",
+   "895"
+  ]
+ },
+ {
+  "daire": "C3-75",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "892",
+   "893"
+  ]
+ },
+ {
+  "daire": "C3-76",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "13.KAT",
+  "yerler": [
+   "890",
+   "891"
+  ]
+ },
+ {
+  "daire": "C3-77",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "887",
+   "889"
+  ]
+ },
+ {
+  "daire": "C3-78",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "885",
+   "886"
+  ]
+ },
+ {
+  "daire": "C3-79",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "883",
+   "884"
+  ]
+ },
+ {
+  "daire": "C3-80",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "881",
+   "882"
+  ]
+ },
+ {
+  "daire": "C3-81",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "879",
+   "880"
+  ]
+ },
+ {
+  "daire": "C3-82",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "14.KAT",
+  "yerler": [
+   "1197",
+   "1198"
+  ]
+ },
+ {
+  "daire": "C3-83",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1195",
+   "1196"
+  ]
+ },
+ {
+  "daire": "C3-84",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1193",
+   "1194"
+  ]
+ },
+ {
+  "daire": "C3-85",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1168",
+   "1169"
+  ]
+ },
+ {
+  "daire": "C3-86",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1166",
+   "1167"
+  ]
+ },
+ {
+  "daire": "C3-87",
+  "etap": "2.ETAP",
+  "bb_tipi": "4+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1142",
+   "1165"
+  ]
+ },
+ {
+  "daire": "C3-88",
+  "etap": "2.ETAP",
+  "bb_tipi": "3+1",
+  "kat": "15.KAT",
+  "yerler": [
+   "1140",
+   "1141"
+  ]
+ },
+ {
+  "daire": "C3-89",
+  "etap": "2.ETAP",
+  "bb_tipi": "TİCARİ",
+  "kat": "5.BODRUMKAT",
+  "yerler": [
+   "69"
+  ]
+ }
+]

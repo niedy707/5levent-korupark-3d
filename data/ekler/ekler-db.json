@@ -1,0 +1,6351 @@
+{
+ "_meta": {
+  "kaynak": "data/yonetim-plani/Yönetim planı Ekler (Ek-1 - Ek-8).pdf",
+  "dpi": 150,
+  "uretim": "araclar/ekler-db-uret.py (/usr/bin/python3)",
+  "uyari": [
+   "OCR tarama katmanı; harfler bozuk olabilir, sayılar genelde sağlam.",
+   "Renk bölgeleri tarama rengine dayanır; küçük etiket kutuları elenmiş olabilir.",
+   "Ek-6 ölçek cm etiketlerinden; Ek-2/5/7 ölçek Ek-3 krokisinden türetilmiş varsayım.",
+   "Kişi adı içermez."
+  ]
+ },
+ "sayfalar": [
+  {
+   "sayfa": 2,
+   "ek": "EK-1",
+   "ek_baslik": "Ticari nitelikli bağımsız bölümlere tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s02-02.jpg",
+   "gorsel_px": [
+    1773,
+    2494
+   ],
+   "kot": null,
+   "blok": null,
+   "olcek": {
+    "cm_per_px": null,
+    "kaynak": "yok"
+   },
+   "lejant": [
+    {
+     "metin": "l , _ __ _ J A Blok Zemin Kat Ticari Bağımsız Bölümlere Tahsis Edilen Alan",
+     "renk": [
+      248,
+      248,
+      232
+     ],
+     "daireler": [],
+     "bbox_px": [
+      68,
+      1970,
+      861,
+      1993
+     ]
+    },
+    {
+     "metin": "l , _ __ _ J A Blok Zemin Kat Ticari Bağımsız Bölümlere Tahsis Edilen Otopark Alanları",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      68,
+      2004,
+      978,
+      2028
+     ]
+    },
+    {
+     "metin": "i,:;..., /,0- J A Blok Zemin Kat 177 Nolu Ticari Bağımsız Bölümlere Tahsis edilen Otopark Alanları",
+     "renk": null,
+     "daireler": [
+      "A-177"
+     ],
+     "bbox_px": [
+      69,
+      2036,
+      1082,
+      2060
+     ]
+    },
+    {
+     "metin": "ma A Blok Zemin Kat 160, 165,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "daireler": [
+      "A-160",
+      "A-165",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "bbox_px": [
+      69,
+      2061,
+      1200,
+      2097
+     ]
+    },
+    {
+     "metin": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "bbox_px": [
+      68,
+      2098,
+      1492,
+      2128
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "l , _ __ _ J A Blok Zemin Kat Ticari Bağımsız Bölümlere Tahsis Edilen Alan",
+     "daireler": [],
+     "renk": [
+      248,
+      248,
+      232
+     ],
+     "alan_px": 2538,
+     "bbox_px": [
+      948,
+      524,
+      1067,
+      635
+     ],
+     "genislik_px": 120,
+     "yukseklik_px": 112,
+     "merkez_px": [
+      1006,
+      590
+     ],
+     "merkez_oran": [
+      0.5674,
+      0.2364
+     ]
+    },
+    {
+     "lejant_no": 0,
+     "kategori": "l , _ __ _ J A Blok Zemin Kat Ticari Bağımsız Bölümlere Tahsis Edilen Alan",
+     "daireler": [],
+     "renk": [
+      248,
+      248,
+      232
+     ],
+     "alan_px": 773,
+     "bbox_px": [
+      812,
+      748,
+      907,
+      807
+     ],
+     "genislik_px": 96,
+     "yukseklik_px": 60,
+     "merkez_px": [
+      860,
+      774
+     ],
+     "merkez_oran": [
+      0.4851,
+      0.3104
+     ]
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "ma A Blok Zemin Kat 160, 165,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-165",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "alan_px": 8272,
+     "bbox_px": [
+      524,
+      729,
+      998,
+      946
+     ],
+     "genislik_px": 475,
+     "yukseklik_px": 218,
+     "merkez_px": [
+      770,
+      798
+     ],
+     "merkez_oran": [
+      0.4344,
+      0.3199
+     ]
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "ma A Blok Zemin Kat 160, 165,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-165",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "alan_px": 1062,
+     "bbox_px": [
+      268,
+      733,
+      407,
+      827
+     ],
+     "genislik_px": 140,
+     "yukseklik_px": 95,
+     "merkez_px": [
+      350,
+      786
+     ],
+     "merkez_oran": [
+      0.1972,
+      0.315
+     ]
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "ma A Blok Zemin Kat 160, 165,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-165",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "alan_px": 1738,
+     "bbox_px": [
+      1100,
+      1117,
+      1260,
+      1251
+     ],
+     "genislik_px": 161,
+     "yukseklik_px": 135,
+     "merkez_px": [
+      1180,
+      1195
+     ],
+     "merkez_oran": [
+      0.6656,
+      0.479
+     ]
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "ma A Blok Zemin Kat 160, 165,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-165",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "alan_px": 773,
+     "bbox_px": [
+      1173,
+      1255,
+      1283,
+      1329
+     ],
+     "genislik_px": 111,
+     "yukseklik_px": 75,
+     "merkez_px": [
+      1227,
+      1289
+     ],
+     "merkez_oran": [
+      0.692,
+      0.5167
+     ]
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "ma A Blok Zemin Kat 160, 165,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-165",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "alan_px": 689,
+     "bbox_px": [
+      1054,
+      1645,
+      1182,
+      1710
+     ],
+     "genislik_px": 129,
+     "yukseklik_px": 66,
+     "merkez_px": [
+      1118,
+      1678
+     ],
+     "merkez_oran": [
+      0.6308,
+      0.6728
+     ]
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "ma A Blok Zemin Kat 160, 165,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-165",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "alan_px": 2957,
+     "bbox_px": [
+      1134,
+      1694,
+      1464,
+      1870
+     ],
+     "genislik_px": 331,
+     "yukseklik_px": 177,
+     "merkez_px": [
+      1297,
+      1776
+     ],
+     "merkez_oran": [
+      0.7318,
+      0.7122
+     ]
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "alan_px": 778,
+     "bbox_px": [
+      499,
+      506,
+      914,
+      639
+     ],
+     "genislik_px": 416,
+     "yukseklik_px": 134,
+     "merkez_px": [
+      757,
+      550
+     ],
+     "merkez_oran": [
+      0.4267,
+      0.2206
+     ]
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "alan_px": 45045,
+     "bbox_px": [
+      400,
+      645,
+      1714,
+      1902
+     ],
+     "genislik_px": 1315,
+     "yukseklik_px": 1258,
+     "merkez_px": [
+      1191,
+      1238
+     ],
+     "merkez_oran": [
+      0.672,
+      0.4964
+     ]
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "alan_px": 2072,
+     "bbox_px": [
+      92,
+      705,
+      403,
+      894
+     ],
+     "genislik_px": 312,
+     "yukseklik_px": 190,
+     "merkez_px": [
+      250,
+      784
+     ],
+     "merkez_oran": [
+      0.1408,
+      0.3145
+     ]
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "alan_px": 1591,
+     "bbox_px": [
+      502,
+      845,
+      824,
+      931
+     ],
+     "genislik_px": 323,
+     "yukseklik_px": 87,
+     "merkez_px": [
+      665,
+      884
+     ],
+     "merkez_oran": [
+      0.3753,
+      0.3546
+     ]
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "alan_px": 1488,
+     "bbox_px": [
+      190,
+      854,
+      418,
+      943
+     ],
+     "genislik_px": 229,
+     "yukseklik_px": 90,
+     "merkez_px": [
+      297,
+      886
+     ],
+     "merkez_oran": [
+      0.1674,
+      0.3554
+     ]
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "alan_px": 598,
+     "bbox_px": [
+      599,
+      1059,
+      721,
+      1249
+     ],
+     "genislik_px": 123,
+     "yukseklik_px": 191,
+     "merkez_px": [
+      658,
+      1142
+     ],
+     "merkez_oran": [
+      0.3713,
+      0.4577
+     ]
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "alan_px": 702,
+     "bbox_px": [
+      263,
+      1093,
+      428,
+      1275
+     ],
+     "genislik_px": 166,
+     "yukseklik_px": 183,
+     "merkez_px": [
+      327,
+      1190
+     ],
+     "merkez_oran": [
+      0.1845,
+      0.4772
+     ]
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "r~ A Blok Zemin Kat 160,161,162,163,164,165,166,168,169,170,171,172,173 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-160",
+      "A-161",
+      "A-162",
+      "A-163",
+      "A-164",
+      "A-165",
+      "A-166",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173"
+     ],
+     "renk": [
+      216,
+      200,
+      216
+     ],
+     "alan_px": 4661,
+     "bbox_px": [
+      345,
+      1234,
+      1019,
+      1511
+     ],
+     "genislik_px": 675,
+     "yukseklik_px": 278,
+     "merkez_px": [
+      653,
+      1383
+     ],
+     "merkez_oran": [
+      0.3686,
+      0.5543
+     ]
+    }
+   ],
+   "geometri_guvenilir": false,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "A-160",
+    "A-161",
+    "A-162",
+    "A-163",
+    "A-164",
+    "A-165",
+    "A-166",
+    "A-168",
+    "A-169",
+    "A-170",
+    "A-171",
+    "A-172",
+    "A-173",
+    "A-177"
+   ],
+   "sayilar": [
+    {
+     "metin": "1043",
+     "px": [
+      55,
+      400
+     ]
+    },
+    {
+     "metin": "001",
+     "px": [
+      826,
+      956
+     ]
+    },
+    {
+     "metin": "177",
+     "px": [
+      343,
+      2038
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 4,
+   "ek": "EK-2",
+   "ek_baslik": "Ticari nitelikli bağımsız bölümlerin kullanımına tahsis edilen depolar",
+   "gorsel": "data/ekler/sayfalar/s04-04.jpg",
+   "gorsel_px": [
+    2487,
+    1764
+   ],
+   "kot": "54.65",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 13.9831,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "T AHSIS EDiLEN DEPOLAR PROJESiDİR . - - - /",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      77,
+      1449,
+      2088,
+      1479
+     ]
+    },
+    {
+     "metin": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DEPOJ\\~RI",
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "bbox_px": [
+      57,
+      1489,
+      1282,
+      1514
+     ]
+    },
+    {
+     "metin": "/,------- 57.65 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1745,
+      1509,
+      2417,
+      1533
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 1,
+     "kategori": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DEPOJ\\~RI",
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 222,
+     "bbox_px": [
+      1802,
+      471,
+      1821,
+      517
+     ],
+     "genislik_px": 20,
+     "yukseklik_px": 47,
+     "merkez_px": [
+      1809,
+      495
+     ],
+     "merkez_oran": [
+      0.7276,
+      0.2805
+     ],
+     "alan_m2_piksel": 4.3,
+     "genislik_cm_kullanilan": 280,
+     "derinlik_cm_kullanilan": 657,
+     "alan_m2_kutu": 18.4,
+     "alan_m2": 4.3,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DEPOJ\\~RI",
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 178,
+     "bbox_px": [
+      1985,
+      523,
+      2010,
+      542
+     ],
+     "genislik_px": 26,
+     "yukseklik_px": 20,
+     "merkez_px": [
+      1998,
+      533
+     ],
+     "merkez_oran": [
+      0.8032,
+      0.3024
+     ],
+     "alan_m2_piksel": 3.5,
+     "genislik_cm_kullanilan": 364,
+     "derinlik_cm_kullanilan": 280,
+     "alan_m2_kutu": 10.19,
+     "alan_m2": 3.5,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DEPOJ\\~RI",
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 175,
+     "bbox_px": [
+      1948,
+      525,
+      1973,
+      543
+     ],
+     "genislik_px": 26,
+     "yukseklik_px": 19,
+     "merkez_px": [
+      1961,
+      535
+     ],
+     "merkez_oran": [
+      0.7884,
+      0.3032
+     ],
+     "alan_m2_piksel": 3.4,
+     "genislik_cm_kullanilan": 364,
+     "derinlik_cm_kullanilan": 266,
+     "alan_m2_kutu": 9.68,
+     "alan_m2": 3.4,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DEPOJ\\~RI",
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 371,
+     "bbox_px": [
+      2046,
+      554,
+      2078,
+      600
+     ],
+     "genislik_px": 33,
+     "yukseklik_px": 47,
+     "merkez_px": [
+      2059,
+      577
+     ],
+     "merkez_oran": [
+      0.8279,
+      0.3273
+     ],
+     "alan_m2_piksel": 7.3,
+     "genislik_cm_kullanilan": 461,
+     "derinlik_cm_kullanilan": 657,
+     "alan_m2_kutu": 30.29,
+     "alan_m2": 7.3,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DEPOJ\\~RI",
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 446,
+     "bbox_px": [
+      1985,
+      706,
+      2026,
+      739
+     ],
+     "genislik_px": 42,
+     "yukseklik_px": 34,
+     "merkez_px": [
+      2002,
+      724
+     ],
+     "merkez_oran": [
+      0.805,
+      0.4107
+     ],
+     "alan_m2_piksel": 8.7,
+     "genislik_cm_kullanilan": 587,
+     "derinlik_cm_kullanilan": 475,
+     "alan_m2_kutu": 27.88,
+     "alan_m2": 8.7,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DEPOJ\\~RI",
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 165,
+     "bbox_px": [
+      2013,
+      737,
+      2049,
+      765
+     ],
+     "genislik_px": 37,
+     "yukseklik_px": 29,
+     "merkez_px": [
+      2032,
+      749
+     ],
+     "merkez_oran": [
+      0.817,
+      0.4247
+     ],
+     "alan_m2_piksel": 3.2,
+     "genislik_cm_kullanilan": 517,
+     "derinlik_cm_kullanilan": 406,
+     "alan_m2_kutu": 20.99,
+     "alan_m2": 3.2,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "A-166",
+    "A-167",
+    "A-168",
+    "A-169",
+    "A-170",
+    "A-171",
+    "A-172",
+    "A-173",
+    "A-174",
+    "A-175",
+    "A-176",
+    "A-177",
+    "A-178"
+   ],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      77,
+      1420
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      222,
+      1438
+     ]
+    },
+    {
+     "metin": "166",
+     "px": [
+      310,
+      1496
+     ]
+    },
+    {
+     "metin": "178",
+     "px": [
+      610,
+      1496
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 5,
+   "ek": "EK-2",
+   "ek_baslik": "Ticari nitelikli bağımsız bölümlerin kullanımına tahsis edilen depolar",
+   "gorsel": "data/ekler/sayfalar/s05-05.jpg",
+   "gorsel_px": [
+    2487,
+    1764
+   ],
+   "kot": "54.65",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 13.9831,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "TAHSiS EDiLEN DEPOLAR PROJESİDiR . --- /",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      77,
+      1448,
+      2089,
+      1472
+     ]
+    },
+    {
+     "metin": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DE:l'O-A~NLARI",
+     "renk": [
+      8,
+      120,
+      216
+     ],
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "bbox_px": [
+      57,
+      1472,
+      1284,
+      1503
+     ]
+    },
+    {
+     "metin": "/,------- 54.65 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1747,
+      1506,
+      2410,
+      1530
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 1,
+     "kategori": "- OTOPARK 54.65 KOTU 166 NOLU BAĞIMSIZ BÖLÜMDEN 178 DAHİL BAĞIMSIZ BÖLÜM KULLANIMINA TAHSiS EDiLEN DE:l'O-A~NLARI",
+     "daireler": [
+      "A-166",
+      "A-167",
+      "A-168",
+      "A-169",
+      "A-170",
+      "A-171",
+      "A-172",
+      "A-173",
+      "A-174",
+      "A-175",
+      "A-176",
+      "A-177",
+      "A-178"
+     ],
+     "renk": [
+      8,
+      120,
+      216
+     ],
+     "alan_px": 157,
+     "bbox_px": [
+      1987,
+      705,
+      2017,
+      736
+     ],
+     "genislik_px": 31,
+     "yukseklik_px": 32,
+     "merkez_px": [
+      2003,
+      719
+     ],
+     "merkez_oran": [
+      0.8052,
+      0.4074
+     ],
+     "alan_m2_piksel": 3.1,
+     "genislik_cm_kullanilan": 433,
+     "derinlik_cm_kullanilan": 447,
+     "alan_m2_kutu": 19.36,
+     "alan_m2": 3.1,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "A-166",
+    "A-167",
+    "A-168",
+    "A-169",
+    "A-170",
+    "A-171",
+    "A-172",
+    "A-173",
+    "A-174",
+    "A-175",
+    "A-176",
+    "A-177",
+    "A-178"
+   ],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      77,
+      1412
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      222,
+      1432
+     ]
+    },
+    {
+     "metin": "166",
+     "px": [
+      311,
+      1483
+     ]
+    },
+    {
+     "metin": "178",
+     "px": [
+      611,
+      1483
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 6,
+   "ek": "EK-2",
+   "ek_baslik": "Ticari nitelikli bağımsız bölümlerin kullanımına tahsis edilen depolar",
+   "gorsel": "data/ekler/sayfalar/s06-06.jpg",
+   "gorsel_px": [
+    2483,
+    1759
+   ],
+   "kot": "45.15",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0056,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "TAHS iS EDiLEN DEPO ALANLARININ PLANLAR! PROJESID~R~A",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      59,
+      1438,
+      616,
+      1455
+     ]
+    },
+    {
+     "metin": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU iMSiZ BÖLÜM KULLAN iMA EDiLEN DEPO - - - - -",
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "daireler": [
+      "C3-89"
+     ],
+     "bbox_px": [
+      149,
+      1470,
+      1138,
+      1487
+     ]
+    },
+    {
+     "metin": "/ 45.15 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1745,
+      1510,
+      2416,
+      1534
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU iMSiZ BÖLÜM KULLAN iMA EDiLEN DEPO - - - - -",
+     "daireler": [
+      "C3-89"
+     ],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 344,
+     "bbox_px": [
+      1879,
+      1041,
+      1902,
+      1080
+     ],
+     "genislik_px": 24,
+     "yukseklik_px": 40,
+     "merkez_px": [
+      1889,
+      1059
+     ],
+     "merkez_oran": [
+      0.7608,
+      0.6019
+     ],
+     "alan_m2_piksel": 6.7,
+     "genislik_cm_kullanilan": 336,
+     "derinlik_cm_kullanilan": 560,
+     "alan_m2_kutu": 18.82,
+     "alan_m2": 6.7,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "C3-89"
+   ],
+   "sayilar": [
+    {
+     "metin": "17",
+     "px": [
+      830,
+      508
+     ]
+    },
+    {
+     "metin": "634",
+     "px": [
+      59,
+      1397
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      203,
+      1416
+     ]
+    },
+    {
+     "metin": "89",
+     "px": [
+      439,
+      1470
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 34,
+   "ek": "EK-5",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s34-34.jpg",
+   "gorsel_px": [
+    2487,
+    1764
+   ],
+   "kot": "45.15",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 13.9831,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "TAHSİS EDiLEN ALANLARIN PLANLAR! PROJESİDiR . - - _",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      64,
+      1472,
+      1197,
+      1495
+     ]
+    },
+    {
+     "metin": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU BAĞ iMSiZ BÖLÜME TAHSiS EDiLEN BALKON, TERAS, YÜZME HAVUZU, SPOR ALAfJDAıR,ı_",
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "daireler": [
+      "C3-89"
+     ],
+     "bbox_px": [
+      132,
+      1495,
+      1286,
+      1523
+     ]
+    },
+    {
+     "metin": "/,------- 45.15 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1745,
+      1509,
+      2420,
+      1534
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU BAĞ iMSiZ BÖLÜME TAHSiS EDiLEN BALKON, TERAS, YÜZME HAVUZU, SPOR ALAfJDAıR,ı_",
+     "daireler": [
+      "C3-89"
+     ],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 40897,
+     "bbox_px": [
+      1943,
+      791,
+      2373,
+      1344
+     ],
+     "genislik_px": 431,
+     "yukseklik_px": 554,
+     "merkez_px": [
+      2165,
+      1066
+     ],
+     "merkez_oran": [
+      0.8705,
+      0.6041
+     ],
+     "alan_m2_piksel": 799.6,
+     "genislik_cm_kullanilan": 6027,
+     "derinlik_cm_kullanilan": 7747,
+     "alan_m2_kutu": 4669.12,
+     "alan_m2": 799.6,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU BAĞ iMSiZ BÖLÜME TAHSiS EDiLEN BALKON, TERAS, YÜZME HAVUZU, SPOR ALAfJDAıR,ı_",
+     "daireler": [
+      "C3-89"
+     ],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 38520,
+     "bbox_px": [
+      1540,
+      1086,
+      1904,
+      1294
+     ],
+     "genislik_px": 365,
+     "yukseklik_px": 209,
+     "merkez_px": [
+      1759,
+      1188
+     ],
+     "merkez_oran": [
+      0.7071,
+      0.6736
+     ],
+     "alan_m2_piksel": 753.2,
+     "genislik_cm_kullanilan": 5104,
+     "derinlik_cm_kullanilan": 2922,
+     "alan_m2_kutu": 1491.39,
+     "alan_m2": 753.2,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU BAĞ iMSiZ BÖLÜME TAHSiS EDiLEN BALKON, TERAS, YÜZME HAVUZU, SPOR ALAfJDAıR,ı_",
+     "daireler": [
+      "C3-89"
+     ],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 29634,
+     "bbox_px": [
+      1699,
+      1264,
+      2091,
+      1464
+     ],
+     "genislik_px": 393,
+     "yukseklik_px": 201,
+     "merkez_px": [
+      1887,
+      1374
+     ],
+     "merkez_oran": [
+      0.7586,
+      0.7792
+     ],
+     "alan_m2_piksel": 579.4,
+     "genislik_cm_kullanilan": 5495,
+     "derinlik_cm_kullanilan": 2811,
+     "alan_m2_kutu": 1544.64,
+     "alan_m2": 579.4,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU BAĞ iMSiZ BÖLÜME TAHSiS EDiLEN BALKON, TERAS, YÜZME HAVUZU, SPOR ALAfJDAıR,ı_",
+     "daireler": [
+      "C3-89"
+     ],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 67239,
+     "bbox_px": [
+      921,
+      1285,
+      1710,
+      1465
+     ],
+     "genislik_px": 790,
+     "yukseklik_px": 181,
+     "merkez_px": [
+      1320,
+      1373
+     ],
+     "merkez_oran": [
+      0.5308,
+      0.7784
+     ],
+     "alan_m2_piksel": 1314.7,
+     "genislik_cm_kullanilan": 11047,
+     "derinlik_cm_kullanilan": 2531,
+     "alan_m2_kutu": 2796.0,
+     "alan_m2": 1314.7,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU BAĞ iMSiZ BÖLÜME TAHSiS EDiLEN BALKON, TERAS, YÜZME HAVUZU, SPOR ALAfJDAıR,ı_",
+     "daireler": [
+      "C3-89"
+     ],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 274,
+     "bbox_px": [
+      1458,
+      1285,
+      1525,
+      1299
+     ],
+     "genislik_px": 68,
+     "yukseklik_px": 15,
+     "merkez_px": [
+      1494,
+      1291
+     ],
+     "merkez_oran": [
+      0.6006,
+      0.7318
+     ],
+     "alan_m2_piksel": 5.4,
+     "genislik_cm_kullanilan": 951,
+     "derinlik_cm_kullanilan": 210,
+     "alan_m2_kutu": 19.97,
+     "alan_m2": 5.4,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 45.15 KOTU C3 BLOK 89 NOLU BAĞ iMSiZ BÖLÜME TAHSiS EDiLEN BALKON, TERAS, YÜZME HAVUZU, SPOR ALAfJDAıR,ı_",
+     "daireler": [
+      "C3-89"
+     ],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 563,
+     "bbox_px": [
+      1648,
+      1285,
+      1726,
+      1312
+     ],
+     "genislik_px": 79,
+     "yukseklik_px": 28,
+     "merkez_px": [
+      1682,
+      1295
+     ],
+     "merkez_oran": [
+      0.6765,
+      0.7341
+     ],
+     "alan_m2_piksel": 11.0,
+     "genislik_cm_kullanilan": 1105,
+     "derinlik_cm_kullanilan": 392,
+     "alan_m2_kutu": 43.32,
+     "alan_m2": 11.0,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "C3-89"
+   ],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      64,
+      1439
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      208,
+      1458
+     ]
+    },
+    {
+     "metin": "89",
+     "px": [
+      423,
+      1504
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 35,
+   "ek": "EK-5",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s35-35.jpg",
+   "gorsel_px": [
+    2480,
+    1754
+   ],
+   "kot": null,
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0225,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "~ OTOPARK OTOPARK4515 45 .15 KOTU K 83 BL OK 96-97-98 NOLU BAĞ iMSiZ BÖLÜMLERE TAHSİS EDiLEN KORiDOR",
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "daireler": [],
+     "bbox_px": [
+      75,
+      1459,
+      980,
+      1489
+     ]
+    },
+    {
+     "metin": "BAĞIMSIZ TAHSİS 45 -15 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      543,
+      1486,
+      2410,
+      1515
+     ]
+    },
+    {
+     "metin": ". OTU 83 BLOK 96-97-98 NOLU BÖLÜMLERE EDiLEN OYUN ALANI",
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "daireler": [],
+     "bbox_px": [
+      239,
+      1498,
+      1005,
+      1515
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "~ OTOPARK OTOPARK4515 45 .15 KOTU K 83 BL OK 96-97-98 NOLU BAĞ iMSiZ BÖLÜMLERE TAHSİS EDiLEN KORiDOR",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 1688,
+     "bbox_px": [
+      228,
+      738,
+      355,
+      926
+     ],
+     "genislik_px": 128,
+     "yukseklik_px": 189,
+     "merkez_px": [
+      300,
+      821
+     ],
+     "merkez_oran": [
+      0.1211,
+      0.4681
+     ],
+     "alan_m2_piksel": 33.2,
+     "genislik_cm_kullanilan": 1795,
+     "derinlik_cm_kullanilan": 2650,
+     "alan_m2_kutu": 475.68,
+     "alan_m2": 33.2,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 0,
+     "kategori": "~ OTOPARK OTOPARK4515 45 .15 KOTU K 83 BL OK 96-97-98 NOLU BAĞ iMSiZ BÖLÜMLERE TAHSİS EDiLEN KORiDOR",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 529,
+     "bbox_px": [
+      366,
+      907,
+      403,
+      952
+     ],
+     "genislik_px": 38,
+     "yukseklik_px": 46,
+     "merkez_px": [
+      390,
+      924
+     ],
+     "merkez_oran": [
+      0.1573,
+      0.5269
+     ],
+     "alan_m2_piksel": 10.4,
+     "genislik_cm_kullanilan": 533,
+     "derinlik_cm_kullanilan": 645,
+     "alan_m2_kutu": 34.38,
+     "alan_m2": 10.4,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 2,
+     "kategori": ". OTU 83 BLOK 96-97-98 NOLU BÖLÜMLERE EDiLEN OYUN ALANI",
+     "daireler": [],
+     "renk": [
+      216,
+      248,
+      248
+     ],
+     "alan_px": 7739,
+     "bbox_px": [
+      65,
+      953,
+      437,
+      1210
+     ],
+     "genislik_px": 373,
+     "yukseklik_px": 258,
+     "merkez_px": [
+      205,
+      1089
+     ],
+     "merkez_oran": [
+      0.0826,
+      0.621
+     ],
+     "alan_m2_piksel": 152.2,
+     "genislik_cm_kullanilan": 5230,
+     "derinlik_cm_kullanilan": 3618,
+     "alan_m2_kutu": 1892.21,
+     "alan_m2": 152.2,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": [
+    {
+     "metin": "83",
+     "px": [
+      326,
+      1463
+     ]
+    },
+    {
+     "metin": "45",
+     "px": [
+      217,
+      1470
+     ]
+    },
+    {
+     "metin": "83",
+     "px": [
+      326,
+      1498
+     ]
+    },
+    {
+     "metin": "45",
+     "px": [
+      2033,
+      1486
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 37,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s37-37.jpg",
+   "gorsel_px": [
+    1240,
+    1754
+   ],
+   "kot": null,
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 4.8585,
+    "kaynak": "Ek-6 cm ölçü etiketleri"
+   },
+   "lejant": [
+    {
+     "metin": "B1 BLOK 1 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "daireler": [
+      "B1-1"
+     ],
+     "bbox_px": [
+      190,
+      1284,
+      638,
+      1300
+     ]
+    },
+    {
+     "metin": "B1 BLOK 2 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "daireler": [
+      "B1-2"
+     ],
+     "bbox_px": [
+      189,
+      1307,
+      638,
+      1323
+     ]
+    },
+    {
+     "metin": "B1 BLOK 3 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      40,
+      152,
+      56
+     ],
+     "daireler": [
+      "B1-3"
+     ],
+     "bbox_px": [
+      189,
+      1330,
+      638,
+      1346
+     ]
+    },
+    {
+     "metin": "B1 BLOK 4 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE ZEMiN KAT PLANI",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "B1-4"
+     ],
+     "bbox_px": [
+      189,
+      1345,
+      1125,
+      1369
+     ]
+    },
+    {
+     "metin": "B1 BLOK 5 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE (±0.00 (+61.15) kotu PLANI)",
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "daireler": [
+      "B1-5"
+     ],
+     "bbox_px": [
+      189,
+      1367,
+      1178,
+      1392
+     ]
+    },
+    {
+     "metin": "TAHSiS EDiLEN KAT BAHÇELERi VE TERASLAR PROJESiDiR.",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      50,
+      1525,
+      697,
+      1545
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "B1 BLOK 1 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B1-1"
+     ],
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "alan_px": 13733,
+     "bbox_px": [
+      226,
+      610,
+      503,
+      665
+     ],
+     "genislik_px": 278,
+     "yukseklik_px": 56,
+     "merkez_px": [
+      364,
+      637
+     ],
+     "merkez_oran": [
+      0.2939,
+      0.3631
+     ],
+     "genislik_cm": 1341,
+     "alan_m2_piksel": 32.4,
+     "genislik_cm_kullanilan": 1341,
+     "derinlik_cm_kullanilan": 272,
+     "alan_m2_kutu": 36.48,
+     "alan_m2": 34.73,
+     "alan_m2_yontem": "paftadaki ölçü etiketi (elle okundu)",
+     "derinlik_cm": 259,
+     "supheli": false,
+     "elle_not": "s.37 üst sol"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "B1 BLOK 2 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B1-2"
+     ],
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "alan_px": 17970,
+     "bbox_px": [
+      174,
+      1104,
+      455,
+      1185
+     ],
+     "genislik_px": 282,
+     "yukseklik_px": 82,
+     "merkez_px": [
+      327,
+      1149
+     ],
+     "merkez_oran": [
+      0.2639,
+      0.6549
+     ],
+     "alan_m2_piksel": 42.4,
+     "genislik_cm_kullanilan": 1370,
+     "derinlik_cm_kullanilan": 398,
+     "alan_m2_kutu": 54.53,
+     "alan_m2": 38.41,
+     "alan_m2_yontem": "paftadaki ölçü etiketi (elle okundu)",
+     "supheli": false,
+     "genislik_cm": 1362,
+     "derinlik_cm": 282,
+     "elle_not": "s.37 alt sol; renk bölgesi L biçimli, etiket dikdörtgeni esas"
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "B1 BLOK 3 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B1-3"
+     ],
+     "renk": [
+      40,
+      152,
+      56
+     ],
+     "alan_px": 13055,
+     "bbox_px": [
+      454,
+      1042,
+      795,
+      1105
+     ],
+     "genislik_px": 342,
+     "yukseklik_px": 64,
+     "merkez_px": [
+      620,
+      1077
+     ],
+     "merkez_oran": [
+      0.5002,
+      0.6143
+     ],
+     "alan_m2_piksel": 30.8,
+     "genislik_cm_kullanilan": 1662,
+     "derinlik_cm_kullanilan": 311,
+     "alan_m2_kutu": 51.69,
+     "alan_m2": 50.13,
+     "alan_m2_yontem": "paftadaki ölçü etiketi (elle okundu)",
+     "supheli": false,
+     "genislik_cm": 1660,
+     "derinlik_cm": 302,
+     "elle_not": "s.37 alt orta"
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "B1 BLOK 4 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE ZEMiN KAT PLANI",
+     "daireler": [
+      "B1-4"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 17935,
+     "bbox_px": [
+      793,
+      1103,
+      1071,
+      1185
+     ],
+     "genislik_px": 279,
+     "yukseklik_px": 83,
+     "merkez_px": [
+      920,
+      1148
+     ],
+     "merkez_oran": [
+      0.7416,
+      0.6546
+     ],
+     "alan_m2_piksel": 42.3,
+     "genislik_cm_kullanilan": 1356,
+     "derinlik_cm_kullanilan": 403,
+     "alan_m2_kutu": 54.65,
+     "alan_m2": 38.14,
+     "alan_m2_yontem": "paftadaki ölçü etiketi (elle okundu)",
+     "supheli": false,
+     "genislik_cm": 1362,
+     "derinlik_cm": 280,
+     "elle_not": "s.37 alt sağ; renk bölgesi L biçimli, etiket dikdörtgeni esas"
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "B1 BLOK 5 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE (±0.00 (+61.15) kotu PLANI)",
+     "daireler": [
+      "B1-5"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 13141,
+     "bbox_px": [
+      751,
+      610,
+      1025,
+      665
+     ],
+     "genislik_px": 275,
+     "yukseklik_px": 56,
+     "merkez_px": [
+      888,
+      637
+     ],
+     "merkez_oran": [
+      0.7165,
+      0.3632
+     ],
+     "genislik_cm": 1336,
+     "alan_m2_piksel": 31.0,
+     "genislik_cm_kullanilan": 1336,
+     "derinlik_cm_kullanilan": 272,
+     "alan_m2_kutu": 36.34,
+     "alan_m2": 34.47,
+     "alan_m2_yontem": "paftadaki ölçü etiketi (elle okundu)",
+     "derinlik_cm": 258,
+     "supheli": false,
+     "elle_not": "s.37 üst sağ"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "B1-1",
+    "B1-2",
+    "B1-3",
+    "B1-4",
+    "B1-5"
+   ],
+   "sayilar": [
+    {
+     "metin": "1341",
+     "px": [
+      351,
+      574
+     ]
+    },
+    {
+     "metin": "1336",
+     "px": [
+      871,
+      575
+     ]
+    },
+    {
+     "metin": "81",
+     "px": [
+      976,
+      1313
+     ]
+    },
+    {
+     "metin": "634",
+     "px": [
+      50,
+      1478
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      220,
+      1502
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 38,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s38-38.jpg",
+   "gorsel_px": [
+    1240,
+    1754
+   ],
+   "kot": null,
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 4.8585,
+    "kaynak": "Ek-6 cm ölçü etiketleri"
+   },
+   "lejant": [
+    {
+     "metin": "B2 BLOK 1 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "daireler": [
+      "B2-1"
+     ],
+     "bbox_px": [
+      188,
+      1284,
+      636,
+      1300
+     ]
+    },
+    {
+     "metin": "B2 BLOK 2 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      8,
+      184,
+      248
+     ],
+     "daireler": [
+      "B2-2"
+     ],
+     "bbox_px": [
+      188,
+      1307,
+      636,
+      1323
+     ]
+    },
+    {
+     "metin": "B2 BLOK 3 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      40,
+      152,
+      56
+     ],
+     "daireler": [
+      "B2-3"
+     ],
+     "bbox_px": [
+      188,
+      1330,
+      636,
+      1345
+     ]
+    },
+    {
+     "metin": "B2 BLOK 4 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE ZEMiN KAT PLANI",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "B2-4"
+     ],
+     "bbox_px": [
+      188,
+      1343,
+      1127,
+      1369
+     ]
+    },
+    {
+     "metin": "B2 BLOK 5 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE (0.00 (+58.15) kotu PLANI)",
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "daireler": [
+      "B2-5"
+     ],
+     "bbox_px": [
+      188,
+      1376,
+      1177,
+      1399
+     ]
+    },
+    {
+     "metin": "TAHSiS EDiLEN KAT BAHÇELERi VE TERASLAR PROJESiDiR.",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      48,
+      1525,
+      695,
+      1545
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "B2 BLOK 1 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B2-1"
+     ],
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "alan_px": 13872,
+     "bbox_px": [
+      224,
+      610,
+      501,
+      664
+     ],
+     "genislik_px": 278,
+     "yukseklik_px": 55,
+     "merkez_px": [
+      363,
+      637
+     ],
+     "merkez_oran": [
+      0.2926,
+      0.3632
+     ],
+     "genislik_cm": 1341,
+     "alan_m2_piksel": 32.7,
+     "genislik_cm_kullanilan": 1341,
+     "derinlik_cm_kullanilan": 267,
+     "alan_m2_kutu": 35.8,
+     "alan_m2": 35.8,
+     "alan_m2_yontem": "kutu (g×d)"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "B2 BLOK 2 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B2-2"
+     ],
+     "renk": [
+      8,
+      184,
+      248
+     ],
+     "alan_px": 18596,
+     "bbox_px": [
+      173,
+      1104,
+      453,
+      1185
+     ],
+     "genislik_px": 281,
+     "yukseklik_px": 82,
+     "merkez_px": [
+      323,
+      1148
+     ],
+     "merkez_oran": [
+      0.2607,
+      0.6546
+     ],
+     "alan_m2_piksel": 43.9,
+     "genislik_cm_kullanilan": 1365,
+     "derinlik_cm_kullanilan": 398,
+     "alan_m2_kutu": 54.33,
+     "alan_m2": 54.33,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "B2 BLOK 3 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B2-3"
+     ],
+     "renk": [
+      40,
+      152,
+      56
+     ],
+     "alan_px": 10532,
+     "bbox_px": [
+      452,
+      1041,
+      793,
+      1105
+     ],
+     "genislik_px": 342,
+     "yukseklik_px": 65,
+     "merkez_px": [
+      618,
+      1076
+     ],
+     "merkez_oran": [
+      0.498,
+      0.6137
+     ],
+     "alan_m2_piksel": 24.9,
+     "genislik_cm_kullanilan": 1662,
+     "derinlik_cm_kullanilan": 316,
+     "alan_m2_kutu": 52.52,
+     "alan_m2": 52.52,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "B2 BLOK 4 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE ZEMiN KAT PLANI",
+     "daireler": [
+      "B2-4"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 18678,
+     "bbox_px": [
+      791,
+      1102,
+      1069,
+      1185
+     ],
+     "genislik_px": 279,
+     "yukseklik_px": 84,
+     "merkez_px": [
+      920,
+      1147
+     ],
+     "merkez_oran": [
+      0.742,
+      0.654
+     ],
+     "alan_m2_piksel": 44.1,
+     "genislik_cm_kullanilan": 1356,
+     "derinlik_cm_kullanilan": 408,
+     "alan_m2_kutu": 55.32,
+     "alan_m2": 55.32,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "B2 BLOK 5 NOLU BAÔIMSIZ BÖLÜME TAHSiSLi BAHÇE (0.00 (+58.15) kotu PLANI)",
+     "daireler": [
+      "B2-5"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 12904,
+     "bbox_px": [
+      749,
+      609,
+      1023,
+      664
+     ],
+     "genislik_px": 275,
+     "yukseklik_px": 56,
+     "merkez_px": [
+      888,
+      637
+     ],
+     "merkez_oran": [
+      0.7162,
+      0.3632
+     ],
+     "genislik_cm": 1336,
+     "alan_m2_piksel": 30.5,
+     "genislik_cm_kullanilan": 1336,
+     "derinlik_cm_kullanilan": 272,
+     "alan_m2_kutu": 36.34,
+     "alan_m2": 36.34,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "B2-1",
+    "B2-2",
+    "B2-3",
+    "B2-4",
+    "B2-5"
+   ],
+   "sayilar": [
+    {
+     "metin": "1341",
+     "px": [
+      349,
+      574
+     ]
+    },
+    {
+     "metin": "1336",
+     "px": [
+      870,
+      574
+     ]
+    },
+    {
+     "metin": "82",
+     "px": [
+      977,
+      1311
+     ]
+    },
+    {
+     "metin": "634",
+     "px": [
+      49,
+      1477
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      219,
+      1502
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 39,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s39-39.jpg",
+   "gorsel_px": [
+    1240,
+    1754
+   ],
+   "kot": null,
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 4.8765,
+    "kaynak": "Ek-6 cm ölçü etiketleri"
+   },
+   "lejant": [
+    {
+     "metin": "B3 BLOK 1 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      232,
+      72,
+      72
+     ],
+     "daireler": [
+      "B3-1"
+     ],
+     "bbox_px": [
+      192,
+      1285,
+      640,
+      1300
+     ]
+    },
+    {
+     "metin": "B3 BLOK 2 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE 83 BLOK",
+     "renk": [
+      8,
+      184,
+      248
+     ],
+     "daireler": [
+      "B3-2"
+     ],
+     "bbox_px": [
+      191,
+      1298,
+      1067,
+      1323
+     ]
+    },
+    {
+     "metin": "B3 BLOK 3 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE ZEMiN KAT PLANI",
+     "renk": [
+      40,
+      152,
+      56
+     ],
+     "daireler": [
+      "B3-3"
+     ],
+     "bbox_px": [
+      191,
+      1330,
+      1101,
+      1350
+     ]
+    },
+    {
+     "metin": "B3 BLOK4 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "B3-4"
+     ],
+     "bbox_px": [
+      191,
+      1354,
+      639,
+      1369
+     ]
+    },
+    {
+     "metin": "B3 BLOK 5 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "daireler": [
+      "B3-5"
+     ],
+     "bbox_px": [
+      191,
+      1377,
+      639,
+      1393
+     ]
+    },
+    {
+     "metin": "TAHSiS EDiLEN KAT BAHÇELERi VE TERASLAR PROJESiDiR.",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      51,
+      1526,
+      698,
+      1546
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "B3 BLOK 1 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B3-1"
+     ],
+     "renk": [
+      232,
+      72,
+      72
+     ],
+     "alan_px": 13849,
+     "bbox_px": [
+      228,
+      610,
+      505,
+      665
+     ],
+     "genislik_px": 278,
+     "yukseklik_px": 56,
+     "merkez_px": [
+      367,
+      637
+     ],
+     "merkez_oran": [
+      0.2959,
+      0.3633
+     ],
+     "genislik_cm": 1341,
+     "alan_m2_piksel": 32.9,
+     "genislik_cm_kullanilan": 1341,
+     "derinlik_cm_kullanilan": 273,
+     "alan_m2_kutu": 36.61,
+     "alan_m2": 36.61,
+     "alan_m2_yontem": "kutu (g×d)"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "B3 BLOK 2 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE 83 BLOK",
+     "daireler": [
+      "B3-2"
+     ],
+     "renk": [
+      8,
+      184,
+      248
+     ],
+     "alan_px": 18649,
+     "bbox_px": [
+      177,
+      1104,
+      456,
+      1186
+     ],
+     "genislik_px": 280,
+     "yukseklik_px": 83,
+     "merkez_px": [
+      327,
+      1149
+     ],
+     "merkez_oran": [
+      0.2636,
+      0.6549
+     ],
+     "alan_m2_piksel": 44.3,
+     "genislik_cm_kullanilan": 1365,
+     "derinlik_cm_kullanilan": 405,
+     "alan_m2_kutu": 55.28,
+     "alan_m2": 55.28,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "B3 BLOK 3 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE ZEMiN KAT PLANI",
+     "daireler": [
+      "B3-3"
+     ],
+     "renk": [
+      40,
+      152,
+      56
+     ],
+     "alan_px": 16039,
+     "bbox_px": [
+      456,
+      1042,
+      797,
+      1106
+     ],
+     "genislik_px": 342,
+     "yukseklik_px": 65,
+     "merkez_px": [
+      622,
+      1078
+     ],
+     "merkez_oran": [
+      0.5017,
+      0.6145
+     ],
+     "alan_m2_piksel": 38.1,
+     "genislik_cm_kullanilan": 1668,
+     "derinlik_cm_kullanilan": 317,
+     "alan_m2_kutu": 52.88,
+     "alan_m2": 52.88,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "B3 BLOK4 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B3-4"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 19055,
+     "bbox_px": [
+      795,
+      1104,
+      1073,
+      1186
+     ],
+     "genislik_px": 279,
+     "yukseklik_px": 83,
+     "merkez_px": [
+      924,
+      1149
+     ],
+     "merkez_oran": [
+      0.745,
+      0.6549
+     ],
+     "alan_m2_piksel": 45.3,
+     "genislik_cm_kullanilan": 1361,
+     "derinlik_cm_kullanilan": 405,
+     "alan_m2_kutu": 55.12,
+     "alan_m2": 55.12,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "B3 BLOK 5 NOLU BAGIMSIZ BÖLÜME TAHSiSLi BAHÇE",
+     "daireler": [
+      "B3-5"
+     ],
+     "renk": [
+      8,
+      120,
+      200
+     ],
+     "alan_px": 10996,
+     "bbox_px": [
+      754,
+      611,
+      1026,
+      666
+     ],
+     "genislik_px": 273,
+     "yukseklik_px": 56,
+     "merkez_px": [
+      898,
+      639
+     ],
+     "merkez_oran": [
+      0.7238,
+      0.3643
+     ],
+     "genislik_cm": 1336,
+     "alan_m2_piksel": 26.1,
+     "genislik_cm_kullanilan": 1336,
+     "derinlik_cm_kullanilan": 273,
+     "alan_m2_kutu": 36.47,
+     "alan_m2": 36.47,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "B3-1",
+    "B3-2",
+    "B3-3",
+    "B3-4",
+    "B3-5"
+   ],
+   "sayilar": [
+    {
+     "metin": "1341",
+     "px": [
+      353,
+      575
+     ]
+    },
+    {
+     "metin": "1336",
+     "px": [
+      874,
+      575
+     ]
+    },
+    {
+     "metin": "83",
+     "px": [
+      950,
+      1298
+     ]
+    },
+    {
+     "metin": "634",
+     "px": [
+      52,
+      1478
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      222,
+      1503
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 40,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s40-40.jpg",
+   "gorsel_px": [
+    1244,
+    1756
+   ],
+   "kot": null,
+   "blok": "C1",
+   "olcek": {
+    "cm_per_px": 4.8709,
+    "kaynak": "Ek-6 diğer sayfaların medyanı (aynı ölçek varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "C1 BLOK 1 NOLU BAĞIMSIZ BÖLÜME~AHSISLI TERAS",
+     "renk": [
+      232,
+      72,
+      72
+     ],
+     "daireler": [
+      "C1-1"
+     ],
+     "bbox_px": [
+      116,
+      1298,
+      564,
+      1324
+     ]
+    },
+    {
+     "metin": "C1 BLOK 2 NOLU BAĞIMSIZ BÖLÜME TAHSiSLİ TERAS",
+     "renk": [
+      8,
+      152,
+      232
+     ],
+     "daireler": [
+      "C1-2"
+     ],
+     "bbox_px": [
+      115,
+      1326,
+      564,
+      1345
+     ]
+    },
+    {
+     "metin": "C1 BLOK 3 NOLU BAĞIMSIZ BÖLÜME TAHSiSLİ TERAS",
+     "renk": [
+      8,
+      152,
+      56
+     ],
+     "daireler": [
+      "C1-3"
+     ],
+     "bbox_px": [
+      115,
+      1349,
+      564,
+      1369
+     ]
+    },
+    {
+     "metin": "C1 BLOK 4 NOLU BAĞIMSIZ BÖLÜME TAHSiSLİ TERAS",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "C1-4"
+     ],
+     "bbox_px": [
+      115,
+      1372,
+      564,
+      1392
+     ]
+    },
+    {
+     "metin": "TAHSİS EDİLEN KAT BAHÇELERİ VE TERASLAR PROJESİDİR.",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      44,
+      1480,
+      693,
+      1504
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "C1 BLOK 1 NOLU BAĞIMSIZ BÖLÜME~AHSISLI TERAS",
+     "daireler": [
+      "C1-1"
+     ],
+     "renk": [
+      232,
+      72,
+      72
+     ],
+     "alan_px": 14813,
+     "bbox_px": [
+      198,
+      1156,
+      424,
+      1227
+     ],
+     "genislik_px": 227,
+     "yukseklik_px": 72,
+     "merkez_px": [
+      311,
+      1192
+     ],
+     "merkez_oran": [
+      0.2497,
+      0.6785
+     ],
+     "alan_m2_piksel": 35.1,
+     "genislik_cm_kullanilan": 1106,
+     "derinlik_cm_kullanilan": 351,
+     "alan_m2_kutu": 38.82,
+     "alan_m2": 38.82,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "C1 BLOK 2 NOLU BAĞIMSIZ BÖLÜME TAHSiSLİ TERAS",
+     "daireler": [
+      "C1-2"
+     ],
+     "renk": [
+      8,
+      152,
+      232
+     ],
+     "alan_px": 7595,
+     "bbox_px": [
+      432,
+      1192,
+      525,
+      1290
+     ],
+     "genislik_px": 94,
+     "yukseklik_px": 99,
+     "merkez_px": [
+      479,
+      1241
+     ],
+     "merkez_oran": [
+      0.3847,
+      0.7066
+     ],
+     "alan_m2_piksel": 18.0,
+     "genislik_cm_kullanilan": 458,
+     "derinlik_cm_kullanilan": 482,
+     "alan_m2_kutu": 22.08,
+     "alan_m2": 22.08,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "C1 BLOK 3 NOLU BAĞIMSIZ BÖLÜME TAHSiSLİ TERAS",
+     "daireler": [
+      "C1-3"
+     ],
+     "renk": [
+      8,
+      152,
+      56
+     ],
+     "alan_px": 6221,
+     "bbox_px": [
+      638,
+      1192,
+      821,
+      1240
+     ],
+     "genislik_px": 184,
+     "yukseklik_px": 49,
+     "merkez_px": [
+      726,
+      1216
+     ],
+     "merkez_oran": [
+      0.5839,
+      0.6926
+     ],
+     "alan_m2_piksel": 14.8,
+     "genislik_cm_kullanilan": 896,
+     "derinlik_cm_kullanilan": 239,
+     "alan_m2_kutu": 21.41,
+     "alan_m2": 21.41,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "C1 BLOK 4 NOLU BAĞIMSIZ BÖLÜME TAHSiSLİ TERAS",
+     "daireler": [
+      "C1-4"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 17390,
+     "bbox_px": [
+      830,
+      1156,
+      1053,
+      1240
+     ],
+     "genislik_px": 224,
+     "yukseklik_px": 85,
+     "merkez_px": [
+      942,
+      1198
+     ],
+     "merkez_oran": [
+      0.757,
+      0.6821
+     ],
+     "alan_m2_piksel": 41.3,
+     "genislik_cm_kullanilan": 1091,
+     "derinlik_cm_kullanilan": 414,
+     "alan_m2_kutu": 45.17,
+     "alan_m2": 45.17,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "C1-1",
+    "C1-2",
+    "C1-3",
+    "C1-4"
+   ],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      44,
+      1436
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      216,
+      1461
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 41,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s41-41.jpg",
+   "gorsel_px": [
+    1240,
+    1754
+   ],
+   "kot": null,
+   "blok": "C1",
+   "olcek": {
+    "cm_per_px": 4.8707,
+    "kaynak": "Ek-6 cm ölçü etiketleri"
+   },
+   "lejant": [
+    {
+     "metin": "C1 BLOK 15 NOLU BAĞIMSIZ BÖLÜME TAHSİSLİ TERAS",
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "daireler": [
+      "C1-15"
+     ],
+     "bbox_px": [
+      154,
+      1322,
+      610,
+      1341
+     ]
+    },
+    {
+     "metin": "C1 BLOK 16 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      24,
+      152,
+      56
+     ],
+     "daireler": [
+      "C1-16"
+     ],
+     "bbox_px": [
+      153,
+      1345,
+      610,
+      1364
+     ]
+    },
+    {
+     "metin": "C1 BLOK 17 NOLU BAĞIMSIZ BÖLÜME TAHSiSLİ TERAS",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "C1-17"
+     ],
+     "bbox_px": [
+      154,
+      1368,
+      610,
+      1388
+     ]
+    },
+    {
+     "metin": "TAHSİS EDİLEN KAT BAHÇELERİ VE TERASLAR PROJESİDİR.",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      42,
+      1475,
+      688,
+      1499
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "C1 BLOK 15 NOLU BAĞIMSIZ BÖLÜME TAHSİSLİ TERAS",
+     "daireler": [
+      "C1-15"
+     ],
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "alan_px": 15722,
+     "bbox_px": [
+      828,
+      531,
+      1051,
+      608
+     ],
+     "genislik_px": 224,
+     "yukseklik_px": 78,
+     "merkez_px": [
+      940,
+      569
+     ],
+     "merkez_oran": [
+      0.7579,
+      0.3246
+     ],
+     "genislik_cm": 1092,
+     "alan_m2_piksel": 37.3,
+     "genislik_cm_kullanilan": 1092,
+     "derinlik_cm_kullanilan": 380,
+     "alan_m2_kutu": 41.5,
+     "alan_m2": 41.5,
+     "alan_m2_yontem": "kutu (g×d)"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "C1 BLOK 16 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C1-16"
+     ],
+     "renk": [
+      24,
+      152,
+      56
+     ],
+     "alan_px": 2091,
+     "bbox_px": [
+      686,
+      531,
+      819,
+      611
+     ],
+     "genislik_px": 134,
+     "yukseklik_px": 81,
+     "merkez_px": [
+      748,
+      570
+     ],
+     "merkez_oran": [
+      0.603,
+      0.325
+     ],
+     "alan_m2_piksel": 5.0,
+     "genislik_cm_kullanilan": 653,
+     "derinlik_cm_kullanilan": 395,
+     "alan_m2_kutu": 25.79,
+     "alan_m2": 25.79,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "C1 BLOK 17 NOLU BAĞIMSIZ BÖLÜME TAHSiSLİ TERAS",
+     "daireler": [
+      "C1-17"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 15971,
+     "bbox_px": [
+      199,
+      530,
+      424,
+      607
+     ],
+     "genislik_px": 226,
+     "yukseklik_px": 78,
+     "merkez_px": [
+      311,
+      569
+     ],
+     "merkez_oran": [
+      0.2511,
+      0.3243
+     ],
+     "genislik_cm": 1090,
+     "alan_m2_piksel": 37.9,
+     "genislik_cm_kullanilan": 1090,
+     "derinlik_cm_kullanilan": 380,
+     "alan_m2_kutu": 41.42,
+     "alan_m2": 41.42,
+     "alan_m2_yontem": "kutu (g×d)"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "C1-15",
+    "C1-16",
+    "C1-17"
+   ],
+   "sayilar": [
+    {
+     "metin": "1090",
+     "px": [
+      298,
+      495
+     ]
+    },
+    {
+     "metin": "1875",
+     "px": [
+      612,
+      496
+     ]
+    },
+    {
+     "metin": "1092",
+     "px": [
+      926,
+      497
+     ]
+    },
+    {
+     "metin": "15",
+     "px": [
+      232,
+      1325
+     ]
+    },
+    {
+     "metin": "16",
+     "px": [
+      232,
+      1348
+     ]
+    },
+    {
+     "metin": "17",
+     "px": [
+      232,
+      1372
+     ]
+    },
+    {
+     "metin": "634",
+     "px": [
+      42,
+      1432
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      213,
+      1456
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 42,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s42-42.jpg",
+   "gorsel_px": [
+    1240,
+    1754
+   ],
+   "kot": null,
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 4.8709,
+    "kaynak": "Ek-6 diğer sayfaların medyanı (aynı ölçek varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "C2 BLOK 1 NOLU BAĞIMSIZ BÖLÜME +AHSISLI T~RAS",
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "daireler": [
+      "C2-1"
+     ],
+     "bbox_px": [
+      116,
+      1294,
+      562,
+      1321
+     ]
+    },
+    {
+     "metin": "C2 BLOK 2 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "daireler": [
+      "C2-2"
+     ],
+     "bbox_px": [
+      116,
+      1323,
+      562,
+      1342
+     ]
+    },
+    {
+     "metin": "C2 BLOK 3 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      40,
+      152,
+      56
+     ],
+     "daireler": [
+      "C2-3"
+     ],
+     "bbox_px": [
+      116,
+      1346,
+      562,
+      1365
+     ]
+    },
+    {
+     "metin": "l!ld~ C2 BLOK 4 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "C2-4"
+     ],
+     "bbox_px": [
+      47,
+      1369,
+      562,
+      1389
+     ]
+    },
+    {
+     "metin": "TAHSİS EDİLEN KAT BAHÇELERİ VE TERASLAR PROJESİDİR.",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      45,
+      1476,
+      691,
+      1500
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "C2 BLOK 1 NOLU BAĞIMSIZ BÖLÜME +AHSISLI T~RAS",
+     "daireler": [
+      "C2-1"
+     ],
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "alan_px": 14765,
+     "bbox_px": [
+      199,
+      1153,
+      424,
+      1223
+     ],
+     "genislik_px": 226,
+     "yukseklik_px": 71,
+     "merkez_px": [
+      311,
+      1188
+     ],
+     "merkez_oran": [
+      0.2511,
+      0.6774
+     ],
+     "alan_m2_piksel": 35.0,
+     "genislik_cm_kullanilan": 1101,
+     "derinlik_cm_kullanilan": 346,
+     "alan_m2_kutu": 38.09,
+     "alan_m2": 38.09,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "C2 BLOK 2 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C2-2"
+     ],
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "alan_px": 7350,
+     "bbox_px": [
+      433,
+      1189,
+      524,
+      1287
+     ],
+     "genislik_px": 92,
+     "yukseklik_px": 99,
+     "merkez_px": [
+      477,
+      1238
+     ],
+     "merkez_oran": [
+      0.3847,
+      0.7056
+     ],
+     "alan_m2_piksel": 17.4,
+     "genislik_cm_kullanilan": 448,
+     "derinlik_cm_kullanilan": 482,
+     "alan_m2_kutu": 21.59,
+     "alan_m2": 21.59,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "C2 BLOK 3 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C2-3"
+     ],
+     "renk": [
+      40,
+      152,
+      56
+     ],
+     "alan_px": 5223,
+     "bbox_px": [
+      638,
+      1188,
+      819,
+      1237
+     ],
+     "genislik_px": 182,
+     "yukseklik_px": 50,
+     "merkez_px": [
+      729,
+      1212
+     ],
+     "merkez_oran": [
+      0.5882,
+      0.6912
+     ],
+     "alan_m2_piksel": 12.4,
+     "genislik_cm_kullanilan": 887,
+     "derinlik_cm_kullanilan": 244,
+     "alan_m2_kutu": 21.64,
+     "alan_m2": 21.64,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "l!ld~ C2 BLOK 4 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C2-4"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 17276,
+     "bbox_px": [
+      828,
+      1152,
+      1050,
+      1237
+     ],
+     "genislik_px": 223,
+     "yukseklik_px": 86,
+     "merkez_px": [
+      939,
+      1194
+     ],
+     "merkez_oran": [
+      0.7573,
+      0.6808
+     ],
+     "alan_m2_piksel": 41.0,
+     "genislik_cm_kullanilan": 1086,
+     "derinlik_cm_kullanilan": 419,
+     "alan_m2_kutu": 45.5,
+     "alan_m2": 45.5,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "C2-1",
+    "C2-2",
+    "C2-3",
+    "C2-4"
+   ],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      46,
+      1432
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      216,
+      1457
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 43,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s43-43.jpg",
+   "gorsel_px": [
+    1240,
+    1754
+   ],
+   "kot": null,
+   "blok": "C1",
+   "olcek": {
+    "cm_per_px": 4.871,
+    "kaynak": "Ek-6 cm ölçü etiketleri"
+   },
+   "lejant": [
+    {
+     "metin": "C1 BLOK 15 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "daireler": [
+      "C1-15"
+     ],
+     "bbox_px": [
+      156,
+      1320,
+      612,
+      1339
+     ]
+    },
+    {
+     "metin": "C1 BLOK 16 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      24,
+      152,
+      56
+     ],
+     "daireler": [
+      "C1-16"
+     ],
+     "bbox_px": [
+      156,
+      1343,
+      612,
+      1362
+     ]
+    },
+    {
+     "metin": "l!.i:J!~ C1 BLOK 17 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "C1-17"
+     ],
+     "bbox_px": [
+      87,
+      1366,
+      612,
+      1386
+     ]
+    },
+    {
+     "metin": "TAHSİS EDİLEN KAT BAHÇELERİ VE TERASLAR PROJESİDİR.",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      44,
+      1474,
+      690,
+      1497
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "C1 BLOK 15 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C1-15"
+     ],
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "alan_px": 15794,
+     "bbox_px": [
+      830,
+      529,
+      1052,
+      605
+     ],
+     "genislik_px": 223,
+     "yukseklik_px": 77,
+     "merkez_px": [
+      941,
+      567
+     ],
+     "merkez_oran": [
+      0.7592,
+      0.3232
+     ],
+     "genislik_cm": 1092,
+     "alan_m2_piksel": 37.5,
+     "genislik_cm_kullanilan": 1092,
+     "derinlik_cm_kullanilan": 375,
+     "alan_m2_kutu": 40.95,
+     "alan_m2": 40.95,
+     "alan_m2_yontem": "kutu (g×d)"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "C1 BLOK 16 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C1-16"
+     ],
+     "renk": [
+      24,
+      152,
+      56
+     ],
+     "alan_px": 1072,
+     "bbox_px": [
+      704,
+      529,
+      821,
+      609
+     ],
+     "genislik_px": 118,
+     "yukseklik_px": 81,
+     "merkez_px": [
+      762,
+      567
+     ],
+     "merkez_oran": [
+      0.6143,
+      0.3235
+     ],
+     "alan_m2_piksel": 2.5,
+     "genislik_cm_kullanilan": 575,
+     "derinlik_cm_kullanilan": 395,
+     "alan_m2_kutu": 22.71,
+     "alan_m2": 22.71,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "l!.i:J!~ C1 BLOK 17 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C1-17"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 15948,
+     "bbox_px": [
+      200,
+      529,
+      426,
+      605
+     ],
+     "genislik_px": 227,
+     "yukseklik_px": 77,
+     "merkez_px": [
+      313,
+      567
+     ],
+     "merkez_oran": [
+      0.2524,
+      0.323
+     ],
+     "genislik_cm": 1090,
+     "alan_m2_piksel": 37.8,
+     "genislik_cm_kullanilan": 1090,
+     "derinlik_cm_kullanilan": 375,
+     "alan_m2_kutu": 40.88,
+     "alan_m2": 40.88,
+     "alan_m2_yontem": "kutu (g×d)"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "C1-15",
+    "C1-16",
+    "C1-17"
+   ],
+   "sayilar": [
+    {
+     "metin": "1090",
+     "px": [
+      299,
+      494
+     ]
+    },
+    {
+     "metin": "1875",
+     "px": [
+      614,
+      494
+     ]
+    },
+    {
+     "metin": "1092",
+     "px": [
+      928,
+      494
+     ]
+    },
+    {
+     "metin": "15",
+     "px": [
+      234,
+      1323
+     ]
+    },
+    {
+     "metin": "16",
+     "px": [
+      234,
+      1346
+     ]
+    },
+    {
+     "metin": "17",
+     "px": [
+      234,
+      1370
+     ]
+    },
+    {
+     "metin": "634",
+     "px": [
+      44,
+      1430
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      215,
+      1454
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 44,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s44-44.jpg",
+   "gorsel_px": [
+    1240,
+    1754
+   ],
+   "kot": null,
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 4.8709,
+    "kaynak": "Ek-6 diğer sayfaların medyanı (aynı ölçek varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "C3 BLOK 1 NOLU BAĞIMSIZ BÖLÜME +AHSISLI T~RAS",
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "daireler": [
+      "C3-1"
+     ],
+     "bbox_px": [
+      116,
+      1295,
+      562,
+      1322
+     ]
+    },
+    {
+     "metin": "C3 BLOK 2 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "daireler": [
+      "C3-2"
+     ],
+     "bbox_px": [
+      115,
+      1324,
+      562,
+      1343
+     ]
+    },
+    {
+     "metin": "C3 BLOK 3 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      24,
+      152,
+      56
+     ],
+     "daireler": [
+      "C3-3"
+     ],
+     "bbox_px": [
+      115,
+      1346,
+      562,
+      1366
+     ]
+    },
+    {
+     "metin": "C3 BLOK 4 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "C3-4"
+     ],
+     "bbox_px": [
+      115,
+      1370,
+      562,
+      1389
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "C3 BLOK 1 NOLU BAĞIMSIZ BÖLÜME +AHSISLI T~RAS",
+     "daireler": [
+      "C3-1"
+     ],
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "alan_px": 14654,
+     "bbox_px": [
+      198,
+      1154,
+      424,
+      1225
+     ],
+     "genislik_px": 227,
+     "yukseklik_px": 72,
+     "merkez_px": [
+      311,
+      1189
+     ],
+     "merkez_oran": [
+      0.2509,
+      0.6779
+     ],
+     "alan_m2_piksel": 34.8,
+     "genislik_cm_kullanilan": 1106,
+     "derinlik_cm_kullanilan": 351,
+     "alan_m2_kutu": 38.82,
+     "alan_m2": 38.82,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "C3 BLOK 2 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C3-2"
+     ],
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "alan_px": 7437,
+     "bbox_px": [
+      432,
+      1191,
+      523,
+      1288
+     ],
+     "genislik_px": 92,
+     "yukseklik_px": 98,
+     "merkez_px": [
+      477,
+      1239
+     ],
+     "merkez_oran": [
+      0.3844,
+      0.7065
+     ],
+     "alan_m2_piksel": 17.6,
+     "genislik_cm_kullanilan": 448,
+     "derinlik_cm_kullanilan": 477,
+     "alan_m2_kutu": 21.37,
+     "alan_m2": 21.37,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "C3 BLOK 3 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C3-3"
+     ],
+     "renk": [
+      24,
+      152,
+      56
+     ],
+     "alan_px": 7357,
+     "bbox_px": [
+      636,
+      1190,
+      819,
+      1238
+     ],
+     "genislik_px": 184,
+     "yukseklik_px": 49,
+     "merkez_px": [
+      727,
+      1214
+     ],
+     "merkez_oran": [
+      0.586,
+      0.6919
+     ],
+     "alan_m2_piksel": 17.5,
+     "genislik_cm_kullanilan": 896,
+     "derinlik_cm_kullanilan": 239,
+     "alan_m2_kutu": 21.41,
+     "alan_m2": 21.41,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 3,
+     "kategori": "C3 BLOK 4 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C3-4"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 17386,
+     "bbox_px": [
+      828,
+      1154,
+      1050,
+      1238
+     ],
+     "genislik_px": 223,
+     "yukseklik_px": 85,
+     "merkez_px": [
+      939,
+      1196
+     ],
+     "merkez_oran": [
+      0.7573,
+      0.6816
+     ],
+     "alan_m2_piksel": 41.2,
+     "genislik_cm_kullanilan": 1086,
+     "derinlik_cm_kullanilan": 414,
+     "alan_m2_kutu": 44.96,
+     "alan_m2": 44.96,
+     "alan_m2_yontem": "kutu (g×d), ölçek medyan"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "C3-1",
+    "C3-2",
+    "C3-3",
+    "C3-4"
+   ],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      45,
+      1433
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      215,
+      1458
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 45,
+   "ek": "EK-6",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen kat bahçeleri ve teraslar",
+   "gorsel": "data/ekler/sayfalar/s45-45.jpg",
+   "gorsel_px": [
+    1240,
+    1754
+   ],
+   "kot": null,
+   "blok": "C3",
+   "olcek": {
+    "cm_per_px": 4.8928,
+    "kaynak": "Ek-6 cm ölçü etiketleri"
+   },
+   "lejant": [
+    {
+     "metin": "C3 BLOK 14 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "daireler": [
+      "C3-14"
+     ],
+     "bbox_px": [
+      155,
+      1322,
+      611,
+      1341
+     ]
+    },
+    {
+     "metin": "C3 BLOK 15 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      8,
+      152,
+      72
+     ],
+     "daireler": [
+      "C3-15"
+     ],
+     "bbox_px": [
+      155,
+      1345,
+      611,
+      1364
+     ]
+    },
+    {
+     "metin": "C3 BLOK 16 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "daireler": [
+      "C3-16"
+     ],
+     "bbox_px": [
+      155,
+      1368,
+      611,
+      1388
+     ]
+    },
+    {
+     "metin": "TAHSİS EDİLEN KAT BAHÇELERİ VE TERASLAR PROJESİDİR.",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      43,
+      1475,
+      689,
+      1499
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 0,
+     "kategori": "C3 BLOK 14 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C3-14"
+     ],
+     "renk": [
+      8,
+      168,
+      248
+     ],
+     "alan_px": 15580,
+     "bbox_px": [
+      830,
+      531,
+      1051,
+      607
+     ],
+     "genislik_px": 222,
+     "yukseklik_px": 77,
+     "merkez_px": [
+      941,
+      569
+     ],
+     "merkez_oran": [
+      0.7585,
+      0.3245
+     ],
+     "genislik_cm": 1092,
+     "alan_m2_piksel": 37.3,
+     "genislik_cm_kullanilan": 1092,
+     "derinlik_cm_kullanilan": 377,
+     "alan_m2_kutu": 41.17,
+     "alan_m2": 41.17,
+     "alan_m2_yontem": "kutu (g×d)"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "C3 BLOK 15 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C3-15"
+     ],
+     "renk": [
+      8,
+      152,
+      72
+     ],
+     "alan_px": 2344,
+     "bbox_px": [
+      704,
+      531,
+      821,
+      611
+     ],
+     "genislik_px": 118,
+     "yukseklik_px": 81,
+     "merkez_px": [
+      764,
+      570
+     ],
+     "merkez_oran": [
+      0.616,
+      0.3251
+     ],
+     "alan_m2_piksel": 5.6,
+     "genislik_cm_kullanilan": 577,
+     "derinlik_cm_kullanilan": 396,
+     "alan_m2_kutu": 22.85,
+     "alan_m2": 22.85,
+     "alan_m2_yontem": "kutu (g×d) — piksel sayımıyla %15+ ayrışıyor; L biçimli ya da taralı olabilir, PDF'e bak",
+     "supheli": true
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "C3 BLOK 16 NOLU BAĞIMSIZ BÖLÜME TAHSiSLi TERAS",
+     "daireler": [
+      "C3-16"
+     ],
+     "renk": [
+      232,
+      72,
+      136
+     ],
+     "alan_px": 15403,
+     "bbox_px": [
+      200,
+      531,
+      425,
+      606
+     ],
+     "genislik_px": 226,
+     "yukseklik_px": 76,
+     "merkez_px": [
+      312,
+      569
+     ],
+     "merkez_oran": [
+      0.252,
+      0.3241
+     ],
+     "genislik_cm": 1090,
+     "alan_m2_piksel": 36.9,
+     "genislik_cm_kullanilan": 1090,
+     "derinlik_cm_kullanilan": 372,
+     "alan_m2_kutu": 40.55,
+     "alan_m2": 40.55,
+     "alan_m2_yontem": "kutu (g×d)"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "C3-14",
+    "C3-15",
+    "C3-16"
+   ],
+   "sayilar": [
+    {
+     "metin": "1090",
+     "px": [
+      299,
+      496
+     ]
+    },
+    {
+     "metin": "1875",
+     "px": [
+      613,
+      495
+     ]
+    },
+    {
+     "metin": "1092",
+     "px": [
+      927,
+      496
+     ]
+    },
+    {
+     "metin": "14",
+     "px": [
+      233,
+      1325
+     ]
+    },
+    {
+     "metin": "15",
+     "px": [
+      233,
+      1348
+     ]
+    },
+    {
+     "metin": "16",
+     "px": [
+      233,
+      1372
+     ]
+    },
+    {
+     "metin": "634",
+     "px": [
+      43,
+      1432
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      214,
+      1456
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 47,
+   "ek": "EK-7",
+   "ek_baslik": "Blok yapının / toplu yapının kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s47-47.jpg",
+   "gorsel_px": [
+    2480,
+    1754
+   ],
+   "kot": "57.65",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0225,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "TAHSiS EDiLEN A1TT TOPLU YAPININ - - - _ /",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      79,
+      1418,
+      2098,
+      1442
+     ]
+    },
+    {
+     "metin": "EDİLEN SIĞINAK",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      658,
+      1427,
+      801,
+      1489
+     ]
+    },
+    {
+     "metin": "OTOPARK 57 .65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR! - - - - -",
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "daireler": [],
+     "bbox_px": [
+      104,
+      1464,
+      1109,
+      1480
+     ]
+    },
+    {
+     "metin": "- / 57.65 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1288,
+      1476,
+      2413,
+      1558
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 2,
+     "kategori": "OTOPARK 57 .65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR! - - - - -",
+     "daireler": [],
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "alan_px": 10071,
+     "bbox_px": [
+      1168,
+      478,
+      1356,
+      577
+     ],
+     "genislik_px": 189,
+     "yukseklik_px": 100,
+     "merkez_px": [
+      1247,
+      524
+     ],
+     "merkez_oran": [
+      0.503,
+      0.2986
+     ],
+     "alan_m2_piksel": 198.0,
+     "genislik_cm_kullanilan": 2650,
+     "derinlik_cm_kullanilan": 1402,
+     "alan_m2_kutu": 371.53,
+     "alan_m2": 198.0,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "OTOPARK 57 .65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR! - - - - -",
+     "daireler": [],
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "alan_px": 6226,
+     "bbox_px": [
+      1359,
+      478,
+      1499,
+      577
+     ],
+     "genislik_px": 141,
+     "yukseklik_px": 100,
+     "merkez_px": [
+      1437,
+      525
+     ],
+     "merkez_oran": [
+      0.5796,
+      0.2994
+     ],
+     "alan_m2_piksel": 122.4,
+     "genislik_cm_kullanilan": 1977,
+     "derinlik_cm_kullanilan": 1402,
+     "alan_m2_kutu": 277.18,
+     "alan_m2": 122.4,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "OTOPARK 57 .65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR! - - - - -",
+     "daireler": [],
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "alan_px": 493,
+     "bbox_px": [
+      1431,
+      491,
+      1444,
+      568
+     ],
+     "genislik_px": 14,
+     "yukseklik_px": 78,
+     "merkez_px": [
+      1437,
+      528
+     ],
+     "merkez_oran": [
+      0.5796,
+      0.3012
+     ],
+     "alan_m2_piksel": 9.7,
+     "genislik_cm_kullanilan": 196,
+     "derinlik_cm_kullanilan": 1094,
+     "alan_m2_kutu": 21.44,
+     "alan_m2": 9.7,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      80,
+      1381
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      223,
+      1398
+     ]
+    },
+    {
+     "metin": "57",
+     "px": [
+      201,
+      1464
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 48,
+   "ek": "EK-7",
+   "ek_baslik": "Blok yapının / toplu yapının kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s48-48.jpg",
+   "gorsel_px": [
+    2483,
+    1759
+   ],
+   "kot": "48.15",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0056,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "Tahsis Edilen Alanlar - - - -",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      361,
+      1392,
+      824,
+      1409
+     ]
+    },
+    {
+     "metin": "OTOPARK 48.15 KOTU TOPLU YAPININ KULLANIMINA TAHSiS EDiLEN DEPO ALANLAR! ,---------_J",
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "daireler": [],
+     "bbox_px": [
+      118,
+      1480,
+      2081,
+      1507
+     ]
+    },
+    {
+     "metin": "......... ___________ -? I 48.15 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1319,
+      1511,
+      2408,
+      1537
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 48.15 KOTU TOPLU YAPININ KULLANIMINA TAHSiS EDiLEN DEPO ALANLAR! ,---------_J",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 2305,
+     "bbox_px": [
+      1349,
+      1042,
+      1438,
+      1082
+     ],
+     "genislik_px": 90,
+     "yukseklik_px": 41,
+     "merkez_px": [
+      1394,
+      1062
+     ],
+     "merkez_oran": [
+      0.5612,
+      0.6038
+     ],
+     "alan_m2_piksel": 45.2,
+     "genislik_cm_kullanilan": 1261,
+     "derinlik_cm_kullanilan": 574,
+     "alan_m2_kutu": 72.38,
+     "alan_m2": 45.2,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 48.15 KOTU TOPLU YAPININ KULLANIMINA TAHSiS EDiLEN DEPO ALANLAR! ,---------_J",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 2586,
+     "bbox_px": [
+      1582,
+      1042,
+      1671,
+      1082
+     ],
+     "genislik_px": 90,
+     "yukseklik_px": 41,
+     "merkez_px": [
+      1626,
+      1062
+     ],
+     "merkez_oran": [
+      0.6549,
+      0.6038
+     ],
+     "alan_m2_piksel": 50.7,
+     "genislik_cm_kullanilan": 1261,
+     "derinlik_cm_kullanilan": 574,
+     "alan_m2_kutu": 72.38,
+     "alan_m2": 50.7,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 48.15 KOTU TOPLU YAPININ KULLANIMINA TAHSiS EDiLEN DEPO ALANLAR! ,---------_J",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 1901,
+     "bbox_px": [
+      1127,
+      1043,
+      1201,
+      1082
+     ],
+     "genislik_px": 75,
+     "yukseklik_px": 40,
+     "merkez_px": [
+      1163,
+      1062
+     ],
+     "merkez_oran": [
+      0.4683,
+      0.6038
+     ],
+     "alan_m2_piksel": 37.3,
+     "genislik_cm_kullanilan": 1050,
+     "derinlik_cm_kullanilan": 560,
+     "alan_m2_kutu": 58.8,
+     "alan_m2": 37.3,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 48.15 KOTU TOPLU YAPININ KULLANIMINA TAHSiS EDiLEN DEPO ALANLAR! ,---------_J",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 2457,
+     "bbox_px": [
+      1816,
+      1043,
+      1904,
+      1082
+     ],
+     "genislik_px": 89,
+     "yukseklik_px": 40,
+     "merkez_px": [
+      1860,
+      1063
+     ],
+     "merkez_oran": [
+      0.7493,
+      0.6041
+     ],
+     "alan_m2_piksel": 48.2,
+     "genislik_cm_kullanilan": 1246,
+     "derinlik_cm_kullanilan": 560,
+     "alan_m2_kutu": 69.78,
+     "alan_m2": 48.2,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 48.15 KOTU TOPLU YAPININ KULLANIMINA TAHSiS EDiLEN DEPO ALANLAR! ,---------_J",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 1510,
+     "bbox_px": [
+      1581,
+      1099,
+      1617,
+      1171
+     ],
+     "genislik_px": 37,
+     "yukseklik_px": 73,
+     "merkez_px": [
+      1600,
+      1134
+     ],
+     "merkez_oran": [
+      0.6444,
+      0.6445
+     ],
+     "alan_m2_piksel": 29.6,
+     "genislik_cm_kullanilan": 518,
+     "derinlik_cm_kullanilan": 1022,
+     "alan_m2_kutu": 52.94,
+     "alan_m2": 29.6,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": [
+    {
+     "metin": "1043",
+     "px": [
+      232,
+      1415
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 49,
+   "ek": "EK-7",
+   "ek_baslik": "Blok yapının / toplu yapının kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s49-49.jpg",
+   "gorsel_px": [
+    2480,
+    1754
+   ],
+   "kot": "51.65",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0225,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "__ Yönletimine Tahsis Edilen",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      236,
+      1390,
+      449,
+      1407
+     ]
+    },
+    {
+     "metin": "TAHSiS EDiLEN ALANLARIN PROJESiDiR APININ YÖNETiMiNE - _",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      75,
+      1439,
+      982,
+      1456
+     ]
+    },
+    {
+     "metin": "OTOPARK 51.65 KOTU TOPLU YAPININ YÖNETiMiNE TAHSiS EDiLEN ALANLAR - - - -",
+     "renk": [
+      72,
+      168,
+      72
+     ],
+     "daireler": [],
+     "bbox_px": [
+      97,
+      1467,
+      1083,
+      1484
+     ]
+    },
+    {
+     "metin": "-- / 51.65 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1261,
+      1473,
+      2428,
+      1563
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 2,
+     "kategori": "OTOPARK 51.65 KOTU TOPLU YAPININ YÖNETiMiNE TAHSiS EDiLEN ALANLAR - - - -",
+     "daireler": [],
+     "renk": [
+      72,
+      168,
+      72
+     ],
+     "alan_px": 1012,
+     "bbox_px": [
+      1049,
+      340,
+      1169,
+      370
+     ],
+     "genislik_px": 121,
+     "yukseklik_px": 31,
+     "merkez_px": [
+      1105,
+      361
+     ],
+     "merkez_oran": [
+      0.4458,
+      0.2057
+     ],
+     "alan_m2_piksel": 19.9,
+     "genislik_cm_kullanilan": 1697,
+     "derinlik_cm_kullanilan": 435,
+     "alan_m2_kutu": 73.82,
+     "alan_m2": 19.9,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "OTOPARK 51.65 KOTU TOPLU YAPININ YÖNETiMiNE TAHSiS EDiLEN ALANLAR - - - -",
+     "daireler": [],
+     "renk": [
+      72,
+      168,
+      72
+     ],
+     "alan_px": 489,
+     "bbox_px": [
+      337,
+      1080,
+      406,
+      1148
+     ],
+     "genislik_px": 70,
+     "yukseklik_px": 69,
+     "merkez_px": [
+      371,
+      1114
+     ],
+     "merkez_oran": [
+      0.1497,
+      0.6352
+     ],
+     "alan_m2_piksel": 9.6,
+     "genislik_cm_kullanilan": 982,
+     "derinlik_cm_kullanilan": 968,
+     "alan_m2_kutu": 95.06,
+     "alan_m2": 9.6,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": [
+    {
+     "metin": "104",
+     "px": [
+      219,
+      1418
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 50,
+   "ek": "EK-7",
+   "ek_baslik": "Blok yapının / toplu yapının kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s50-50.jpg",
+   "gorsel_px": [
+    2483,
+    1759
+   ],
+   "kot": "54.65",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0056,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "TAHSiS EDiLEN ALANLARIN PROJESiDiR. - - /",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      81,
+      1424,
+      2099,
+      1452
+     ]
+    },
+    {
+     "metin": "OTOPARK 54 .65 KOTU TOPLU YAPININ KULLANIMINA TAHS iS EDiLEN DEPO ALANLAR! ---'",
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "daireler": [],
+     "bbox_px": [
+      106,
+      1470,
+      2077,
+      1501
+     ]
+    },
+    {
+     "metin": ",------- 54.65 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1759,
+      1506,
+      2417,
+      1531
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 54 .65 KOTU TOPLU YAPININ KULLANIMINA TAHS iS EDiLEN DEPO ALANLAR! ---'",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 587,
+     "bbox_px": [
+      1347,
+      1042,
+      1405,
+      1062
+     ],
+     "genislik_px": 59,
+     "yukseklik_px": 21,
+     "merkez_px": [
+      1377,
+      1051
+     ],
+     "merkez_oran": [
+      0.5546,
+      0.5975
+     ],
+     "alan_m2_piksel": 11.5,
+     "genislik_cm_kullanilan": 826,
+     "derinlik_cm_kullanilan": 294,
+     "alan_m2_kutu": 24.28,
+     "alan_m2": 11.5,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 54 .65 KOTU TOPLU YAPININ KULLANIMINA TAHS iS EDiLEN DEPO ALANLAR! ---'",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 201,
+     "bbox_px": [
+      1417,
+      1042,
+      1436,
+      1061
+     ],
+     "genislik_px": 20,
+     "yukseklik_px": 20,
+     "merkez_px": [
+      1426,
+      1052
+     ],
+     "merkez_oran": [
+      0.5744,
+      0.5978
+     ],
+     "alan_m2_piksel": 3.9,
+     "genislik_cm_kullanilan": 280,
+     "derinlik_cm_kullanilan": 280,
+     "alan_m2_kutu": 7.84,
+     "alan_m2": 3.9,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 54 .65 KOTU TOPLU YAPININ KULLANIMINA TAHS iS EDiLEN DEPO ALANLAR! ---'",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 229,
+     "bbox_px": [
+      1578,
+      1042,
+      1601,
+      1061
+     ],
+     "genislik_px": 24,
+     "yukseklik_px": 20,
+     "merkez_px": [
+      1589,
+      1051
+     ],
+     "merkez_oran": [
+      0.64,
+      0.5978
+     ],
+     "alan_m2_piksel": 4.5,
+     "genislik_cm_kullanilan": 336,
+     "derinlik_cm_kullanilan": 280,
+     "alan_m2_kutu": 9.41,
+     "alan_m2": 4.5,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 54 .65 KOTU TOPLU YAPININ KULLANIMINA TAHS iS EDiLEN DEPO ALANLAR! ---'",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 601,
+     "bbox_px": [
+      1610,
+      1042,
+      1664,
+      1061
+     ],
+     "genislik_px": 55,
+     "yukseklik_px": 20,
+     "merkez_px": [
+      1637,
+      1051
+     ],
+     "merkez_oran": [
+      0.6592,
+      0.5975
+     ],
+     "alan_m2_piksel": 11.8,
+     "genislik_cm_kullanilan": 770,
+     "derinlik_cm_kullanilan": 280,
+     "alan_m2_kutu": 21.56,
+     "alan_m2": 11.8,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 54 .65 KOTU TOPLU YAPININ KULLANIMINA TAHS iS EDiLEN DEPO ALANLAR! ---'",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 624,
+     "bbox_px": [
+      1816,
+      1042,
+      1871,
+      1061
+     ],
+     "genislik_px": 56,
+     "yukseklik_px": 20,
+     "merkez_px": [
+      1845,
+      1051
+     ],
+     "merkez_oran": [
+      0.7429,
+      0.5975
+     ],
+     "alan_m2_piksel": 12.2,
+     "genislik_cm_kullanilan": 784,
+     "derinlik_cm_kullanilan": 280,
+     "alan_m2_kutu": 21.95,
+     "alan_m2": 12.2,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 54 .65 KOTU TOPLU YAPININ KULLANIMINA TAHS iS EDiLEN DEPO ALANLAR! ---'",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 213,
+     "bbox_px": [
+      1882,
+      1042,
+      1901,
+      1061
+     ],
+     "genislik_px": 20,
+     "yukseklik_px": 20,
+     "merkez_px": [
+      1892,
+      1051
+     ],
+     "merkez_oran": [
+      0.7619,
+      0.5976
+     ],
+     "alan_m2_piksel": 4.2,
+     "genislik_cm_kullanilan": 280,
+     "derinlik_cm_kullanilan": 280,
+     "alan_m2_kutu": 7.84,
+     "alan_m2": 4.2,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "OTOPARK 54 .65 KOTU TOPLU YAPININ KULLANIMINA TAHS iS EDiLEN DEPO ALANLAR! ---'",
+     "daireler": [],
+     "renk": [
+      248,
+      72,
+      136
+     ],
+     "alan_px": 226,
+     "bbox_px": [
+      1143,
+      1043,
+      1168,
+      1062
+     ],
+     "genislik_px": 26,
+     "yukseklik_px": 20,
+     "merkez_px": [
+      1156,
+      1052
+     ],
+     "merkez_oran": [
+      0.4657,
+      0.5982
+     ],
+     "alan_m2_piksel": 4.4,
+     "genislik_cm_kullanilan": 364,
+     "derinlik_cm_kullanilan": 280,
+     "alan_m2_kutu": 10.19,
+     "alan_m2": 4.4,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      81,
+      1395
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      226,
+      1415
+     ]
+    },
+    {
+     "metin": "54",
+     "px": [
+      203,
+      1470
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 51,
+   "ek": "EK-7",
+   "ek_baslik": "Blok yapının / toplu yapının kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s51-51.jpg",
+   "gorsel_px": [
+    2483,
+    1759
+   ],
+   "kot": "57.65",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0056,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "/ 57.65 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1747,
+      1522,
+      2419,
+      1546
+     ]
+    },
+    {
+     "metin": "OTOPARK 57 .65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR! - - - - - [lejant bu sayfada OCR'a düşmedi; renk kardeş sayfadan]",
+     "renk": [
+      232,
+      88,
+      72
+     ],
+     "daireler": [],
+     "bbox_px": [
+      104,
+      1464,
+      1109,
+      1480
+     ]
+    }
+   ],
+   "bolgeler": [],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": []
+  },
+  {
+   "sayfa": 52,
+   "ek": "EK-7",
+   "ek_baslik": "Blok yapının / toplu yapının kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s52-52.jpg",
+   "gorsel_px": [
+    2483,
+    1759
+   ],
+   "kot": "48.15",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0056,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "~~, 1 t~nü~~:~~~I~ Sığınak Al~nları /",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      156,
+      1340,
+      2141,
+      1402
+     ]
+    },
+    {
+     "metin": ":3~ 7sl~~I Tahsis",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      56,
+      1369,
+      382,
+      1393
+     ]
+    },
+    {
+     "metin": "TAHSiS EDiLEN 1~ iN TOPLU YAPININ KULLANIMINA - - _",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      56,
+      1419,
+      931,
+      1436
+     ]
+    },
+    {
+     "metin": "SIĞINAKALANLARI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      730,
+      1433,
+      894,
+      1495
+     ]
+    },
+    {
+     "metin": "OTOPARK48.15 KOTU TOPLU YAPININ KULLANIMINATAHSIS EDiLEN ----- r _________",
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "daireler": [],
+     "bbox_px": [
+      106,
+      1461,
+      2040,
+      1491
+     ]
+    },
+    {
+     "metin": "- ......_------~ / 48.15 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1289,
+      1482,
+      2391,
+      1564
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 4,
+     "kategori": "OTOPARK48.15 KOTU TOPLU YAPININ KULLANIMINATAHSIS EDiLEN ----- r _________",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 7392,
+     "bbox_px": [
+      396,
+      611,
+      496,
+      750
+     ],
+     "genislik_px": 101,
+     "yukseklik_px": 140,
+     "merkez_px": [
+      452,
+      677
+     ],
+     "merkez_oran": [
+      0.182,
+      0.3851
+     ],
+     "alan_m2_piksel": 145.0,
+     "genislik_cm_kullanilan": 1415,
+     "derinlik_cm_kullanilan": 1961,
+     "alan_m2_kutu": 277.48,
+     "alan_m2": 145.0,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "OTOPARK48.15 KOTU TOPLU YAPININ KULLANIMINATAHSIS EDiLEN ----- r _________",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 8509,
+     "bbox_px": [
+      395,
+      773,
+      495,
+      942
+     ],
+     "genislik_px": 101,
+     "yukseklik_px": 170,
+     "merkez_px": [
+      449,
+      861
+     ],
+     "merkez_oran": [
+      0.181,
+      0.4894
+     ],
+     "alan_m2_piksel": 166.9,
+     "genislik_cm_kullanilan": 1415,
+     "derinlik_cm_kullanilan": 2381,
+     "alan_m2_kutu": 336.91,
+     "alan_m2": 166.9,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "OTOPARK48.15 KOTU TOPLU YAPININ KULLANIMINATAHSIS EDiLEN ----- r _________",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 5185,
+     "bbox_px": [
+      671,
+      1002,
+      739,
+      1123
+     ],
+     "genislik_px": 69,
+     "yukseklik_px": 122,
+     "merkez_px": [
+      709,
+      1062
+     ],
+     "merkez_oran": [
+      0.2855,
+      0.6039
+     ],
+     "alan_m2_piksel": 101.7,
+     "genislik_cm_kullanilan": 966,
+     "derinlik_cm_kullanilan": 1709,
+     "alan_m2_kutu": 165.09,
+     "alan_m2": 101.7,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "OTOPARK48.15 KOTU TOPLU YAPININ KULLANIMINATAHSIS EDiLEN ----- r _________",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 6820,
+     "bbox_px": [
+      883,
+      1002,
+      970,
+      1123
+     ],
+     "genislik_px": 88,
+     "yukseklik_px": 122,
+     "merkez_px": [
+      923,
+      1062
+     ],
+     "merkez_oran": [
+      0.3717,
+      0.604
+     ],
+     "alan_m2_piksel": 133.8,
+     "genislik_cm_kullanilan": 1232,
+     "derinlik_cm_kullanilan": 1709,
+     "alan_m2_kutu": 210.55,
+     "alan_m2": 133.8,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "OTOPARK48.15 KOTU TOPLU YAPININ KULLANIMINATAHSIS EDiLEN ----- r _________",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 2787,
+     "bbox_px": [
+      1812,
+      1086,
+      1899,
+      1157
+     ],
+     "genislik_px": 88,
+     "yukseklik_px": 72,
+     "merkez_px": [
+      1866,
+      1117
+     ],
+     "merkez_oran": [
+      0.7515,
+      0.635
+     ],
+     "alan_m2_piksel": 54.7,
+     "genislik_cm_kullanilan": 1232,
+     "derinlik_cm_kullanilan": 1008,
+     "alan_m2_kutu": 124.19,
+     "alan_m2": 54.7,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": [
+    {
+     "metin": "1043",
+     "px": [
+      201,
+      1395
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 53,
+   "ek": "EK-7",
+   "ek_baslik": "Blok yapının / toplu yapının kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s53-53.jpg",
+   "gorsel_px": [
+    2480,
+    1754
+   ],
+   "kot": "51.65",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0225,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "E3K4:7STAoYpllLulYKAapının Kull_anım_ına Sığınak Alanları /",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      74,
+      1345,
+      2143,
+      1392
+     ]
+    },
+    {
+     "metin": "__ Tahsis Edilen",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      235,
+      1369,
+      454,
+      1386
+     ]
+    },
+    {
+     "metin": "TAHSiS EDiLEN ALANL!~~J/1TTBPL~;JL;DR N TOPLU YAPININ KULLANIMINA - --- /",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      73,
+      1419,
+      2100,
+      1446
+     ]
+    },
+    {
+     "metin": "TAHSİS SIĞINAKALANLARI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      586,
+      1431,
+      894,
+      1492
+     ]
+    },
+    {
+     "metin": "OTOPARK 51.65 KOTU TOPLU YAPININ KULLANIMINA EDiLEN - --- -",
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "daireler": [],
+     "bbox_px": [
+      102,
+      1467,
+      1111,
+      1484
+     ]
+    },
+    {
+     "metin": "51 -65 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      2039,
+      1507,
+      2418,
+      1531
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 4,
+     "kategori": "OTOPARK 51.65 KOTU TOPLU YAPININ KULLANIMINA EDiLEN - --- -",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 13869,
+     "bbox_px": [
+      657,
+      480,
+      987,
+      578
+     ],
+     "genislik_px": 331,
+     "yukseklik_px": 99,
+     "merkez_px": [
+      832,
+      523
+     ],
+     "merkez_oran": [
+      0.3356,
+      0.298
+     ],
+     "alan_m2_piksel": 272.7,
+     "genislik_cm_kullanilan": 4641,
+     "derinlik_cm_kullanilan": 1388,
+     "alan_m2_kutu": 644.17,
+     "alan_m2": 272.7,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "OTOPARK 51.65 KOTU TOPLU YAPININ KULLANIMINA EDiLEN - --- -",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 7318,
+     "bbox_px": [
+      393,
+      606,
+      494,
+      745
+     ],
+     "genislik_px": 102,
+     "yukseklik_px": 140,
+     "merkez_px": [
+      447,
+      672
+     ],
+     "merkez_oran": [
+      0.1803,
+      0.3829
+     ],
+     "alan_m2_piksel": 143.9,
+     "genislik_cm_kullanilan": 1430,
+     "derinlik_cm_kullanilan": 1963,
+     "alan_m2_kutu": 280.71,
+     "alan_m2": 143.9,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 4,
+     "kategori": "OTOPARK 51.65 KOTU TOPLU YAPININ KULLANIMINA EDiLEN - --- -",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 8570,
+     "bbox_px": [
+      393,
+      769,
+      494,
+      937
+     ],
+     "genislik_px": 102,
+     "yukseklik_px": 169,
+     "merkez_px": [
+      448,
+      856
+     ],
+     "merkez_oran": [
+      0.1805,
+      0.4879
+     ],
+     "alan_m2_piksel": 168.5,
+     "genislik_cm_kullanilan": 1430,
+     "derinlik_cm_kullanilan": 2370,
+     "alan_m2_kutu": 338.91,
+     "alan_m2": 168.5,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": [
+    {
+     "metin": "1043",
+     "px": [
+      217,
+      1396
+     ]
+    },
+    {
+     "metin": "51",
+     "px": [
+      2039,
+      1507
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 54,
+   "ek": "EK-7",
+   "ek_baslik": "Blok yapının / toplu yapının kullanımına tahsis edilen alanlar",
+   "gorsel": "data/ekler/sayfalar/s54-54.jpg",
+   "gorsel_px": [
+    2480,
+    1754
+   ],
+   "kot": "54.65",
+   "blok": null,
+   "olcek": {
+    "cm_per_px": 14.0225,
+    "kaynak": "türetilmiş (Ek-3 kroki ölçeği; aynı vaziyet planı varsayımı)"
+   },
+   "lejant": [
+    {
+     "metin": "TAHSiS EDiLEN SIĞINAK ALANLARINA AiT PROJEDiR. - - /",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      79,
+      1427,
+      2101,
+      1454
+     ]
+    },
+    {
+     "metin": "EDİLEN SIĞINAK",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      660,
+      1468,
+      803,
+      1490
+     ]
+    },
+    {
+     "metin": "OTOPARK 54.65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR!",
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "daireler": [],
+     "bbox_px": [
+      104,
+      1472,
+      895,
+      1489
+     ]
+    },
+    {
+     "metin": ",------- 54.65 KOTU OTOPARK PLANI",
+     "renk": null,
+     "daireler": [],
+     "bbox_px": [
+      1761,
+      1509,
+      2424,
+      1533
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 2,
+     "kategori": "OTOPARK 54.65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR!",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 13840,
+     "bbox_px": [
+      1171,
+      484,
+      1502,
+      584
+     ],
+     "genislik_px": 332,
+     "yukseklik_px": 101,
+     "merkez_px": [
+      1345,
+      527
+     ],
+     "merkez_oran": [
+      0.5422,
+      0.3007
+     ],
+     "alan_m2_piksel": 272.1,
+     "genislik_cm_kullanilan": 4655,
+     "derinlik_cm_kullanilan": 1416,
+     "alan_m2_kutu": 659.15,
+     "alan_m2": 272.1,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "OTOPARK 54.65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR!",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 9405,
+     "bbox_px": [
+      658,
+      485,
+      845,
+      583
+     ],
+     "genislik_px": 188,
+     "yukseklik_px": 99,
+     "merkez_px": [
+      736,
+      530
+     ],
+     "merkez_oran": [
+      0.2969,
+      0.3023
+     ],
+     "alan_m2_piksel": 184.9,
+     "genislik_cm_kullanilan": 2636,
+     "derinlik_cm_kullanilan": 1388,
+     "alan_m2_kutu": 365.88,
+     "alan_m2": 184.9,
+     "alan_m2_yontem": "piksel sayımı"
+    },
+    {
+     "lejant_no": 2,
+     "kategori": "OTOPARK 54.65 KOTU TOPLU YAPININ KULLANIMINA TAHSiS ALANLAR!",
+     "daireler": [],
+     "renk": [
+      248,
+      88,
+      72
+     ],
+     "alan_px": 5384,
+     "bbox_px": [
+      849,
+      485,
+      988,
+      583
+     ],
+     "genislik_px": 140,
+     "yukseklik_px": 99,
+     "merkez_px": [
+      926,
+      532
+     ],
+     "merkez_oran": [
+      0.3735,
+      0.3033
+     ],
+     "alan_m2_piksel": 105.9,
+     "genislik_cm_kullanilan": 1963,
+     "derinlik_cm_kullanilan": 1388,
+     "alan_m2_kutu": 272.46,
+     "alan_m2": 105.9,
+     "alan_m2_yontem": "piksel sayımı"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [],
+   "sayilar": [
+    {
+     "metin": "634",
+     "px": [
+      80,
+      1400
+     ]
+    },
+    {
+     "metin": "1043",
+     "px": [
+      224,
+      1419
+     ]
+    }
+   ]
+  },
+  {
+   "sayfa": 56,
+   "ek": "EK-8",
+   "ek_baslik": "Bağımsız bölümlerin kullanımına tahsis edilen alanlar (A blok 1. kat)",
+   "gorsel": "data/ekler/sayfalar/s56-56.jpg",
+   "gorsel_px": [
+    2490,
+    1769
+   ],
+   "kot": null,
+   "blok": null,
+   "olcek": {
+    "cm_per_px": null,
+    "kaynak": "yok"
+   },
+   "lejant": [
+    {
+     "metin": ".___~ ,I A Blok 1. Kat 14, 15 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "renk": null,
+     "daireler": [
+      "A-14",
+      "A-15"
+     ],
+     "bbox_px": [
+      467,
+      1527,
+      1308,
+      1552
+     ]
+    },
+    {
+     "metin": "ı A Blok 1. Kat 11, 12, 13 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "renk": [
+      248,
+      216,
+      232
+     ],
+     "daireler": [
+      "A-11",
+      "A-12",
+      "A-13"
+     ],
+     "bbox_px": [
+      533,
+      1577,
+      1343,
+      1602
+     ]
+    }
+   ],
+   "bolgeler": [
+    {
+     "lejant_no": 1,
+     "kategori": "ı A Blok 1. Kat 11, 12, 13 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-11",
+      "A-12",
+      "A-13"
+     ],
+     "renk": [
+      248,
+      216,
+      232
+     ],
+     "alan_px": 753,
+     "bbox_px": [
+      577,
+      445,
+      624,
+      632
+     ],
+     "genislik_px": 48,
+     "yukseklik_px": 188,
+     "merkez_px": [
+      597,
+      549
+     ],
+     "merkez_oran": [
+      0.2399,
+      0.3103
+     ]
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "ı A Blok 1. Kat 11, 12, 13 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-13"
+     ],
+     "renk": [
+      248,
+      216,
+      232
+     ],
+     "alan_px": 14949,
+     "bbox_px": [
+      958,
+      456,
+      1571,
+      823
+     ],
+     "genislik_px": 614,
+     "yukseklik_px": 368,
+     "merkez_px": [
+      1318,
+      632
+     ],
+     "merkez_oran": [
+      0.5293,
+      0.3574
+     ],
+     "alan_m2": 114.99,
+     "alan_m2_yontem": "paftada basılı alan etiketi (elle okundu)",
+     "supheli": false,
+     "elle_not": "s.56 pembe büyük alan; etiket '13 Nolu Bağımsız Bölümlü Alana Tahsis edilmiştir 114,99 m2'"
+    },
+    {
+     "lejant_no": 1,
+     "kategori": "ı A Blok 1. Kat 11, 12, 13 Nolu Bağımsız Bölümlere Tahsis Edilen Alanlar",
+     "daireler": [
+      "A-11"
+     ],
+     "renk": [
+      248,
+      216,
+      232
+     ],
+     "alan_px": 6059,
+     "bbox_px": [
+      1399,
+      855,
+      1641,
+      1099
+     ],
+     "genislik_px": 243,
+     "yukseklik_px": 245,
+     "merkez_px": [
+      1514,
+      963
+     ],
+     "merkez_oran": [
+      0.6081,
+      0.5446
+     ],
+     "alan_m2": 89.35,
+     "alan_m2_yontem": "paftada basılı alan etiketi (elle okundu)",
+     "supheli": false,
+     "elle_not": "s.56 pembe alt-sağ; etiket '11 Nolu Bağımsız Bölümlü Alana Tahsis edilmiştir 89,35 m2' (yanındaki 'teras 29,32 m²' beyaz taralı, dairenin kendi terası)"
+    }
+   ],
+   "geometri_guvenilir": true,
+   "elle_bolgesiz": [
+    {
+     "daire": "A-15",
+     "alan_m2": 51.9,
+     "bolgesiz": true,
+     "not": "s.56 sol üst, beyaz taralı kategori (14–15); renk bölgesi yok; etiket '15 Nolu … 51,90 m2'"
+    },
+    {
+     "daire": "A-12",
+     "alan_m2": 119.4,
+     "bolgesiz": true,
+     "not": "s.56 pembe orta alan; etiket '12 Nolu … 119,40 m2'. Renk tespiti A-13 alanıyla BİRLEŞİK (aralarında ince çizgi) — bölgeye değil daireye bağlı kayıt"
+    }
+   ],
+   "m2_etiketleri": [],
+   "daire_ifadeleri": [
+    "A-11",
+    "A-12",
+    "A-13",
+    "A-14",
+    "A-15"
+   ],
+   "sayilar": [
+    {
+     "metin": "1043",
+     "px": [
+      413,
+      134
+     ]
+    },
+    {
+     "metin": "15",
+     "px": [
+      741,
+      1529
+     ]
+    },
+    {
+     "metin": "13",
+     "px": [
+      775,
+      1579
+     ]
+    }
+   ]
+  }
+ ]
+}
