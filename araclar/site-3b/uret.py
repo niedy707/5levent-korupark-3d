@@ -186,7 +186,9 @@ for kod, liste in TAHSIS.items():
         if s == 43: continue
         x0, y0, x1, y1 = bb
         kat = DAIRE[kod]["kat"] if kod in DAIRE else 0
-        if kat == 0: tur = "bahçe"   # zemin kat tahsisleri bahçedir (Ek-6 C paftalarında "teras" yazsa da zeminde; kullanıcı, 24.10.2026)
+        # tahsis kotu bloğun bahçe kotundaysa bahçedir (Ek-6 C paftalarında "teras" yazsa da toprak hizasında; kullanıcı, 24.10.2026):
+        # zemin kat her blokta; C3'ün kuzeyinde 3. kat (+61,15 = BAHCE_C["C3"]). C1 2. kat (+58,15) bahçe kotunun (55,15) 3 m üstünde → teras
+        if kat == 0 or abs(kat_kot(b, kat) - BAHCE_C.get(b, -1)) < .01: tur = "bahçe"
         TAHSIS_PLAKA.append({"kod": kod, "tur": tur, "m2": m2, "kot": round(kat_kot(b, kat), 2), "p": yuvarla(poly_site(b, [[x0, y0], [x1, y0], [x1, y1], [x0, y1]]))})
         if kod in DAIRE: DAIRE[kod]["tahsis"] = f"{tur} {str(m2).replace('.', ',')} m²" if m2 else tur
 
@@ -268,9 +270,9 @@ for w in OSM["yollar"]:
     yeni = []
     for x, y in w["p"]:
         u, v = _ters_vz(x, y)
-        if 1000 < u < 1700 and 1255 < v < 1360: yeni.append(VZ(u, 1255))
+        if 1000 < u < 1700 and 1215 < v < 1360: yeni.append(VZ(u, 1222))   # yol (6,5 m ≈ 48 px) tamamen podyum şeridinin kuzeyinde kalsın
         else:
-            if 1780 < u < 1830 and 1320 < v < 1360 and yeni: yeni.append(VZ(1745, 1257))
+            if 1780 < u < 1830 and 1320 < v < 1360 and yeni: yeni.append(VZ(1745, 1224))
             yeni.append([x, y])
     w["p"] = yeni
 # İstinat duvarı (podyum +51,65 → havuz +45,15), kafe/sosyal tesis cephesi, asansör kulesi ve merdiven (Ek-5 s.35'ten)
@@ -332,6 +334,9 @@ for w in yollar:   # halkaya bağlanan kollar: halka kotunda
         m = cizgi_maske(w["p"], 5) & ~SABIT; sabitle(m, HK)
 sabitle(hucre_maske(PODYUM_SABIT), 51.65)
 sabitle(hucre_maske(HAVUZ_ALAN), HAVUZ_KOT)
+# havuz önündeki yol podyumun üstünde (+51,65): bant tek kotta sabitlenir — ızgara 3 m, kenar havuz kotuna sarkmasın.
+# (eksene göre ya da açıya göre kotlamak, bant C1 önüne taşınca rampa kotunu oraya da yayıp yolu tümsekliyordu)
+sabitle(hm & hucre_maske(HAVUZ_ALAN, 1), 51.65)   # havuz önündeki yol bandı podyum kotunda kalsın (ızgara 3 m: kenar havuz kotuna sarkmasın)
 sabitle(hucre_maske(B3_TICARI), 46.15)
 for b in bloklar:
     m = hucre_maske(b["dis"], 1)
@@ -654,7 +659,10 @@ model = {
     "havuz": {**{k: yuvarla(v) for k, v in HAVUZ.items()}, "kot": HAVUZ_KOT}, "sezlong": [[round(a, 1), round(b_, 1), c] for a, b_, c in SEZLONG],
     "semsiye": yuvarla(SEMSIYE, 1), "sahalar": [{**s, "z": round(kot(*s["merkez"]), 2)} for s in SAHALAR], "gobek": GOBEK,
     "podyum": yuvarla(PODYUM), "site": yuvarla(SITE), "agac": agac, "komsu": komsu, "etiket": etiket,
-    "halka": yuvarla(HALKA), "otopark": OTOPARK_M, "duvar": {k: (yuvarla(v) if isinstance(v, list) else v) for k, v in DUVAR.items()},
+    "halka": yuvarla(HALKA), "otopark": OTOPARK_M,
+    # ticari alanlar (yürüme mesafesi katmanı): yalnız A blok ticari kaide (A-160…178)
+    "ticari": [{"ad": "A blok ticari alanlar", "p": kaide["p"], "kot": ZEMIN["A"]}],   # kullanıcı: "kasıt A blok ticari alanlardır"
+    "duvar": {k: (yuvarla(v) if isinstance(v, list) else v) for k, v in DUVAR.items()},
     # site girişi (B1 ile A arası, 15 Temmuz Cd. bağlantısı; OSM giriş/çıkış kolları 1470076630/31'in ortası): "Korupark" kapısı
     "kapi": {"merkez": [-11.6, 88.5], "yon": [round(math.cos(math.radians(9.5)), 4), round(math.sin(math.radians(9.5)), 4)], "gen": 21.0, "z": round(kot(-11.6, 88.5), 2)},
 }

@@ -15,7 +15,7 @@ class Isleyici(http.server.BaseHTTPRequestHandler):
         yol = self.path.split("?")[0].split("#")[0]
         if yol in ("/", "/3d", "/3d/"): dosya = os.path.join(KOK, "site-3b.html")
         elif yol.startswith("/assets/site-3b/"): dosya = os.path.normpath(os.path.join(KOK, yol.lstrip("/")))
-        else: return self.send_error(404, "Bu sunucu yalnız 3B sayfasını sunar")
+        else: return self.send_error(404, "Not found", "Bu sunucu yalniz 3B sayfasini sunar")   # durum satiri latin-1: Turkce harf baglantiyi koparir
         if not dosya.startswith(os.path.join(KOK, "")) or not os.path.isfile(dosya): return self.send_error(404)
         veri = open(dosya, "rb").read()
         self.send_response(200); self.send_header("Content-Type", TUR.get(os.path.splitext(dosya)[1], "application/octet-stream"))

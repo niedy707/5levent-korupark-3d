@@ -155,6 +155,22 @@
   #mod-kat { display: inline-flex; gap: 4px; } #mod-kat.gizli { display: none; }
   #mod-bant button { flex: none; border: 0; background: rgba(255,255,255,.18); color: #fff; border-radius: 999px; padding: 4px 10px; font-weight: 800; cursor: pointer; }
   #blokcu { position: fixed; left: 376px; top: 12px; z-index: 6; display: flex; align-items: center; gap: 6px; }
+  #ekstra { position: relative; flex: none; }
+  body:not(.sec-yok) #ekstra { display: none; }
+  #ekstra-dugme { white-space: nowrap; border: 1px solid rgba(203,213,225,.8); background: rgba(255,255,255,.5); color: #334155; border-radius: 10px; padding: 8px 11px;
+                  font-size: 13px; font-weight: 700; cursor: pointer; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); box-shadow: 0 2px 8px rgba(15,23,42,.08); }
+  #ekstra-dugme.aktif { color: var(--vurgu); border-color: var(--vurgu); }
+  #ekstra-dugme[aria-expanded="true"] { background: rgba(255,255,255,.9); }
+  #ekstra-liste { display: none; position: absolute; left: 0; top: 42px; min-width: 230px; background: rgba(255,255,255,.9); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid var(--cizgi); border-radius: 12px; box-shadow: 0 10px 28px rgba(15,23,42,.18); padding: 6px; z-index: 9; }
+  #ekstra-liste.acik { display: block; }
+  #ekstra-liste button { display: flex; align-items: center; gap: 9px; width: 100%; border: 0; background: none; padding: 9px 10px; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer; text-align: left; }
+  #ekstra-liste button:hover { background: var(--vurgu-acik); }
+  #ekstra-liste button[aria-checked="true"] { background: var(--vurgu); color: #fff; }
+  #lejant-oto { position: fixed; left: 376px; bottom: 28px; z-index: 4; background: rgba(255,255,255,.88); border: 1px solid var(--cizgi); border-radius: 12px; padding: 8px 10px;
+                font-size: 12.5px; box-shadow: 0 4px 14px rgba(15,23,42,.1); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+  #lejant-oto b { display: block; font-size: 11px; color: var(--soluk); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+  #lejant-oto div { display: flex; align-items: center; gap: 7px; padding: 1px 0; } #lejant-oto i { width: 13px; height: 13px; border-radius: 3px; flex: none; }
+  #lejant-oto span { margin-left: auto; padding-left: 10px; color: var(--soluk); font-variant-numeric: tabular-nums; }
   #ana { flex: none; width: 40px; height: 38px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--cizgi); background: #fff; color: var(--lacivert); border-radius: 10px; cursor: pointer; box-shadow: 0 4px 12px rgba(15,23,42,.12); }
   #ana:hover { background: var(--vurgu-acik); }
   #blok-dugme { white-space: nowrap; flex: none; border: 0; background: var(--lacivert); color: #fff; border-radius: 10px; padding: 8px 13px; font-size: 14px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 12px rgba(15,23,42,.2); }
@@ -201,6 +217,7 @@
     #panel #kart, #panel #blok-kart, #panel .kart-bas { background: transparent; }
     #panel .tarif-yazi { background: rgba(248,250,252,.55); }
     #panel header { padding: 12px 12px 6px; align-items: center; position: relative; touch-action: none; cursor: grab; }
+    #panel::before { touch-action: none; } #panel.kucuk #kucult { display: none; }   /* küçükken: dokunuş künyeyi açar, pasif düğme yutmasın */
     body.sec-blok #panel:not(.kucuk) header { position: absolute; right: 8px; top: 8px; padding: 0; border: 0; background: none; z-index: 2; }
     body.sec-blok #panel:not(.kucuk) header::before { display: none; }
     body.sec-blok #panel:not(.kucuk)::before { content: ""; position: absolute; left: 50%; top: 4px; width: 40px; height: 4px; margin-left: -20px; border-radius: 4px; background: #cbd5e1; }
@@ -241,6 +258,10 @@
     #zoom { right: 10px; bottom: auto; top: 98px; } #zoom button { width: 42px; height: 42px; font-size: 24px; }
     body.sec-yok #zoom { top: auto; bottom: 34px; }
     #bakis { left: 8px; top: 6px; } #gorusler button { padding: 6px 8px; font-size: 12.5px; } #bakis .goz { padding: 0 3px 0 5px; }
+    #lejant-oto { left: 8px; bottom: auto; top: 96px; font-size: 11.5px; padding: 6px 8px; }
+    body:not(.sec-yok) #lejant-oto { top: 140px; }
+    #ekstra-dugme { padding: 8px 9px; font-size: 12.5px; }
+    #ekstra { position: static; } #ekstra-liste { left: 8px; right: 8px; top: 46px; min-width: 0; }
     #hakkinda { top: 8px; right: 8px; padding: 6px 9px; font-size: 12px; }
     #blokcu { left: 8px; top: 48px; right: 60px; flex-wrap: nowrap; }
     #no-form label { display: none; } #no-form { padding-left: 3px; min-width: 0; } #no-gir { width: 104px !important; min-width: 0; }
@@ -299,6 +320,11 @@
   <div id="blok-liste" role="listbox"></div>
   <form id="no-form" class="gizli" autocomplete="off"><label for="no-gir" id="no-etiket">Daire no</label><input id="no-gir" inputmode="numeric" pattern="[0-9]*" placeholder="88" maxlength="3"><button type="submit">Git</button></form>
   <span id="no-hata" class="gizli"></span>
+  <div id="ekstra"><button id="ekstra-dugme" type="button" aria-expanded="false">Gereksiz bilgiler ▾</button>
+    <div id="ekstra-liste"><button type="button" data-k="oto" role="menuitemcheckbox" aria-checked="false">Dairelerin otopark renkleri</button>
+      <button type="button" data-k="havuz" role="menuitemcheckbox" aria-checked="false">Açık havuza olan mesafe</button>
+      <button type="button" data-k="kapi" role="menuitemcheckbox" aria-checked="false">Site çıkış kapısına olan uzaklık</button>
+      <button type="button" data-k="ticari" role="menuitemcheckbox" aria-checked="false">Ticari alanlara yürüyüş mesafesi (A_blok)</button></div></div>
 </div>
 <button id="pusula" type="button" title="Kuzey yukarı (kuşbakışı)" aria-label="Pusula"><svg viewBox="0 0 40 40"><path d="M20 5 L27 22 L20 18 L13 22 Z" fill="#dc2626"/><path d="M20 35 L13 18 L20 22 L27 18 Z" fill="#94a3b8"/></svg><b>K</b></button>
 
@@ -358,6 +384,7 @@
 </div></div>
 <div id="alt"><a href="mailto:mail@5-levent.com">mail@5-levent.com</a></div>
 <div id="hobi">Hobi projesidir</div>
+<div id="lejant-oto" class="gizli"></div>
 <div id="yukleniyor"><div>Korupark 3B yükleniyor…</div><div class="cubuk"><i id="yuk-cubuk"></i></div><div id="yuk-yazi" style="font-size:12px;font-weight:600;color:#64748b"></div></div>
 
 <script src="/assets/site-3b/three.min.js?v=r160"></script>
@@ -924,7 +951,7 @@ function ustundeIste(x, y) {
     if (v && v.id !== undefined) {
       const u = UNITE[v.id], d = katman.durumlar?.[u.kod];
       ip.innerHTML = (!mod.plan && u.blok !== (secili ? UNITE[KOD_ID[secili]].blok : odakBlok)) ? `${u.blok} blok<i>tıkla: bloğu seç</i>`
-        : `${u.kod} · ${KAT_ADI(u.kat)}` + (d && katman.lejant?.[d] ? `<i>${katman.lejant[d].ad}</i>` : '');
+        : `${u.kod} · ${KAT_ADI(u.kat)}` + (katman.tur === 'havuz' ? `<i>havuza ≈ ${DAIRE[u.kod].havuz.toFixed(1).replace('.', ',')} dk</i>` : katman.tur === 'ticari' ? `<i>${DAIRE[u.kod].ticari.ad}: ≈ ${Math.round(DAIRE[u.kod].ticari.m / 5) * 5} m</i>` : katman.tur === 'kapi' && DAIRE[u.kod].kapi ? `<i>kapıya ≈ ${Math.round((DAIRE[u.kod].kapi.y + DAIRE[u.kod].kapi.a) / 10) * 10} m (yürüme ${Math.round(DAIRE[u.kod].kapi.y)} + araç ${Math.round(DAIRE[u.kod].kapi.a)})</i>` : d && katman.lejant?.[d] ? `<i>${katman.lejant[d].ad}</i>` : '');
       ip.style.display = 'block'; ip.style.left = x + 'px'; ip.style.top = y + 'px'; tuval.style.cursor = isaretModu() ? 'crosshair' : 'pointer';
     } else if (v && v.kaide) { ip.textContent = 'A blok ticari kaide (işyerleri)'; ip.style.display = 'block'; ip.style.left = x + 'px'; ip.style.top = y + 'px'; tuval.style.cursor = 'pointer'; }
     else { ip.style.display = 'none'; tuval.style.cursor = ''; }
@@ -1073,6 +1100,7 @@ function kartDoldur(kod) {
     const kk = BLOK[u.blok].katlar.find(k => k.no === u.kat).kot;
     $('k-ozet').innerHTML = [`${KAT_ADI(d.kat)} <i class="kot">(kot +${fmt(kk)})</i>`, d.cephe, d.tip, d.net ? `net ${fmt(d.net)} m²` : ''].filter(Boolean).join(' · ');
     const yl = d.oto || [], y0 = yl.length && OTO.yer[yl[0]];
+    if (yl.length && !y0) $('k-ozet').innerHTML += `<br>Otopark: ${yl.join(', ')} <i class="kot">(krokide bu numara yok)</i>`;
     if (y0) { const ks = OTO.kotlar[y0[2]], k = OTO.eslesme[u.blok]?.[ks];
       $('k-ozet').innerHTML += `<br>Otopark: <span class="oto-kutu" style="--r:${otoRenk(ks).hex};margin:0 2px">${k === undefined ? '+' + ks : (k === 0 ? 'Zemin' : KAT_ADI(k))}</span> ${yl.join(', ')}`; }
   }
@@ -1087,6 +1115,7 @@ function kartDoldur(kod) {
     const rk = otoRenk(ks);
     return `<button class="park" data-no="${no}" type="button" style="--pr:${rk.hex}"><i></i>P ${no} · ${rk.ad}<small>+${ks}${ka ? ' · ' + u.blok + ' ' + ka : ''}${y && y[4] === 1 ? ' · engelli' : y && y[4] === 2 ? ' · elektrikli' : ''}</small></button>`; }).join('')
     : '<span class="not" style="margin:0">Ek-3\'te bu daireye tahsisli yer yok.</span>';
+  if (yl.length && !yl.some(n => OTO.yer[n])) $('parklar').innerHTML = `<span class="not" style="margin:0">Ek-3 tablosu ${yl.join(', ')} numarasını veriyor, ama bu numara otopark krokisinde yok; yeri gösterilemiyor.</span>`;
   $('d-oto').disabled = !yl.length;
   document.querySelectorAll('.park').forEach(b => b.onclick = () => { seciliPark = b.dataset.no; otoAc(true); });
   seciliPark = yl[0] || null;
@@ -1162,7 +1191,9 @@ async function oto2d(kod) {
   const tv = $('oto2d'), g = tv.getContext('2d'), yl = DAIRE[kod].oto || [];
   $('b-oto').querySelector('canvas').style.display = yl.length ? '' : 'none';
   if (!yl.length) return;
-  const no = seciliPark && yl.includes(seciliPark) ? seciliPark : yl[0], y = OTO.yer[no], kotS = OTO.kotlar[y[2]], kat = OTO.kat[kotS];
+  const no = seciliPark && yl.includes(seciliPark) && OTO.yer[seciliPark] ? seciliPark : yl.find(n => OTO.yer[n]), y = OTO.yer[no];
+  if (!y) { $('b-oto').querySelector('canvas').style.display = 'none'; return; }
+  const kotS = OTO.kotlar[y[2]], kat = OTO.kat[kotS];
   document.querySelectorAll('.park').forEach(b => b.classList.toggle('aktif', b.dataset.no === no));
   g.fillStyle = '#f8fafc'; g.fillRect(0, 0, tv.width, tv.height);
   let img; try { img = await resim(kat.dosya); } catch { return; }
@@ -1276,7 +1307,8 @@ async function otoAc(ucsun = true) {
   if (!secili) return; const yl = DAIRE[secili].oto || []; if (!yl.length) return;
   planKapat();
   const no = seciliPark && yl.includes(seciliPark) ? seciliPark : yl[0]; seciliPark = no;
-  const y = OTO.yer[no], kotS = OTO.kotlar[y[2]], kat = OTO.kat[kotS], z = +kotS;
+  const y = OTO.yer[no]; if (!y) return;
+  const kotS = OTO.kotlar[y[2]], kat = OTO.kat[kotS], z = +kotS;
   mod.oto = { kot: kotS };
   soldur(BLOK_SIRA, 0.12); for (const m of ARAZI_MATLAR) { m.transparent = true; m.opacity = .28; m.depthWrite = false; m.needsUpdate = true; }
   const u = UNITE[KOD_ID[secili]], ka = otoKatAdi(u.blok, kotS);
@@ -1317,7 +1349,86 @@ function geriAdim() {                       // daire seçiliyse daireyi bırak (
   if (secili) { const b = UNITE[KOD_ID[secili]].blok; secimTemizle(); blokOdak(b, false); }
   else secimTemizle();
 }
-$('ana').onclick = () => { $('paylas-pop').classList.remove('acik'); secimTemizle(); const g = GORUS.genel; uc(genelHedef(), { az: g[2], el: g[3], uz: genelUz() }); };
+// "Gereksiz bilgiler": küçük katmanlar. İlki: her daire, otopark yerinin bulunduğu katın renginde
+$('ekstra-dugme').onclick = e => { e.stopPropagation(); const a = $('ekstra-liste').classList.toggle('acik'); $('ekstra-dugme').setAttribute('aria-expanded', a); };
+addEventListener('click', e => { if (!$('ekstra').contains(e.target)) { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); } });
+function ekstraKapat() { katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('ekstra-dugme').classList.remove('aktif');
+  document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', false)); hepsiniBoya(); }
+function ekstraAc(tur, lejant, durumlar, baslik, sira, ek = '') {
+  katman = { tur, lejant, durumlar }; hepsiniBoya(); $('ekstra-dugme').classList.add('aktif');
+  document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', b.dataset.k === tur));
+  const sayi = {}; for (const v of Object.values(durumlar)) sayi[v] = (sayi[v] || 0) + 1;
+  $('lejant-oto').innerHTML = `<b>${baslik}</b>` + sira.map(k => `<div><i style="background:${lejant[k].renk}"></i>${lejant[k].ad}<span>${sayi[k] || 0}</span></div>`).join('') + ek;
+  $('lejant-oto').classList.remove('gizli');
+}
+function otoRenkKatmani() {
+  const lejant = {}, durumlar = {};
+  for (const ks of OTO.kotlar) lejant[ks] = { ad: `${otoRenk(ks).ad} · +${ks.replace('.', ',')}`, renk: otoRenk(ks).hex };
+  for (const [kod, d] of Object.entries(DAIRE)) { const y = (d.oto || []).map(n => OTO.yer[n]).find(Boolean); if (y) durumlar[kod] = OTO.kotlar[y[2]]; }
+  const yok = Object.keys(DAIRE).length - Object.keys(durumlar).length;
+  ekstraAc('oto', lejant, durumlar, 'Dairelerin otopark rengi', OTO.kotlar.slice().reverse(),
+    yok ? `<div><i style="background:#fff;border:1px solid #cbd5e1"></i>Yer yok<span>${yok}</span></div>` : '');
+}
+// Açık havuza ortalama varış süresi (kestirim). Havuza tek yol: C3'ün zemin katından (+51,65) çıkıp havuz asansörü ya da merdiveniyle
+// iki kot inmek (+45,15). C bloklarından: asansörle zemin kata, podyumda C3'e yürü. A ve B bloklarından: asansörle zemine, bahçeden
+// C3'ün bahçe girişine (+61,15) yürü, C3 asansörüyle zemin kata in. Asansör: bekleme 30 sn + 1,5 m/sn; yürüme: kuş uçuşu × 1,3, 1,2 m/sn.
+const HAVUZ_KADEME = [[2.5, '#15803d', '2,5 dk altı'], [3.5, '#65a30d', '2,5–3,5 dk'], [4.5, '#ca8a04', '3,5–4,5 dk'], [5.5, '#ea580c', '4,5–5,5 dk'], [Infinity, '#dc2626', '5,5 dk üstü']];
+const yur = m => m * 1.3 / 1.2, asn = h => h > 0.5 ? 30 + h / 1.5 : 0;
+function havuzSuresi(kod) {
+  const { b, kat, polys } = birimKutusu(kod), [dx, dy] = merkezi(polys), [cx, cy] = merkezi(b.asansor);
+  const C3 = BLOK.C3, [c3x, c3y] = merkezi(C3.asansor), [hx, hy] = merkeziB(M.duvar.asansor), zemin = C3.katlar.find(k => k.no === 0).kot;
+  let s = Math.hypot(dx - cx, dy - cy) / 1.2;                                  // daireden kendi asansörüne
+  if (b.ad.startsWith('C')) s += asn(kat.kot - zemin) + yur(Math.hypot(cx - c3x, cy - c3y));   // zemin kata in, podyumda C3'e
+  else s += asn(kat.kot - b.zemin) + yur(Math.hypot(cx - c3x, cy - c3y)) + asn(61.15 - zemin);  // zemine in, bahçeden C3'e, C3 asansörüyle zemine
+  s += yur(Math.hypot(c3x - hx, c3y - hy)) + asn(zemin - 45.15);              // C3 zemin çıkışından havuz asansörüne, iki kot aşağı
+  return s / 60;
+}
+function havuzKatmani() {
+  const lejant = {}, durumlar = {}; HAVUZ_KADEME.forEach(([, renk, ad], i) => lejant['k' + i] = { ad, renk });
+  for (const kod of Object.keys(DAIRE)) { const s = havuzSuresi(kod); DAIRE[kod].havuz = s; durumlar[kod] = 'k' + HAVUZ_KADEME.findIndex(([ust]) => s < ust); }
+  ekstraAc('havuz', lejant, durumlar, 'Açık havuza ortalama süre', HAVUZ_KADEME.map((_, i) => 'k' + i),
+    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">Havuza yalnız C3 zemin kat çıkışından, asansör ya da merdivenle iki kot inilerek gidilir; asansör + yürüme kestirimi.</div>');
+}
+// Site çıkış kapısına uzaklık (kestirim, metre): daireden asansöre yürüme + otopark katında asansörden araca yürüme (kuş uçuşu × 1,3)
+// + araçla: yerden otopark rampasına (OSM parking_entrance, A–B1 arası; kuş uçuşu × 1,4) + kat başına 45 m rampa (en üst kat +57,65'ten)
+// + rampadan "KORUPARK" giriş kapısına. Dairenin birden çok yeri varsa en yakını.
+const RAMPA = [-9, 57], KAPI_KADEME = [[200, '#15803d', '200 m altı'], [275, '#65a30d', '200–275 m'], [350, '#ca8a04', '275–350 m'], [425, '#ea580c', '350–425 m'], [Infinity, '#dc2626', '425 m üstü']];
+function kapiUzaklik(kod) {
+  const { b, polys } = birimKutusu(kod), [dx, dy] = merkezi(polys), [cx, cy] = merkezi(b.asansor), K = M.kapi.merkez;
+  let en = null;
+  for (const n of DAIRE[kod].oto || []) {
+    const y = OTO.yer[n]; if (!y) continue;
+    const yurume = Math.hypot(dx - cx, dy - cy) + Math.hypot(y[0] - cx, y[1] - cy) * 1.3;
+    const arac = Math.hypot(y[0] - RAMPA[0], y[1] - RAMPA[1]) * 1.4 + (OTO.kotlar.length - 1 - y[2]) * 45 + Math.hypot(K[0] - RAMPA[0], K[1] - RAMPA[1]);
+    if (!en || yurume + arac < en.y + en.a) en = { y: yurume, a: arac };
+  }
+  return en;
+}
+function kapiKatmani() {
+  const lejant = {}, durumlar = {}; KAPI_KADEME.forEach(([, renk, ad], i) => lejant['k' + i] = { ad, renk });
+  for (const kod of Object.keys(DAIRE)) { const u = kapiUzaklik(kod); DAIRE[kod].kapi = u; if (u) durumlar[kod] = 'k' + KAPI_KADEME.findIndex(([ust]) => u.y + u.a < ust); }
+  ekstraAc('kapi', lejant, durumlar, 'Site çıkış kapısına uzaklık', KAPI_KADEME.map((_, i) => 'k' + i),
+    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">Evden araca yürüme + araçla otopark rampası ve giriş kapısına; kestirim.</div>');
+}
+// Ticari alanlara (A blok ticari kaide) yürüyüş mesafesi (kestirim, metre): daireden asansöre + bloğun asansöründen kaidenin en yakın noktasına
+// kuş uçuşu × 1,3 (asansördeki dikey yol sayılmaz). En yakın olanın adı ipucunda.
+const TICARI_KADEME = [[60, '#15803d', '60 m altı'], [120, '#65a30d', '60–120 m'], [180, '#ca8a04', '120–180 m'], [240, '#ea580c', '180–240 m'], [Infinity, '#dc2626', '240 m üstü']];
+const noktaCokgen = (x, y, p) => { let en = Infinity; for (let i = 0; i < p.length; i++) { const a = p[i], b = p[(i + 1) % p.length], dx = b[0] - a[0], dy = b[1] - a[1], L = dx * dx + dy * dy || 1e-9;
+  const t = Math.max(0, Math.min(1, ((x - a[0]) * dx + (y - a[1]) * dy) / L)); en = Math.min(en, Math.hypot(x - a[0] - dx * t, y - a[1] - dy * t)); } return en; };
+function ticariMesafe(kod) {
+  const { b, polys } = birimKutusu(kod), [dx, dy] = merkezi(polys), [cx, cy] = merkezi(b.asansor), ic = Math.hypot(dx - cx, dy - cy);
+  let en = null; for (const tc of M.ticari) { const m = ic + noktaCokgen(cx, cy, tc.p) * 1.3; if (!en || m < en.m) en = { m, ad: tc.ad }; }
+  return en;
+}
+function ticariKatmani() {
+  const lejant = {}, durumlar = {}; TICARI_KADEME.forEach(([, renk, ad], i) => lejant['k' + i] = { ad, renk });
+  for (const kod of Object.keys(DAIRE)) { const t = ticariMesafe(kod); DAIRE[kod].ticari = t; durumlar[kod] = 'k' + TICARI_KADEME.findIndex(([ust]) => t.m < ust); }
+  ekstraAc('ticari', lejant, durumlar, 'Ticari alanlara yürüyüş (A_blok)', TICARI_KADEME.map((_, i) => 'k' + i),
+    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">A blok ticari alanlarına (zemin ve asma kat işyerleri) en yakın noktaya; asansörden sonraki yürüme, kestirim.</div>');
+}
+const EKSTRA = { oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani };
+document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
+$('ana').onclick = () => { $('paylas-pop').classList.remove('acik'); if (katman.tur !== 'yok') ekstraKapat(); $('ekstra-liste').classList.remove('acik'); secimTemizle(); const g = GORUS.genel; uc(genelHedef(), { az: g[2], el: g[3], uz: genelUz() }); };
 $('d-git').onclick = () => { if (!secili) return; modKapat(); daireyeGit(secili); };
 $('d-plan').onclick = () => { if (!secili || mod.plan) return; { const u = UNITE[KOD_ID[secili]]; planAc(u.blok, u.kat); } };
 $('d-oto').onclick = () => { if (mod.oto) modKapat(); else otoAc(); };
@@ -1373,13 +1484,18 @@ $('panel').addEventListener('click', e => { if (boy === 0 && innerWidth <= 760 &
 // üstteki tutma yerinden (başlık şeridi) yukarı/aşağı çekerek büyüt/küçült
 {
   let tut = null;
-  const bas = $('panel').querySelector('header');
-  bas.addEventListener('pointerdown', e => { if (innerWidth > 760 || e.target.closest('button')) return; tut = { y: e.clientY, id: e.pointerId }; bas.setPointerCapture(e.pointerId); });
-  bas.addEventListener('pointermove', e => { if (!tut) return; const dy = e.clientY - tut.y; $('panel').style.transform = `translateY(${Math.max(-40, Math.min(80, dy)) * .5}px)`; });
+  const bas = $('panel');   // tutma yeri: künyenin üst 26 px'i (çubuk) ya da başlık şeridi; küçükken künyenin tamamı
+  const tutmaYeri = (y, hedef) => innerWidth <= 760 && !hedef.closest('button, a, input, canvas')
+    && (boy === 0 || y - bas.getBoundingClientRect().top <= 26 || !!hedef.closest('header'));
+  // dokunmatikte tarayıcı kaydırması pointercancel üretip sürüklemeyi bozmasın: tutma yerinde varsayılan davranış kapatılır
+  bas.addEventListener('touchstart', e => { if (tutmaYeri(e.touches[0].clientY, e.target)) e.preventDefault(); }, { passive: false });
+  bas.addEventListener('pointerdown', e => { if (!tutmaYeri(e.clientY, e.target)) return; tut = { y: e.clientY, son: e.clientY }; bas.setPointerCapture(e.pointerId); });
+  bas.addEventListener('pointermove', e => { if (!tut) return; tut.son = e.clientY; const dy = e.clientY - tut.y; bas.style.transform = `translateY(${Math.max(-40, Math.min(80, dy)) * .5}px)`; });
   const birakT = e => {
-    if (!tut) return; const dy = e.clientY - tut.y; tut = null; $('panel').style.transform = '';
+    if (!tut) return; const dy = (e.type === 'pointercancel' ? tut.son : e.clientY) - tut.y; tut = null; bas.style.transform = '';
     if (dy < -30) panelBoyu(secili ? boy + 1 : Math.max(boy, 1));    // blok künyesi Genişlet'e çıkmaz
     else if (dy > 30) panelBoyu(boy - 1);
+    else if (boy === 0) panelBoyu(1);                                  // küçükken dokunuş: aç
   };
   bas.addEventListener('pointerup', birakT); bas.addEventListener('pointercancel', birakT);
 }
