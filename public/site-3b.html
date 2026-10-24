@@ -91,6 +91,9 @@
   .ikili { flex: 1; display: flex; border: 1px solid #cbd5e1; border-radius: 10px; overflow: hidden; }
   .ikili .dugme { flex: 1; border: 0; border-radius: 0; } .ikili .dugme + .dugme { border-left: 1px solid #cbd5e1; }
   .dugme.paylas { flex: none; }
+  .kible-satir { display: flex; padding: 0 14px 10px; margin-top: -4px; }
+  .kible-kutu { margin-left: calc((100% - 80px) / 2); display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 700; color: #065f46; cursor: pointer; user-select: none; }
+  .kible-kutu input { width: 17px; height: 17px; accent-color: #059669; margin: 0; }
   #hakkinda-pop { position: fixed; inset: 0; z-index: 30; display: none; align-items: center; justify-content: center; background: rgba(15,23,42,.45); padding: 16px; }
   #hakkinda-pop.acik { display: flex; }
   #hakkinda-pop .kutu { background: #fff; border-radius: 16px; width: 100%; max-width: 520px; max-height: calc(100dvh - 32px); overflow-y: auto; padding: 18px 20px; box-shadow: 0 20px 50px rgba(15,23,42,.3); font-size: 13.5px; line-height: 1.5; }
@@ -184,6 +187,7 @@
                   background: rgba(255,255,255,.6); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); box-shadow: 0 2px 8px rgba(15,23,42,.08); }
   #gunes-filtre.gizli { display: none; }
   #gunes-filtre button { border: 0; background: none; border-radius: 9px; padding: 6px 10px; font-size: 13px; font-weight: 700; color: #0f172a; cursor: pointer; white-space: nowrap; }
+  #gunes-filtre button small { font-weight: 600; opacity: .7; }
   #gunes-filtre button.aktif { background: rgba(15,23,42,.88); color: #fff; }
   #lejant-oto .lj-bas { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
   #lejant-oto .lj-bas b { margin: 0; } #lejant-oto .lj-bas .ok { margin-left: auto; color: var(--soluk); font-weight: 800; }
@@ -265,6 +269,7 @@
     body.sec-daire #panel:not(.genis) #k-ozet { display: block; margin-top: 1px; color: #0f172a; font-weight: 600; }
     body.sec-daire #panel:not(.genis) #k-bilgi, body.sec-daire #panel:not(.genis) #kart .bolum { display: none; }
     body.sec-daire #kart .dugmeler { padding: 6px 4px 4px; }
+    .kible-satir { padding: 0 4px 2px; margin-top: 0; } .kible-kutu { font-size: 12.5px; }
     body.sec-daire .ikili .dugme, body.sec-daire .dugme.paylas { padding: 7px 6px; }
     #panel header::before { content: ""; position: absolute; left: 50%; top: 4px; width: 40px; height: 4px; margin-left: -20px; border-radius: 4px; background: #cbd5e1; }
     #panel header h1 { font-size: 14px; } #panel header p, #panel header a { display: none; }
@@ -391,6 +396,7 @@
         <button class="dugme paylas" id="d-paylas" type="button" aria-label="Paylaş">↗<span class="pay-yazi"> Paylaş</span></button>
         <button class="gizli" id="d-oto" type="button"></button>
       </div>
+      <div class="kible-satir"><label class="kible-kutu"><input type="checkbox" id="kible-cb"><span>Kıble yönü</span></label></div>
       <div class="bolum" id="b-tarif">
         <h3>Otoparka nasıl gidilir</h3>
         <ul class="tarif" id="tarif"></ul>
@@ -430,13 +436,13 @@
 <div id="lejant-oto" class="gizli"></div>
 <div id="gunes-filtre" class="gizli" role="group" aria-label="Güneş süzgeci">
   <button type="button" data-f="hepsi">Hepsi</button><button type="button" data-f="uc">En az – En çok</button>
-  <button type="button" data-f="ust">3.400 saat üstü</button><button type="button" data-f="alt">500 saat altı</button>
+  <button type="button" data-f="ust">3.400 saat üstü <small>%80+</small></button><button type="button" data-f="alt">500 saat altı <small>%12−</small></button>
 </div>
 <div id="yukleniyor"><div>Korupark 3B yükleniyor…</div><div class="cubuk"><i id="yuk-cubuk"></i></div><div id="yuk-yazi" style="font-size:12px;font-weight:600;color:#64748b"></div></div>
 
 <script src="/assets/site-3b/three.min.js?v=r160"></script>
 <script type="module">
-const SURUM = '8b77ed2e';
+const SURUM = '27f2e455';
 const A = (f) => `/assets/site-3b/${f}?v=${SURUM}`;
 const $ = (id) => document.getElementById(id);
 const yukCubuk = $('yuk-cubuk'), yukYazi = $('yuk-yazi');
@@ -998,7 +1004,7 @@ function ustundeIste(x, y) {
     if (v && v.id !== undefined) {
       const u = UNITE[v.id], d = katman.durumlar?.[u.kod];
       ip.innerHTML = (!mod.plan && u.blok !== (secili ? UNITE[KOD_ID[secili]].blok : odakBlok)) ? `${u.blok} blok<i>tıkla: bloğu seç</i>`
-        : `${u.kod} · ${KAT_ADI(u.kat)}` + (katman.tur === 'gunes' ? `<i>yılda ≈ ${fmtSay(DAIRE[u.kod].gunes)} saat güneş</i>` : katman.tur === 'manzara' ? `<i>açıklık ≈ ${DAIRE[u.kod].manzara} m</i>` : katman.tur === 'arsa' && arsaSapma(u.kod) != null ? `<i>ortalamaya göre ${(arsaSapma(u.kod) > 0 ? '+' : '') + arsaSapma(u.kod).toFixed(1).replace('.', ',')}%</i>` : katman.tur === 'havuz' ? `<i>havuza ≈ ${DAIRE[u.kod].havuz.toFixed(1).replace('.', ',')} dk</i>` : katman.tur === 'ticari' ? `<i>${DAIRE[u.kod].ticari.ad}: ≈ ${Math.round(DAIRE[u.kod].ticari.m / 5) * 5} m</i>` : katman.tur === 'kapi' && DAIRE[u.kod].kapi ? `<i>kapıya ≈ ${Math.round((DAIRE[u.kod].kapi.y + DAIRE[u.kod].kapi.a) / 10) * 10} m (yürüme ${Math.round(DAIRE[u.kod].kapi.y)} + araç ${Math.round(DAIRE[u.kod].kapi.a)})</i>` : d && katman.lejant?.[d] ? `<i>${katman.lejant[d].ad}</i>` : '');
+        : `${u.kod} · ${KAT_ADI(u.kat)}` + (katman.tur === 'gunes' ? `<i>yılda ≈ ${fmtSay(DAIRE[u.kod].gunes)} saat · %${gYuzde(DAIRE[u.kod].gunes)}</i>` : katman.tur === 'manzara' ? `<i>açıklık ≈ ${DAIRE[u.kod].manzara} m</i>` : katman.tur === 'arsa' && arsaSapma(u.kod) != null ? `<i>ortalamaya göre ${(arsaSapma(u.kod) > 0 ? '+' : '') + arsaSapma(u.kod).toFixed(1).replace('.', ',')}%</i>` : katman.tur === 'havuz' ? `<i>havuza ≈ ${DAIRE[u.kod].havuz.toFixed(1).replace('.', ',')} dk</i>` : katman.tur === 'ticari' ? `<i>${DAIRE[u.kod].ticari.ad}: ≈ ${Math.round(DAIRE[u.kod].ticari.m / 5) * 5} m</i>` : katman.tur === 'kapi' && DAIRE[u.kod].kapi ? `<i>kapıya ≈ ${Math.round((DAIRE[u.kod].kapi.y + DAIRE[u.kod].kapi.a) / 10) * 10} m (yürüme ${Math.round(DAIRE[u.kod].kapi.y)} + araç ${Math.round(DAIRE[u.kod].kapi.a)})</i>` : d && katman.lejant?.[d] ? `<i>${katman.lejant[d].ad}</i>` : '');
       ip.style.display = 'block'; ip.style.left = x + 'px'; ip.style.top = y + 'px'; tuval.style.cursor = isaretModu() ? 'crosshair' : 'pointer';
     } else if (v && v.kaide) { ip.textContent = 'A blok ticari kaide (işyerleri)'; ip.style.display = 'block'; ip.style.left = x + 'px'; ip.style.top = y + 'px'; tuval.style.cursor = 'pointer'; }
     else { ip.style.display = 'none'; tuval.style.cursor = ''; }
@@ -1026,7 +1032,7 @@ function birimRengi(u) {
   return null;
 }
 function boya(u) {
-  const attr = blokNesne[u.blok].renk, r = birimRengi(u);
+  const attr = blokNesne[u.blok].renk, r = soluk.has(u.blok) ? null : birimRengi(u);   // silüet bloklar renksiz
   for (let i = u.fS; i < u.fS + u.fN; i++) r ? attr.setXYZ(i, .35 + r[0] * .65, .35 + r[1] * .65, .35 + r[2] * .65) : attr.setXYZ(i, 1, 1, 1);
   for (let i = u.oS; i < u.oS + u.oN; i++) {
     if (r) attr.setXYZ(i, r[0], r[1], r[2]);
@@ -1156,7 +1162,7 @@ function kartDoldur(kod) {
     ['Alan', alan ? alan + ' m²' : '—'],
     ['Arsa payı', d.arsa ? `${d.arsa.toLocaleString('tr-TR')} / 9.183.440` : '—']];
   if (d.tahsis) satir.push(['Tahsisli', d.tahsis]);
-  if (d.gunes != null) satir.push(['Güneş', `yılda ≈ ${fmtSay(d.gunes)} saat`]);
+  if (d.gunes != null) satir.push(['Güneş', `yılda ≈ ${fmtSay(d.gunes)} saat <i class="kot">(%${gYuzde(d.gunes)})</i>`]);
   $('k-bilgi').innerHTML = satir.map(([a, b]) => `<dt>${a}</dt><dd>${b}</dd>`).join('');
   const yl = d.oto || [];
   $('parklar').innerHTML = yl.length ? yl.map(no => { const y = OTO.yer[no]; const ks = y ? OTO.kotlar[y[2]] : '?'; const ka = otoKatAdi(u.blok, ks);
@@ -1263,7 +1269,8 @@ const mod = { plan: null, oto: null };
 let planNesne = null;
 const planDokuOnbellek = {}, duvarOnbellek = {};
 function soldur(adlar, opak = 0.16) {
-  soluk.clear(); for (const a of adlar) soluk.add(a);
+  const once = [...soluk].sort().join(); soluk.clear(); for (const a of adlar) soluk.add(a);
+  if (once !== [...soluk].sort().join() && typeof hepsiniBoya === 'function') setTimeout(hepsiniBoya);
   for (const ad of BLOK_SIRA) for (const m of blokNesne[ad].matlar) {
     const s = soluk.has(ad); m.transparent = s || m.userData.hepSaydam; m.opacity = s ? opak : 1; m.depthWrite = !s; m.needsUpdate = true;
   }
@@ -1401,7 +1408,7 @@ function geriAdim() {                       // daire seçiliyse daireyi bırak (
 $('ekstra-dugme').onclick = e => { e.stopPropagation(); const a = $('ekstra-liste').classList.toggle('acik'); $('ekstra-dugme').setAttribute('aria-expanded', a); };
 addEventListener('click', e => { if (!$('ekstra').contains(e.target)) { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); } });
 let lejantDar = false;
-function ekstraKapat() { document.body.classList.remove('kible-acik'); if (katman.tur === 'kible') { kibleTemizle(); if (mod.plan) modKapat(); } katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('gunes-filtre').classList.add('gizli'); document.body.classList.remove('filtreli'); $('ekstra-dugme').classList.remove('aktif');
+function ekstraKapat() { document.body.classList.remove('kible-acik'); $('kible-cb').checked = false; if (katman.tur === 'kible') { kibleTemizle(); if (mod.plan) modKapat(); } katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('gunes-filtre').classList.add('gizli'); document.body.classList.remove('filtreli'); $('ekstra-dugme').classList.remove('aktif');
   document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', false)); hepsiniBoya(); }
 function ekstraAc(tur, lejant, durumlar, baslik, sira, ek = '') {
   katman = { tur, lejant, durumlar }; hepsiniBoya(); $('ekstra-dugme').classList.add('aktif');
@@ -1411,7 +1418,7 @@ function ekstraAc(tur, lejant, durumlar, baslik, sira, ek = '') {
     + sira.filter(k => sayi[k] || !Object.keys(durumlar).length).map(k => `<div><i style="background:${lejant[k].renk}"></i>${lejant[k].ad}<span>${sayi[k] || 0}</span></div>`).join('') + ek + '</div>';
   $('lejant-oto').classList.remove('gizli'); $('lejant-oto').classList.toggle('dar', lejantDar);
   $('lejant-oto').querySelector('.lj-bas').onclick = () => { lejantDar = !lejantDar; $('lejant-oto').classList.toggle('dar', lejantDar); $('lejant-oto').querySelector('.ok').textContent = lejantDar ? '▸' : '▾'; };
-  document.body.classList.toggle('kible-acik', tur === 'kible');
+  document.body.classList.toggle('kible-acik', tur === 'kible'); $('kible-cb').checked = tur === 'kible';
   const gf = tur === 'gunes'; $('gunes-filtre').classList.toggle('gizli', !gf); document.body.classList.toggle('filtreli', gf);
   $('lejant-oto').querySelectorAll('.liste a').forEach(a => a.onclick = () => sec(a.dataset.kod));
 }
@@ -1496,6 +1503,7 @@ const GUNES = (() => { const b = atob(M.gunes.h), u = new Uint8Array(b.length); 
   const m = {}; M.gunes.kodlar.forEach((k, i) => m[k] = u.subarray(i * 52, i * 52 + 52)); return m; })();
 const SPEKTRUM = ['#1e3a8a', '#2563eb', '#0d9488', '#65a30d', '#eab308', '#f97316'];   // az → çok
 const fmtSay = n => Math.round(n).toLocaleString('tr-TR');
+const GMAKS = M.gunes.maks_yil, gYuzde = s => Math.round(s / GMAKS * 100);   // %100 = gölgesiz, her yöne açık bir noktanın yıllık en çok süresi
 function kademeli(tur, baslik, deger, kademe, ad, ek = '', liste = null, suzgec = null) {
   // suzgec: { secili: Set(kod) | null (hepsi), bolumler: [[başlık, [kod…]]] } — yalnız seçili daireler boyanır, liste bölümleri gösterilir
   const lejant = {}, durumlar = {}; kademe.forEach(([, renk, a], i) => lejant['k' + i] = { ad: a, renk });
@@ -1517,13 +1525,15 @@ function gunesKatmani(f = gunesFiltre) {
   const SZ = {
     hepsi: { secili: null, bolumler: [] },
     uc: { secili: new Set([...s.slice(0, 10), ...s.slice(-10)]), bolumler: [['En çok güneş alan 10 daire', s.slice(0, 10)], ['En az güneş alan 10 daire', s.slice(-10).reverse()]] },
-    ust: (() => { const L = s.filter(k => DAIRE[k].gunes >= 3400); return { secili: new Set(L), bolumler: [[`3.400 saat üstü · ${L.length} daire`, L]] }; })(),
-    alt: (() => { const L = s.filter(k => DAIRE[k].gunes < 500).reverse(); return { secili: new Set(L), bolumler: [[`500 saat altı · ${L.length} daire`, L]] }; })(),
+    ust: (() => { const L = s.filter(k => DAIRE[k].gunes >= 3400); return { secili: new Set(L), bolumler: [[`3.400 saat üstü (%${gYuzde(3400)}+) · ${L.length} daire`, L]] }; })(),
+    alt: (() => { const L = s.filter(k => DAIRE[k].gunes < 500).reverse(); return { secili: new Set(L), bolumler: [[`500 saat altı (%${gYuzde(500)}−) · ${L.length} daire`, L]] }; })(),
   }[f];
-  kademeli('gunes', 'Güneş alma süresi · yılda', k => DAIRE[k].gunes, [[1000, SPEKTRUM[0], '1.000 saat altı'], [1600, SPEKTRUM[1], '1.000–1.600'],
-    [2200, SPEKTRUM[2], '1.600–2.200'], [2800, SPEKTRUM[3], '2.200–2.800'], [3400, SPEKTRUM[4], '2.800–3.400'], [Infinity, SPEKTRUM[5], '3.400 saat üstü']], null,
-    '<div style="color:var(--soluk);font-size:11px;max-width:230px;display:block;margin-top:3px">Dairenin herhangi bir cephesine doğrudan güneş düşen saatler; blokların ve komşu binaların gölgesi hesaba katıldı, arazi katılmadı.</div>',
-    v => fmtSay(v) + ' sa', SZ);
+  const yk = p => p * GMAKS / 100, ks = p => fmtSay(yk(p));
+  kademeli('gunes', 'Güneş alma · en çoka göre', k => DAIRE[k].gunes, [[yk(25), SPEKTRUM[0], `%25 altı (${ks(25)} sa)`], [yk(40), SPEKTRUM[1], `%25–40`],
+    [yk(55), SPEKTRUM[2], `%40–55`], [yk(70), SPEKTRUM[3], `%55–70`], [yk(85), SPEKTRUM[4], `%70–85`], [Infinity, SPEKTRUM[5], `%85 üstü (${ks(85)} sa)`]], null,
+    `<div style="color:var(--soluk);font-size:11px;max-width:230px;display:block;margin-top:3px"><span style="color:#334155;font-weight:700">%100 = yılda ${fmtSay(GMAKS)} saat</span>: hiç gölgesi olmayan,
+     her yöne açık bir noktanın alabileceği en çok süre (güneş ufkun 2° üstündeyken). Daire: herhangi bir cephesine doğrudan güneş düşen saatler; blok ve komşu bina gölgesi hesaba katıldı, arazi katılmadı.</div>`,
+    v => `${fmtSay(v)} sa · %${gYuzde(v)}`, SZ);
 }
 document.querySelectorAll('#gunes-filtre button').forEach(b => b.onclick = () => { if (katman.tur === 'gunes') { if (b.dataset.f !== 'hepsi') lejantDar = false; gunesKatmani(b.dataset.f); } });
 function manzaraKatmani() {
@@ -1563,21 +1573,23 @@ function gunesGrafik(kod) {
   g.strokeStyle = '#e2e8f0'; g.lineWidth = 1; g.fillStyle = '#64748b'; g.font = '600 14px Inter, sans-serif'; g.textAlign = 'right';
   for (let v = 0; v <= ust; v += 4) { g.beginPath(); g.moveTo(ml, y(v)); g.lineTo(W - mr, y(v)); g.stroke(); g.fillText(v + ' sa', ml - 6, y(v) + 5); }
   g.textAlign = 'center'; ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara'].forEach((a, i) => g.fillText(a, x(i * 52 / 12 + 2), H - 12));
-  // gün uzunluğu (üst sınır, soluk) — 41° enlem yaklaşık
-  g.beginPath(); for (let i = 0; i < 52; i++) { const d = 7 * i + 4, dek = -23.44 * Math.cos(2 * Math.PI * (d + 10) / 365) * Math.PI / 180;
-    const gu = 24 / Math.PI * Math.acos(-Math.tan(41.09 * Math.PI / 180) * Math.tan(dek)); i ? g.lineTo(x(i), y(gu)) : g.moveTo(x(i), y(gu)); }
+  // gölgesiz en çok (aynı hesap, engelsiz ve her yöne açık nokta)
+  g.beginPath(); M.gunes.maks.forEach((v, i) => i ? g.lineTo(x(i), y(v)) : g.moveTo(x(i), y(v)));
   g.strokeStyle = '#cbd5e1'; g.setLineDash([5, 4]); g.lineWidth = 2; g.stroke(); g.setLineDash([]);
   g.beginPath(); for (let i = 0; i < 52; i++) { const v = h[i] / 10; i ? g.lineTo(x(i), y(v)) : g.moveTo(x(i), y(v)); }
   g.lineTo(x(51), y(0)); g.lineTo(x(0), y(0)); g.closePath(); g.fillStyle = 'rgba(234,179,8,.18)'; g.fill();
   g.beginPath(); for (let i = 0; i < 52; i++) { const v = h[i] / 10; i ? g.lineTo(x(i), y(v)) : g.moveTo(x(i), y(v)); }
   g.strokeStyle = '#ca8a04'; g.lineWidth = 3; g.stroke();
   const say = [...h], mn = Math.min(...say) / 10, mx = Math.max(...say) / 10, sira = Object.keys(DAIRE).filter(k => DAIRE[k].gunes > DAIRE[kod].gunes).length + 1;
-  $('gunes-not').innerHTML = `Yılda ≈ <b>${fmtSay(DAIRE[kod].gunes)} saat</b> doğrudan güneş · kışın günde ${mn.toFixed(1).replace('.', ',')} sa, yazın ${mx.toFixed(1).replace('.', ',')} sa · 744 daire içinde ${sira}. sırada.
-    <span style="color:var(--cok-soluk)">Kesikli çizgi: gün uzunluğu.</span>`;
+  $('gunes-not').innerHTML = `Yılda ≈ <b>${fmtSay(DAIRE[kod].gunes)} saat</b> doğrudan güneş: gölgesiz en çokun <b>%${gYuzde(DAIRE[kod].gunes)}</b>'i ·
+    kışın günde ${mn.toFixed(1).replace('.', ',')} sa, yazın ${mx.toFixed(1).replace('.', ',')} sa · 744 daire içinde ${sira}. sırada.
+    <span style="color:var(--cok-soluk)">Kesikli çizgi: gölgesiz bir noktanın alabileceği en çok süre (yılda ${fmtSay(GMAKS)} sa = %100).</span>`;
 }
 // ── kıble: Kâbe'ye büyük çember başlangıç yönü (kuzeyden saat yönünde). Blok/daire seçimine göre kuşbakışı oklar
 const KIBLE = (() => { const r = Math.PI / 180, f1 = 41.0900 * r, f2 = 21.4225 * r, dl = (39.8262 - 28.9431) * r;
   return ((Math.atan2(Math.sin(dl) * Math.cos(f2), Math.cos(f1) * Math.sin(f2) - Math.sin(f1) * Math.cos(f2) * Math.cos(dl)) / r) + 360) % 360; })();
+// kamera yönü: ekranın üstü kıble olsun (kamKur: kamera hedefin (cos az, sin az) tarafında → ekranın üstü bunun tersi)
+const KIBLE_AZ = Math.atan2(-Math.cos(KIBLE * Math.PI / 180), -Math.sin(KIBLE * Math.PI / 180)) * 180 / Math.PI;
 const kibleGrup = new THREE.Group(); S.add(kibleGrup);
 const kibleMat = new THREE.MeshBasicMaterial({ color: 0x059669, transparent: true, opacity: .95, depthTest: false });
 const kibleEt = [];
@@ -1596,6 +1608,7 @@ async function kibleCiz() {
   if (secili) {   // dairenin içi: kat planı açılır, daire içine oklar (her odada aynı yön)
     const { u, b, kat, polys } = birimKutusu(secili);
     if (!mod.plan || mod.plan.blok !== u.blok || mod.plan.kat !== u.kat) await planAc(u.blok, u.kat, false);
+    $('mod-park').classList.add('gizli');
     const z = kat.kot + 0.4;
     for (const p of polys) {
       let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity; for (const [x, y] of p) { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); }
@@ -1604,21 +1617,21 @@ async function kibleCiz() {
     const [cx, cy] = merkezi(polys), dk = [Math.sin(KIBLE * Math.PI / 180), Math.cos(KIBLE * Math.PI / 180)];
     kibleEt.push(etiket('kible', `Kıble ${yazi}`, V3(cx + dk[0] * 9, cy + dk[1] * 9, z + 4), { tur: 'kible' }));
     if (innerWidth <= 760 && !lejantDar) { lejantDar = true; $('lejant-oto').classList.add('dar'); const o = $('lejant-oto').querySelector('.ok'); if (o) o.textContent = '▸'; }
-    uc(V3(cx, cy, z), { az: 270, el: 86, uz: 55 * uzOlcek() });
+    uc(V3(cx, cy, z), { az: KIBLE_AZ, el: 58, uz: 62 * uzOlcek() });   // daire: hafif çapraz, kıble üstte
   } else if (odakBlok) {   // blok: çatıda büyük ok
     const B = BLOK[odakBlok], c = merkezi([B.dis]); kibleOk(c, 30, 3.2, B.cati + 3);
     kibleEt.push(etiket('kible', `Kıble ${yazi}`, V3(c[0], c[1], B.cati + 8), { tur: 'kible' }));
-    uc(V3(c[0], c[1], B.cati), { az: 270, el: 86, uz: 150 * uzOlcek() });
+    uc(V3(c[0], c[1], B.cati), { az: KIBLE_AZ, el: 86, uz: 150 * uzOlcek() });
   } else {   // site: her blokta ok
     for (const B of M.bloklar) kibleOk(merkezi([B.dis]), 22, 2.4, B.cati + 3);
-    uc(V3(-62, 22, 70), { az: 270, el: 86, uz: (KAM.aspect < 1 ? 560 : 430) });
+    uc(V3(-62, 22, 70), { az: KIBLE_AZ, el: 86, uz: (KAM.aspect < 1 ? 560 : 430) });
   }
 }
 function kibleKatmani() {
   ekstraAc('kible', {}, {}, 'Kıble yönü', [],
     `<div style="font-size:13px;font-weight:700;margin:4px 0 2px">${KIBLE.toFixed(1).replace('.', ',')}° · ${yonAdi(KIBLE)}</div>
      <div style="color:var(--soluk);font-size:11px;max-width:230px;display:block">Kuzeyden saat yönünde; Kâbe'ye en kısa yol (büyük çember). Blok seçince çatısında, daire seçince
-     kat planında her odaya ok çizilir. Kuzey ekranın üstünde.</div>`);
+     kat planında her odaya ok çizilir. Görünüm döner: <span style="font-weight:700;color:#334155">kıble ekranın üstünde</span>; kuzeyi sağ üstteki pusula gösterir.</div>`);
   kibleCiz();
 }
 const EKSTRA = { kible: kibleKatmani, oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: () => gunesKatmani('hepsi'), manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
@@ -1631,7 +1644,7 @@ function digerGizleUygula() {
   $('gizle-dugme').setAttribute('aria-pressed', digerGizli && !!b); const ya = digerGizli && b ? 'Diğer blokları göster' : 'Diğer blokları gizle';
   $('gizle-dugme').querySelector('span').textContent = ya; $('gizle-dugme').title = ya;
   if (mod.plan || mod.oto) return;   // kat planı / otopark kipleri kendi soldurmasını yönetir
-  soldur(digerGizli && b ? BLOK_SIRA.filter(x => x !== b) : [], 0.1);
+  soldur(digerGizli && b ? BLOK_SIRA.filter(x => x !== b) : [], 0.05);
 }
 $('gizle-dugme').onclick = () => { digerGizli = !digerGizli; digerGizleUygula(); };
 $('ana').onclick = () => { $('paylas-pop').classList.remove('acik'); if (katman.tur !== 'yok') ekstraKapat(); $('ekstra-liste').classList.remove('acik'); secimTemizle(); const g = GORUS.genel; uc(genelHedef(), { az: g[2], el: g[3], uz: genelUz() }); };
@@ -1645,6 +1658,8 @@ function paylasAc() {
   $('pp-kopya').querySelector('span').textContent = 'Kopyala'; $('paylas-pop').classList.add('acik');
 }
 $('d-paylas').onclick = paylasAc;
+// daire kartındaki "Kıble yönü" kutusu: kat planını açar ve planda kıbleyi gösterir (katmanla aynı)
+$('kible-cb').onchange = e => { if (e.target.checked) kibleKatmani(); else if (katman.tur === 'kible') ekstraKapat(); };
 $('plan-buyuk-ac').onclick = planBuyukAc; $('plan2d').onclick = planBuyukAc;
 $('pp-kopya').onclick = async () => {
   const url = $('pp-link').textContent;
@@ -1822,6 +1837,7 @@ function etiketleriYerlestir() {
     if (o.tur === 'no') gor = !!mod.plan && kp.distanceTo(o.p) < 260;
     if (o.tur === 'cek') gor = !mod.plan && !mod.oto;
     if (o.gizle) gor = false;
+    if (katman.tur === 'kible' && (o.tur === 'park' || o.e.classList.contains('cek'))) gor = false;   // kıble kipi: yalnız kıble
     if (o.tur === 'pusula') gor = !mod.plan;
     if (gor) { gecici.copy(o.p).project(KAM); gor = gecici.z < 1 && Math.abs(gecici.x) < 1.1 && Math.abs(gecici.y) < 1.1; }
     if (gor && o.site) {   // komşu yerleşim adı: kuşbakışında ya da kamera o yerleşim tarafındayken
@@ -1839,6 +1855,7 @@ pusulaEl.onclick = () => { modKapat(); uc(kam.hedef.clone(), { az: 270, el: 80, 
 function ciz(t) {
   requestAnimationFrame(ciz);
   ucusAdim(t); kamKur();
+  if (katman.tur === 'kible') { parkGrup.visible = false; isaretGrup.visible = true; } else if (!mod.plan) parkGrup.visible = true;
   if (kareNo % 3 === 0) pusulaEl.style.transform = `rotate(${(kam.az - 270).toFixed(1)}deg)`;
   suNormal.offset.set(t * 0.00002, t * 0.000013);
   const nab = 0.4 + 0.3 * Math.sin(t / 260); for (const m of PARK_MAT) m.opacity = nab;

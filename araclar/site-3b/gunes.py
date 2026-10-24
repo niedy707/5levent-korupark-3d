@@ -76,6 +76,7 @@ def hesapla(bloklar, kaide, komsu, yil=2026):
     nd = len(kodlar)
     # güneş: 52 hafta × 20 dk
     hafta = np.zeros((nd, 52), np.float32)
+    maks = np.zeros(52, np.float32)        # gölgesiz, her yöne açık bir noktanın alabileceği en çok süre (güneş ufkun 2° üstünde)
     for w in range(52):
         gun = dt.date(yil, 1, 1) + dt.timedelta(days=7 * w + (2 - dt.date(yil, 1, 1).weekday()) % 7)
         gno = gun.timetuple().tm_yday
@@ -83,6 +84,7 @@ def hesapla(bloklar, kaide, komsu, yil=2026):
             saat = 5 + (k + 0.5) / 3
             az, alt = gunes_konumu(gno, saat)
             if alt < 2: continue
+            maks[w] += 1 / 3
             d = np.array([math.sin(math.radians(az)), math.cos(math.radians(az))])      # x doğu, y kuzey
             on = (Nn @ d) > 0.08
             if not on.any(): continue
@@ -105,4 +107,4 @@ def hesapla(bloklar, kaide, komsu, yil=2026):
     nokta_ort = mesafe.mean(1)
     manzara = np.zeros(nd)
     np.maximum.at(manzara, S, nokta_ort)
-    return kodlar, hafta, manzara
+    return kodlar, hafta, manzara, maks

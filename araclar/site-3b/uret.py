@@ -571,14 +571,15 @@ print("komşu bina:", len(komsu))
 # ───────────────────────── 9a. güneş alma ve manzara açıklığı (gölgeli; gunes.py) ─────────────────────────
 import gunes, time as _t
 _t0 = _t.time()
-G_KOD, G_HAFTA, G_MANZARA = gunes.hesapla(bloklar, kaide, komsu)
+G_KOD, G_HAFTA, G_MANZARA, G_MAKS = gunes.hesapla(bloklar, kaide, komsu)
 for kod, h, mz in zip(G_KOD, G_HAFTA, G_MANZARA):
     DAIRE[kod]["gunes"] = round(float(h.sum() * 7), 0)           # yıllık saat (hafta günü × 7)
     DAIRE[kod]["manzara"] = int(round(mz))
 GUNES_M = {"kodlar": G_KOD, "h": base64.b64encode(np.clip(np.round(G_HAFTA * 10), 0, 255).astype(np.uint8).tobytes()).decode(),
-           "not": "52 hafta × saat (×10), her haftanın çarşambası; gölgeli, arazi hariç"}
+           "maks": [round(float(v), 2) for v in G_MAKS], "maks_yil": round(float(G_MAKS.sum() * 7), 0),
+           "not": "52 hafta × saat (×10), her haftanın çarşambası; gölgeli, arazi hariç. maks: gölgesiz ve her yöne açık bir noktanın en çok süresi"}
 print(f"güneş/manzara: {len(G_KOD)} daire · {_t.time() - _t0:.0f} sn · yıllık saat {G_HAFTA.sum(1).min() * 7:.0f}…{G_HAFTA.sum(1).max() * 7:.0f}"
-      f" · manzara {G_MANZARA.min():.0f}…{G_MANZARA.max():.0f} m")
+      f" · manzara {G_MANZARA.min():.0f}…{G_MANZARA.max():.0f} m · gölgesiz en çok {G_MAKS.sum() * 7:.0f} saat")
 
 
 # ───────────────────────── 9b. otopark (Ek-3 krokileri → site) ─────────────────────────
