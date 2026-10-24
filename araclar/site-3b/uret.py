@@ -694,5 +694,9 @@ shutil.copyfile(f"{DEPO}/public/assets/ikon-192.png", f"{CIKTI}/ikon.png")
 surum = hashlib.md5(b"".join(open(f"{CIKTI}/{f}", "rb").read() for f in ("model.json", "zemin-ic.jpg", "zemin-dis.jpg", *[f"otopark-{k}.jpg" for k in KOTLAR], *[f"plan-s{n}.{e}" for n in PLAN_IC for e in ("jpg", "json")]))).hexdigest()[:8]
 sablon = open(f"{KOK}/sablon.html", encoding="utf-8").read()
 assert sablon.count("/*SURUM*/") == 1
-open(f"{DEPO}/public/site-3b.html", "w", encoding="utf-8").write(sablon.replace("/*SURUM*/", surum))
+import datetime as _dt
+versiyon = "ver." + _dt.datetime.now(_dt.timezone(_dt.timedelta(hours=3))).strftime("%y.%m%d.%H%M")   # sayfa sürümü (İstanbul saati, üretim anı)
+assert sablon.count("/*VERSIYON*/") == 1
+open(f"{DEPO}/public/site-3b.html", "w", encoding="utf-8").write(sablon.replace("/*SURUM*/", surum).replace("/*VERSIYON*/", versiyon))
+print("versiyon:", versiyon)
 print("sayfa: public/site-3b.html · sürüm", surum)

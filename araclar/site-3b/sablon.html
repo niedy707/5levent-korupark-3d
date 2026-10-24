@@ -116,6 +116,7 @@
   #gorusler { display: flex; gap: 2px; }
   #gorusler button { border: 0; background: none; border-radius: 9px; padding: 6px 10px; font-size: 13px; font-weight: 700; color: #0f172a; cursor: pointer; white-space: nowrap; }
   #gorusler button:hover { background: rgba(255,255,255,.85); }
+  #surum { position: fixed; top: 52px; right: 14px; z-index: 4; font-size: 10px; font-weight: 600; color: #0f172a; opacity: .1; pointer-events: none; font-variant-numeric: tabular-nums; }
   /* Hakkında: her zaman en sağda, soluk */
   #hakkinda { position: fixed; top: 12px; right: 12px; z-index: 4; border: 1px solid rgba(203,213,225,.7); background: rgba(255,255,255,.55); color: #64748b;
               border-radius: 10px; padding: 7px 11px; font-size: 13px; font-weight: 600; cursor: pointer; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
@@ -295,6 +296,7 @@
     #ekstra-dugme { padding: 8px 9px; font-size: 12.5px; }
     #ekstra { position: static; } body.kible-acik:not(.sec-yok) #ekstra { display: none; }   /* telefonda yer dar: ⌂ kıbleyi kapatır */
     #gizle-dugme { padding: 9px; } #gizle-dugme span { display: none; } #no-gir { width: 84px !important; } #ekstra-liste { left: 8px; right: 8px; top: 46px; min-width: 0; }
+    #surum { top: 42px; right: 10px; font-size: 9px; }
     #hakkinda { top: 8px; right: 8px; padding: 6px 9px; font-size: 12px; }
     #blokcu { left: 8px; top: 48px; right: 60px; flex-wrap: nowrap; }
     #no-form label { display: none; } #no-form { padding-left: 3px; min-width: 0; } #no-gir { width: 104px !important; min-width: 0; }
@@ -323,6 +325,7 @@
   <div id="gorusler"></div>
 </div>
 <button type="button" id="hakkinda">ℹ️ Hakkında</button>
+<div id="surum" aria-label="Sürüm">/*VERSIYON*/</div>
 <div id="zoom" role="group" aria-label="Yakınlaştırma"><button id="z-art" type="button" aria-label="Yakınlaştır">+</button><button id="z-eks" type="button" aria-label="Uzaklaştır">−</button></div>
 <div id="hakkinda-pop" role="dialog" aria-modal="true" aria-labelledby="hk-baslik"><div class="kutu">
   <a class="gh" href="https://github.com/niedy707/5levent-korupark-3d" target="_blank" rel="noopener">
@@ -1000,7 +1003,7 @@ let ustundeBekle = null;
 function ustundeIste(x, y) {
   if (ustundeBekle) return;
   ustundeBekle = requestAnimationFrame(() => {
-    ustundeBekle = null; const v = vur(x, y), ip = $('ipucu');
+    ustundeBekle = null; const v = mod.plan ? null : vur(x, y), ip = $('ipucu');
     if (v && v.id !== undefined) {
       const u = UNITE[v.id], d = katman.durumlar?.[u.kod];
       ip.innerHTML = (!mod.plan && u.blok !== (secili ? UNITE[KOD_ID[secili]].blok : odakBlok)) ? `${u.blok} blok<i>tıkla: bloğu seç</i>`
@@ -1338,7 +1341,7 @@ async function planAc(blok, katNo, ucsun = true) {
   S.add(grup); planNesne = { grup, zemin, yuz: Int32Array.from(yuz), etiket: et };
   R.shadowMap.needsUpdate = true;
   if (ucsun) { const [cx, cy] = secili && kat.d.some(d => d[0] === secili) ? merkezi(birimKutusu(secili).polys) : b.merkez;
-    uc(V3(cx, cy, z), { el: 58, uz: secili ? 85 : 120 }); }
+    uc(V3(cx, cy, z), { el: 58, uz: secili ? 85 : 120, ...(secili && kat.d.some(d => d[0] === secili) && katman.tur !== 'kible' ? { az: kapiAz(secili) } : {}) }); }
 }
 function katAdim(d) {
   if (!mod.plan) return; const b = BLOK[mod.plan.blok], nos = b.katlar.map(k => k.no).sort((a, c) => a - c);
@@ -1408,7 +1411,7 @@ function geriAdim() {                       // daire seçiliyse daireyi bırak (
 $('ekstra-dugme').onclick = e => { e.stopPropagation(); const a = $('ekstra-liste').classList.toggle('acik'); $('ekstra-dugme').setAttribute('aria-expanded', a); };
 addEventListener('click', e => { if (!$('ekstra').contains(e.target)) { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); } });
 let lejantDar = false;
-function ekstraKapat() { document.body.classList.remove('kible-acik'); $('kible-cb').checked = false; if (katman.tur === 'kible') { kibleTemizle(); if (mod.plan) modKapat(); } katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('gunes-filtre').classList.add('gizli'); document.body.classList.remove('filtreli'); $('ekstra-dugme').classList.remove('aktif');
+function ekstraKapat() { document.body.classList.remove('kible-acik'); $('kible-cb').checked = false; if (katman.tur === 'kible') { kibleTemizle(); if (mod.plan && secili) { const kod = secili, { kat, polys } = birimKutusu(kod), [cx, cy] = merkezi(polys), az = kapiAz(kod); setTimeout(() => { if (secili === kod && mod.plan) uc(V3(cx, cy, kat.kot), { az, el: 58, uz: 85 }); }); } } katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('gunes-filtre').classList.add('gizli'); document.body.classList.remove('filtreli'); $('ekstra-dugme').classList.remove('aktif');
   document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', false)); hepsiniBoya(); }
 function ekstraAc(tur, lejant, durumlar, baslik, sira, ek = '') {
   katman = { tur, lejant, durumlar }; hepsiniBoya(); $('ekstra-dugme').classList.add('aktif');
@@ -1814,10 +1817,20 @@ function genelHesap() {
   return { h, uz };
 }
 // daire seçiliyken Kuşbakışı: tüm site değil, o dairenin kat planı tepeden
+// dairenin giriş kapısı: kat çekirdeğine (merdiven/asansör holü) en yakın nokta. Kamera bu yönde durur → kapı ekranın altında, ev içi üstte
+function kapiAz(kod) {
+  const { b, polys } = birimKutusu(kod), [cx, cy] = merkezi(polys); let en = null;
+  for (const p of b.cekirdek) for (let i = 0; i < p.length; i++) {
+    const a = p[i], c = p[(i + 1) % p.length], dx = c[0] - a[0], dy = c[1] - a[1], L = dx * dx + dy * dy || 1e-9;
+    const s = Math.max(0, Math.min(1, ((cx - a[0]) * dx + (cy - a[1]) * dy) / L)), q = [a[0] + dx * s, a[1] + dy * s], d = Math.hypot(q[0] - cx, q[1] - cy);
+    if (!en || d < en.d) en = { d, q };
+  }
+  return en ? Math.atan2(en.q[1] - cy, en.q[0] - cx) * 180 / Math.PI : kam.az;
+}
 async function kusDaire() {
   const { u, kat, polys } = birimKutusu(secili), [cx, cy] = merkezi(polys);
   if (!mod.plan || mod.plan.blok !== u.blok || mod.plan.kat !== u.kat) await planAc(u.blok, u.kat, false);
-  uc(V3(cx, cy, kat.kot), { az: GORUS.kus[2], el: 86, uz: 60 * Math.min(uzOlcek(), 1.3) });
+  uc(V3(cx, cy, kat.kot), { az: kapiAz(secili), el: 86, uz: 60 * Math.min(uzOlcek(), 1.3) });
 }
 const genelHedef = () => genelHesap().h;
 const genelUz = () => genelHesap().uz;
@@ -1845,6 +1858,7 @@ function etiketleriYerlestir() {
     if (o.tur === 'no') gor = !!mod.plan && kp.distanceTo(o.p) < 260;
     if (o.tur === 'cek') gor = !mod.plan && !mod.oto;
     if (o.gizle) gor = false;
+    if (mod.plan && (o.tur === 'secili' || o.tur === 'no' || o.tur === 'blok')) gor = false;   // kat planı: plan üstünde yazı yok (daire adı, numaralar, merdiven/asansör yazısı)
     if (katman.tur === 'kible' && (o.tur === 'park' || o.e.classList.contains('cek'))) gor = false;   // kıble kipi: yalnız kıble
     if (o.tur === 'pusula') gor = !mod.plan;
     if (gor) { gecici.copy(o.p).project(KAM); gor = gecici.z < 1 && Math.abs(gecici.x) < 1.1 && Math.abs(gecici.y) < 1.1; }
