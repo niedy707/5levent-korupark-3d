@@ -47,6 +47,7 @@
   .et.no.aktif { background: var(--vurgu); color: #fff; border-color: var(--vurgu); }
   .et.cek { font-size: 11px; font-weight: 800; color: #fff; padding: 2px 7px; border-radius: 6px; }
   .et.cek.asansor { background: #16a34a; } .et.cek.merdiven { background: #dc2626; }
+  .et.kible { font-size: 13px; font-weight: 800; color: #fff; background: #059669; padding: 4px 9px; border-radius: 8px; box-shadow: 0 4px 12px rgba(5,150,105,.35); }
   .et.pusula { font-size: 12px; font-weight: 800; letter-spacing: 1px; color: #fff; background: #1e3a8a; border-radius: 999px; padding: 3px 9px; }
   #ipucu { position: fixed; pointer-events: none; z-index: 6; display: none; background: #0f172a; color: #fff; font-size: 12px; font-weight: 600;
            padding: 4px 8px; border-radius: 6px; transform: translate(12px, 12px); white-space: nowrap; }
@@ -152,7 +153,8 @@
   .blok-tablo th:first-child, .blok-tablo td:first-child { text-align: left; font-weight: 700; }
   .blok-tablo th { color: var(--soluk); font-size: 10.5px; }
 
-  #mod-bant { position: fixed; left: 50%; top: 62px; transform: translateX(-50%); z-index: 4; display: none; background: var(--lacivert); color: #fff;
+  #k-ozet { display: none; }
+  #mod-bant { position: fixed; left: 50%; top: 108px; transform: translateX(-50%); z-index: 4; display: none; background: var(--lacivert); color: #fff;
               border-radius: 999px; padding: 7px 8px 7px 14px; font-size: 13px; font-weight: 700; box-shadow: 0 6px 18px rgba(15,23,42,.25); align-items: center; gap: 10px; }
   #mod-bant.acik { display: flex; } #mod-bant.oto { background: var(--oto); }
   #mod-yazi { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
@@ -164,7 +166,7 @@
   #gizle-dugme[aria-pressed="true"] { background: rgba(15,23,42,.88); color: #fff; border-color: transparent; }
   body.sec-yok #gizle-dugme { display: none; }
   #ekstra { position: relative; flex: none; }
-  body:not(.sec-yok) #ekstra { display: none; }
+  body:not(.sec-yok):not(.kible-acik) #ekstra { display: none; }
   #ekstra-dugme { white-space: nowrap; border: 1px solid rgba(203,213,225,.8); background: rgba(255,255,255,.5); color: #334155; border-radius: 10px; padding: 8px 11px;
                   font-size: 13px; font-weight: 700; cursor: pointer; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); box-shadow: 0 2px 8px rgba(15,23,42,.08); }
   #ekstra-dugme.aktif { color: var(--vurgu); border-color: var(--vurgu); }
@@ -192,7 +194,7 @@
   #ekstra-liste button small { font-weight: 600; color: var(--soluk); margin-left: 4px; }
   #ekstra-liste button.deneme { display: none; } body.deneme #ekstra-liste button.deneme { display: flex; }
   #lejant-oto b { display: block; font-size: 11px; color: var(--soluk); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
-  #lejant-oto div { display: flex; align-items: center; gap: 7px; padding: 1px 0; } #lejant-oto i { width: 13px; height: 13px; border-radius: 3px; flex: none; }
+  #lejant-oto .lj-govde > div:not(.liste) { display: flex; align-items: center; gap: 7px; padding: 1px 0; } #lejant-oto .lj-govde { display: block; } #lejant-oto i { width: 13px; height: 13px; border-radius: 3px; flex: none; }
   #lejant-oto span { margin-left: auto; padding-left: 10px; color: var(--soluk); font-variant-numeric: tabular-nums; }
   #ana { flex: none; width: 40px; height: 38px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--cizgi); background: #fff; color: var(--lacivert); border-radius: 10px; cursor: pointer; box-shadow: 0 4px 12px rgba(15,23,42,.12); }
   #ana:hover { background: var(--vurgu-acik); }
@@ -281,12 +283,12 @@
     #zoom { right: 10px; bottom: auto; top: 98px; } #zoom button { width: 42px; height: 42px; font-size: 24px; }
     body.sec-yok #zoom { top: auto; bottom: 34px; }
     #bakis { left: 8px; top: 6px; } #gorusler button { padding: 6px 8px; font-size: 12.5px; } #bakis .goz { padding: 0 3px 0 5px; }
-    #lejant-oto { left: 8px; bottom: auto; top: 96px; font-size: 11.5px; padding: 6px 8px; }
+    #lejant-oto { left: 8px; bottom: auto; top: 96px; font-size: 11.5px; padding: 6px 8px; max-height: 45vh; max-height: 45dvh; }
     body:not(.sec-yok) #lejant-oto { top: 140px; }
     #gunes-filtre { left: 8px; right: 8px; top: 92px; overflow-x: auto; scrollbar-width: none; } #gunes-filtre button { padding: 6px 8px; font-size: 12px; }
     body.filtreli #lejant-oto { top: 138px; } body.filtreli:not(.sec-yok) #lejant-oto { top: 182px; }
     #ekstra-dugme { padding: 8px 9px; font-size: 12.5px; }
-    #ekstra { position: static; }
+    #ekstra { position: static; } body.kible-acik:not(.sec-yok) #ekstra { display: none; }   /* telefonda yer dar: ⌂ kıbleyi kapatır */
     #gizle-dugme { padding: 9px; } #gizle-dugme span { display: none; } #no-gir { width: 84px !important; } #ekstra-liste { left: 8px; right: 8px; top: 46px; min-width: 0; }
     #hakkinda { top: 8px; right: 8px; padding: 6px 9px; font-size: 12px; }
     #blokcu { left: 8px; top: 48px; right: 60px; flex-wrap: nowrap; }
@@ -359,6 +361,7 @@
       <button type="button" data-k="manzara" role="menuitemcheckbox" aria-checked="false">Manzara açıklığı</button>
       <button type="button" data-k="arsa" role="menuitemcheckbox" aria-checked="false">Arsa payı / brüt m² oranı</button>
       <button type="button" data-k="bahce" role="menuitemcheckbox" aria-checked="false">Bahçe ve teras tahsisli daireler</button>
+      <button type="button" data-k="kible" role="menuitemcheckbox" aria-checked="false">Kıble yönü</button>
       <button type="button" data-k="ototur" role="menuitemcheckbox" aria-checked="false" class="deneme">Otopark yerlerinin durumu <small>(deneme)</small></button></div></div>
 </div>
 <button id="pusula" type="button" title="Kuzey yukarı (kuşbakışı)" aria-label="Pusula"><svg viewBox="0 0 40 40"><path d="M20 5 L27 22 L20 18 L13 22 Z" fill="#dc2626"/><path d="M20 35 L13 18 L20 22 L27 18 Z" fill="#94a3b8"/></svg><b>K</b></button>
@@ -1075,7 +1078,7 @@ function sec(kod, opt = {}) {
   if (opt.uc !== false) daireyeGit(kod);
   if (mod.plan) planAc(u.blok, u.kat, false); else if (mod.oto) otoAc(false);
   history.replaceState(null, '', '#' + kod);
-  secimSenk(kod); durum(); blokCerceve.clear();    // daire seçiliyken blok çerçevesi gereksiz
+  secimSenk(kod); durum(); blokCerceve.clear(); if (katman.tur === 'kible') setTimeout(kibleCiz, 30);    // daire seçiliyken blok çerçevesi gereksiz
   return true;
 }
 function secimTemizle() {
@@ -1398,16 +1401,17 @@ function geriAdim() {                       // daire seçiliyse daireyi bırak (
 $('ekstra-dugme').onclick = e => { e.stopPropagation(); const a = $('ekstra-liste').classList.toggle('acik'); $('ekstra-dugme').setAttribute('aria-expanded', a); };
 addEventListener('click', e => { if (!$('ekstra').contains(e.target)) { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); } });
 let lejantDar = false;
-function ekstraKapat() { katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('gunes-filtre').classList.add('gizli'); document.body.classList.remove('filtreli'); $('ekstra-dugme').classList.remove('aktif');
+function ekstraKapat() { document.body.classList.remove('kible-acik'); if (katman.tur === 'kible') { kibleTemizle(); if (mod.plan) modKapat(); } katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('gunes-filtre').classList.add('gizli'); document.body.classList.remove('filtreli'); $('ekstra-dugme').classList.remove('aktif');
   document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', false)); hepsiniBoya(); }
 function ekstraAc(tur, lejant, durumlar, baslik, sira, ek = '') {
   katman = { tur, lejant, durumlar }; hepsiniBoya(); $('ekstra-dugme').classList.add('aktif');
   document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', b.dataset.k === tur));
   const sayi = {}; for (const v of Object.values(durumlar)) sayi[v] = (sayi[v] || 0) + 1;
   $('lejant-oto').innerHTML = `<div class="lj-bas"><b>${baslik}</b><span class="ok">${lejantDar ? '▸' : '▾'}</span></div><div class="lj-govde">`
-    + sira.map(k => `<div><i style="background:${lejant[k].renk}"></i>${lejant[k].ad}<span>${sayi[k] || 0}</span></div>`).join('') + ek + '</div>';
+    + sira.filter(k => sayi[k] || !Object.keys(durumlar).length).map(k => `<div><i style="background:${lejant[k].renk}"></i>${lejant[k].ad}<span>${sayi[k] || 0}</span></div>`).join('') + ek + '</div>';
   $('lejant-oto').classList.remove('gizli'); $('lejant-oto').classList.toggle('dar', lejantDar);
   $('lejant-oto').querySelector('.lj-bas').onclick = () => { lejantDar = !lejantDar; $('lejant-oto').classList.toggle('dar', lejantDar); $('lejant-oto').querySelector('.ok').textContent = lejantDar ? '▸' : '▾'; };
+  document.body.classList.toggle('kible-acik', tur === 'kible');
   const gf = tur === 'gunes'; $('gunes-filtre').classList.toggle('gizli', !gf); document.body.classList.toggle('filtreli', gf);
   $('lejant-oto').querySelectorAll('.liste a').forEach(a => a.onclick = () => sec(a.dataset.kod));
 }
@@ -1571,7 +1575,53 @@ function gunesGrafik(kod) {
   $('gunes-not').innerHTML = `Yılda ≈ <b>${fmtSay(DAIRE[kod].gunes)} saat</b> doğrudan güneş · kışın günde ${mn.toFixed(1).replace('.', ',')} sa, yazın ${mx.toFixed(1).replace('.', ',')} sa · 744 daire içinde ${sira}. sırada.
     <span style="color:var(--cok-soluk)">Kesikli çizgi: gün uzunluğu.</span>`;
 }
-const EKSTRA = { oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: () => gunesKatmani('hepsi'), manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
+// ── kıble: Kâbe'ye büyük çember başlangıç yönü (kuzeyden saat yönünde). Blok/daire seçimine göre kuşbakışı oklar
+const KIBLE = (() => { const r = Math.PI / 180, f1 = 41.0900 * r, f2 = 21.4225 * r, dl = (39.8262 - 28.9431) * r;
+  return ((Math.atan2(Math.sin(dl) * Math.cos(f2), Math.cos(f1) * Math.sin(f2) - Math.sin(f1) * Math.cos(f2) * Math.cos(dl)) / r) + 360) % 360; })();
+const kibleGrup = new THREE.Group(); S.add(kibleGrup);
+const kibleMat = new THREE.MeshBasicMaterial({ color: 0x059669, transparent: true, opacity: .95, depthTest: false });
+const kibleEt = [];
+function kibleOk(c, L, w, z) {   // site koordinatında düz ok, ucu kıbleye bakar
+  const d = [Math.sin(KIBLE * Math.PI / 180), Math.cos(KIBLE * Math.PI / 180)], n = [-d[1], d[0]], hL = Math.min(L * .38, w * 3.2), hw = w * 1.6;
+  const P = (s, k) => [c[0] + d[0] * s + n[0] * k, c[1] + d[1] * s + n[1] * k];
+  const T = new Tampon(); T.kapak(ccw([P(-L / 2, -w / 2), P(L / 2 - hL, -w / 2), P(L / 2 - hL, -hw), P(L / 2, 0), P(L / 2 - hL, hw), P(L / 2 - hL, w / 2), P(-L / 2, w / 2)]), z, true, [1, 1, 1]);
+  const m = new THREE.Mesh(T.geo(), kibleMat); m.renderOrder = 30; kibleGrup.add(m);
+}
+const icinde = (x, y, p) => { let i = false; for (let a = 0, b = p.length - 1; a < p.length; b = a++) { const [xa, ya] = p[a], [xb, yb] = p[b]; if ((ya > y) !== (yb > y) && x < (xb - xa) * (y - ya) / (yb - ya) + xa) i = !i; } return i; };
+function kibleTemizle() { kibleGrup.clear(); for (const e of kibleEt) { e.e.remove(); ETIKET.splice(ETIKET.indexOf(e), 1); } kibleEt.length = 0; }
+const yonAdi = a => ['kuzey', 'kuzey-kuzeydoğu', 'kuzeydoğu', 'doğu-kuzeydoğu', 'doğu', 'doğu-güneydoğu', 'güneydoğu', 'güney-güneydoğu', 'güney', 'güney-güneybatı', 'güneybatı', 'batı-güneybatı', 'batı', 'batı-kuzeybatı', 'kuzeybatı', 'kuzey-kuzeybatı'][Math.round(a / 22.5) % 16];
+async function kibleCiz() {
+  if (katman.tur !== 'kible') return;
+  kibleTemizle(); const yazi = `${KIBLE.toFixed(1).replace('.', ',')}° · ${yonAdi(KIBLE)}`;
+  if (secili) {   // dairenin içi: kat planı açılır, daire içine oklar (her odada aynı yön)
+    const { u, b, kat, polys } = birimKutusu(secili);
+    if (!mod.plan || mod.plan.blok !== u.blok || mod.plan.kat !== u.kat) await planAc(u.blok, u.kat, false);
+    const z = kat.kot + 0.4;
+    for (const p of polys) {
+      let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity; for (const [x, y] of p) { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); }
+      for (let x = x0 + 1.6; x < x1; x += 3.2) for (let y = y0 + 1.6; y < y1; y += 3.2) if (icinde(x, y, p)) kibleOk([x, y], 2.2, 0.28, z);
+    }
+    const [cx, cy] = merkezi(polys), dk = [Math.sin(KIBLE * Math.PI / 180), Math.cos(KIBLE * Math.PI / 180)];
+    kibleEt.push(etiket('kible', `Kıble ${yazi}`, V3(cx + dk[0] * 9, cy + dk[1] * 9, z + 4), { tur: 'kible' }));
+    if (innerWidth <= 760 && !lejantDar) { lejantDar = true; $('lejant-oto').classList.add('dar'); const o = $('lejant-oto').querySelector('.ok'); if (o) o.textContent = '▸'; }
+    uc(V3(cx, cy, z), { az: 270, el: 86, uz: 55 * uzOlcek() });
+  } else if (odakBlok) {   // blok: çatıda büyük ok
+    const B = BLOK[odakBlok], c = merkezi([B.dis]); kibleOk(c, 30, 3.2, B.cati + 3);
+    kibleEt.push(etiket('kible', `Kıble ${yazi}`, V3(c[0], c[1], B.cati + 8), { tur: 'kible' }));
+    uc(V3(c[0], c[1], B.cati), { az: 270, el: 86, uz: 150 * uzOlcek() });
+  } else {   // site: her blokta ok
+    for (const B of M.bloklar) kibleOk(merkezi([B.dis]), 22, 2.4, B.cati + 3);
+    uc(V3(-62, 22, 70), { az: 270, el: 86, uz: (KAM.aspect < 1 ? 560 : 430) });
+  }
+}
+function kibleKatmani() {
+  ekstraAc('kible', {}, {}, 'Kıble yönü', [],
+    `<div style="font-size:13px;font-weight:700;margin:4px 0 2px">${KIBLE.toFixed(1).replace('.', ',')}° · ${yonAdi(KIBLE)}</div>
+     <div style="color:var(--soluk);font-size:11px;max-width:230px;display:block">Kuzeyden saat yönünde; Kâbe'ye en kısa yol (büyük çember). Blok seçince çatısında, daire seçince
+     kat planında her odaya ok çizilir. Kuzey ekranın üstünde.</div>`);
+  kibleCiz();
+}
+const EKSTRA = { kible: kibleKatmani, oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: () => gunesKatmani('hepsi'), manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
 if (new URLSearchParams(location.search).has('deneme') && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) document.body.classList.add('deneme');   // deneme katmanları yalnız yerel önizlemede
 document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
 // diğer blokları gizle: seçili blok dışındakiler silüet (soluk, yarı saydam)
@@ -1684,7 +1734,7 @@ function blokCerceveCiz(b) {
   blokCerceve.add(l, l2);
 }
 function blokOdak(b, ucsun = true) {
-  odakBlok = b; blokCerceveCiz(b); bilgiAcik = false; setTimeout(durum);  $('blok-yazi').textContent = `${b} blok`; $('blok-liste').classList.remove('acik');
+  odakBlok = b; blokCerceveCiz(b); bilgiAcik = false; setTimeout(durum); if (katman.tur === 'kible') setTimeout(kibleCiz, 30);  $('blok-yazi').textContent = `${b} blok`; $('blok-liste').classList.remove('acik');
   document.querySelectorAll('#blok-liste button').forEach(x => x.classList.toggle('aktif', x.dataset.b === b));
   const nolar = Object.keys(DAIRE).filter(k => k.startsWith(b + '-')).map(k => +k.split('-')[1]);
   $('no-form').classList.remove('gizli'); $('no-etiket').textContent = `${b} · daire no`; $('no-gir').placeholder = innerWidth <= 760 ? `No ${Math.min(...nolar)}–${Math.max(...nolar)}` : `${Math.min(...nolar)}–${Math.max(...nolar)}`; $('no-hata').classList.add('gizli');
