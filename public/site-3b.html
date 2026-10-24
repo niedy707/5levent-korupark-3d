@@ -1636,7 +1636,9 @@ function kibleKatmani() {
 }
 const EKSTRA = { kible: kibleKatmani, oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: () => gunesKatmani('hepsi'), manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
 if (new URLSearchParams(location.search).has('deneme') && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) document.body.classList.add('deneme');   // deneme katmanları yalnız yerel önizlemede
-document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { lejantDar = false; $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
+// liste varsayılanı: güneş, otopark rengi ve kıble açık; öbür katmanlarda kapalı başlar ("Aç ▾" ile açılır)
+const LISTE_KAPALI = new Set(['havuz', 'kapi', 'ticari', 'manzara', 'arsa', 'bahce']);
+document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { lejantDar = LISTE_KAPALI.has(b.dataset.k); $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
 // diğer blokları gizle: seçili blok dışındakiler silüet (soluk, yarı saydam)
 let digerGizli = false;
 function digerGizleUygula() {
@@ -1775,7 +1777,7 @@ $('z-art').onclick = () => yakinlas(0.7); $('z-eks').onclick = () => yakinlas(1 
 $('hakkinda').onclick = () => $('hakkinda-pop').classList.add('acik');
 $('hk-kapat').onclick = () => $('hakkinda-pop').classList.remove('acik');
 $('hakkinda-pop').onclick = e => { if (e.target.id === 'hakkinda-pop') $('hakkinda-pop').classList.remove('acik'); };
-document.querySelectorAll('#gorusler button[data-g]').forEach(b => b.onclick = () => { const g = GORUS[b.dataset.g]; modKapat(); const k = b.dataset.g; uc(k === 'genel' ? genelHedef() : g[1], { az: g[2], el: g[3], uz: k === 'genel' ? genelUz() : k === 'kus' ? (KAM.aspect < 1 ? 520 : g[4]) : g[4] * uzOlcek() }); });
+document.querySelectorAll('#gorusler button[data-g]').forEach(b => b.onclick = () => { if (b.dataset.g === 'kus' && secili) { kusDaire(); return; } const g = GORUS[b.dataset.g]; modKapat(); const k = b.dataset.g; uc(k === 'genel' ? genelHedef() : g[1], { az: g[2], el: g[3], uz: k === 'genel' ? genelUz() : k === 'kus' ? (KAM.aspect < 1 ? 520 : g[4]) : g[4] * uzOlcek() }); });
 const uzOlcek = () => Math.max(1, Math.pow(1.5 / KAM.aspect, .6));
 // Genel: açı sabit (az/el), hedef ve uzaklık ekrana göre hesaplanır — bütün bloklar ve spor sahaları kadrajda kalsın
 const GENEL_NOKTA = (() => {
@@ -1810,6 +1812,12 @@ function genelHesap() {
   }
   kam.hedef.copy(yedek.h); kam.az = yedek.az; kam.el = yedek.el; kam.uz = yedek.uz; kamKur();
   return { h, uz };
+}
+// daire seçiliyken Kuşbakışı: tüm site değil, o dairenin kat planı tepeden
+async function kusDaire() {
+  const { u, kat, polys } = birimKutusu(secili), [cx, cy] = merkezi(polys);
+  if (!mod.plan || mod.plan.blok !== u.blok || mod.plan.kat !== u.kat) await planAc(u.blok, u.kat, false);
+  uc(V3(cx, cy, kat.kot), { az: GORUS.kus[2], el: 86, uz: 60 * Math.min(uzOlcek(), 1.3) });
 }
 const genelHedef = () => genelHesap().h;
 const genelUz = () => genelHesap().uz;
