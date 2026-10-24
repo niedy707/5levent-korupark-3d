@@ -357,7 +357,7 @@
   <form id="no-form" class="gizli" autocomplete="off"><label for="no-gir" id="no-etiket">Daire no</label><input id="no-gir" inputmode="numeric" pattern="[0-9]*" placeholder="88" maxlength="3"><button type="submit">Git</button></form>
   <span id="no-hata" class="gizli"></span>
   <button id="gizle-dugme" type="button" aria-pressed="false" title="Diğer blokları gizle"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="7" height="18" rx="1" fill="currentColor" fill-opacity=".85"/><rect x="2" y="9" width="5" height="12" rx="1" stroke-dasharray="2 2"/><rect x="18" y="7" width="4" height="14" rx="1" stroke-dasharray="2 2"/></svg><span>Diğer blokları gizle</span></button>
-  <div id="ekstra"><button id="ekstra-dugme" type="button" aria-expanded="false">Gereksiz bilgiler ▾</button>
+  <div id="ekstra"><button id="ekstra-dugme" type="button" aria-expanded="false">Ekstra Bilgiler ▾</button>
     <div id="ekstra-liste"><button type="button" data-k="oto" role="menuitemcheckbox" aria-checked="false">Dairelerin otopark renkleri</button>
       <button type="button" data-k="havuz" role="menuitemcheckbox" aria-checked="false">Açık havuza olan mesafe</button>
       <button type="button" data-k="kapi" role="menuitemcheckbox" aria-checked="false">Site çıkış kapısına olan uzaklık</button>
@@ -1404,7 +1404,7 @@ function geriAdim() {                       // daire seçiliyse daireyi bırak (
   if (secili) { const b = UNITE[KOD_ID[secili]].blok; secimTemizle(); blokOdak(b, false); }
   else secimTemizle();
 }
-// "Gereksiz bilgiler": küçük katmanlar. İlki: her daire, otopark yerinin bulunduğu katın renginde
+// "Ekstra Bilgiler" (eski adı: Gereksiz bilgiler): küçük katmanlar. İlki: her daire, otopark yerinin bulunduğu katın renginde
 $('ekstra-dugme').onclick = e => { e.stopPropagation(); const a = $('ekstra-liste').classList.toggle('acik'); $('ekstra-dugme').setAttribute('aria-expanded', a); };
 addEventListener('click', e => { if (!$('ekstra').contains(e.target)) { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); } });
 let lejantDar = false;

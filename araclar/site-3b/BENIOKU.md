@@ -75,7 +75,7 @@ kişi adını "kullanıcı"ya çevirir, ad/e-posta/IP/anahtar denetimi yapar; de
 (yazar `mail@5-levent.com`). README/LICENSE kaynağı `yayin/`. Kopyada Yönetim Planı PDF'i yok: `plan_ic.py` PDF yoksa
 `kaynak/plan-meta.json` + hazır `plan-sNN` dosyalarıyla çalışır (kopyadan `uret.py` aynı `model.json`'u üretir, 24.10.2026'da denendi).
 
-## Gereksiz bilgiler katmanları (24.10.2026)
+## Ekstra Bilgiler katmanları (24.10.2026; ilk adı "Gereksiz bilgiler")
 
 Menü (seçim yokken, Blok seç'in yanında): otopark rengi · havuza süre (yalnız C3 zemin çıkışı) · çıkış kapısına uzaklık ·
 A blok ticari yürüyüş · **güneş alma** · **manzara açıklığı** · arsa payı/brüt m² · bahçe-teras tahsisi.
