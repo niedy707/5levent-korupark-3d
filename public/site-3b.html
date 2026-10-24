@@ -1687,7 +1687,7 @@ function blokOdak(b, ucsun = true) {
   odakBlok = b; blokCerceveCiz(b); bilgiAcik = false; setTimeout(durum);  $('blok-yazi').textContent = `${b} blok`; $('blok-liste').classList.remove('acik');
   document.querySelectorAll('#blok-liste button').forEach(x => x.classList.toggle('aktif', x.dataset.b === b));
   const nolar = Object.keys(DAIRE).filter(k => k.startsWith(b + '-')).map(k => +k.split('-')[1]);
-  $('no-form').classList.remove('gizli'); $('no-etiket').textContent = `${b} · daire no`; $('no-gir').placeholder = innerWidth <= 760 ? `Daire ${Math.min(...nolar)}–${Math.max(...nolar)}` : `${Math.min(...nolar)}–${Math.max(...nolar)}`; $('no-hata').classList.add('gizli');
+  $('no-form').classList.remove('gizli'); $('no-etiket').textContent = `${b} · daire no`; $('no-gir').placeholder = innerWidth <= 760 ? `No ${Math.min(...nolar)}–${Math.max(...nolar)}` : `${Math.min(...nolar)}–${Math.max(...nolar)}`; $('no-hata').classList.add('gizli');
   if (ucsun) blokCercevele(b);
   if (!DOKUNMA) setTimeout(() => $('no-gir').focus(), 50);
 }
