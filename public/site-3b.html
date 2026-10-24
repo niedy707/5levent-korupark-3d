@@ -159,6 +159,10 @@
   #mod-kat { display: inline-flex; gap: 4px; } #mod-kat.gizli { display: none; }
   #mod-bant button { flex: none; border: 0; background: rgba(255,255,255,.18); color: #fff; border-radius: 999px; padding: 4px 10px; font-weight: 800; cursor: pointer; }
   #blokcu { position: fixed; left: 376px; top: 12px; z-index: 6; display: flex; align-items: center; gap: 6px; }
+  #gizle-dugme { display: flex; align-items: center; gap: 6px; flex: none; white-space: nowrap; border: 1px solid rgba(203,213,225,.8); background: rgba(255,255,255,.6); color: #334155; border-radius: 10px;
+                 padding: 8px 11px; font-size: 13px; font-weight: 700; cursor: pointer; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+  #gizle-dugme[aria-pressed="true"] { background: rgba(15,23,42,.88); color: #fff; border-color: transparent; }
+  body.sec-yok #gizle-dugme { display: none; }
   #ekstra { position: relative; flex: none; }
   body:not(.sec-yok) #ekstra { display: none; }
   #ekstra-dugme { white-space: nowrap; border: 1px solid rgba(203,213,225,.8); background: rgba(255,255,255,.5); color: #334155; border-radius: 10px; padding: 8px 11px;
@@ -170,10 +174,18 @@
   #ekstra-liste button { display: flex; align-items: center; gap: 9px; width: 100%; border: 0; background: none; padding: 9px 10px; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer; text-align: left; }
   #ekstra-liste button:hover { background: var(--vurgu-acik); }
   #ekstra-liste button[aria-checked="true"] { background: var(--vurgu); color: #fff; }
-  #lejant-oto { position: fixed; left: 376px; bottom: 28px; z-index: 4; background: rgba(255,255,255,.88); border: 1px solid var(--cizgi); border-radius: 12px; padding: 8px 10px;
+  #lejant-oto { position: fixed; left: 376px; bottom: 28px; z-index: 4; background: rgba(255,255,255,.9); border: 1px solid var(--cizgi); border-radius: 12px; padding: 8px 10px;
                 font-size: 12.5px; box-shadow: 0 4px 14px rgba(15,23,42,.1); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
   #lejant-oto { max-height: calc(100dvh - 140px); overflow-y: auto; }
-  #lejant-oto { max-width: 270px; } #lejant-oto .liste { display: block; margin-top: 6px; border-top: 1px solid var(--cizgi); padding-top: 5px; }
+  #lejant-oto { max-width: 270px; }
+  #gunes-filtre { position: fixed; left: 376px; top: 108px; z-index: 5; display: flex; gap: 2px; padding: 3px; border-radius: 12px; border: 1px solid rgba(203,213,225,.7);
+                  background: rgba(255,255,255,.6); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); box-shadow: 0 2px 8px rgba(15,23,42,.08); }
+  #gunes-filtre.gizli { display: none; }
+  #gunes-filtre button { border: 0; background: none; border-radius: 9px; padding: 6px 10px; font-size: 13px; font-weight: 700; color: #0f172a; cursor: pointer; white-space: nowrap; }
+  #gunes-filtre button.aktif { background: rgba(15,23,42,.88); color: #fff; }
+  #lejant-oto .lj-bas { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+  #lejant-oto .lj-bas b { margin: 0; } #lejant-oto .lj-bas .ok { margin-left: auto; color: var(--soluk); font-weight: 800; }
+  #lejant-oto.dar .lj-govde { display: none; } #lejant-oto .liste { display: block; margin-top: 6px; border-top: 1px solid var(--cizgi); padding-top: 5px; }
   #lejant-oto .liste b { margin-top: 6px; } #lejant-oto .liste a { width: 100%; }
   #lejant-oto .liste a { display: flex; gap: 6px; padding: 2px 0; color: #0f172a; text-decoration: none; cursor: pointer; font-variant-numeric: tabular-nums; }
   #lejant-oto .liste a:hover { color: var(--vurgu); } #lejant-oto .liste a em { margin-left: auto; font-style: normal; color: var(--soluk); padding-left: 10px; }
@@ -271,8 +283,11 @@
     #bakis { left: 8px; top: 6px; } #gorusler button { padding: 6px 8px; font-size: 12.5px; } #bakis .goz { padding: 0 3px 0 5px; }
     #lejant-oto { left: 8px; bottom: auto; top: 96px; font-size: 11.5px; padding: 6px 8px; }
     body:not(.sec-yok) #lejant-oto { top: 140px; }
+    #gunes-filtre { left: 8px; right: 8px; top: 92px; overflow-x: auto; scrollbar-width: none; } #gunes-filtre button { padding: 6px 8px; font-size: 12px; }
+    body.filtreli #lejant-oto { top: 138px; } body.filtreli:not(.sec-yok) #lejant-oto { top: 182px; }
     #ekstra-dugme { padding: 8px 9px; font-size: 12.5px; }
-    #ekstra { position: static; } #ekstra-liste { left: 8px; right: 8px; top: 46px; min-width: 0; }
+    #ekstra { position: static; }
+    #gizle-dugme { padding: 9px; } #gizle-dugme span { display: none; } #no-gir { width: 84px !important; } #ekstra-liste { left: 8px; right: 8px; top: 46px; min-width: 0; }
     #hakkinda { top: 8px; right: 8px; padding: 6px 9px; font-size: 12px; }
     #blokcu { left: 8px; top: 48px; right: 60px; flex-wrap: nowrap; }
     #no-form label { display: none; } #no-form { padding-left: 3px; min-width: 0; } #no-gir { width: 104px !important; min-width: 0; }
@@ -334,6 +349,7 @@
   <div id="blok-liste" role="listbox"></div>
   <form id="no-form" class="gizli" autocomplete="off"><label for="no-gir" id="no-etiket">Daire no</label><input id="no-gir" inputmode="numeric" pattern="[0-9]*" placeholder="88" maxlength="3"><button type="submit">Git</button></form>
   <span id="no-hata" class="gizli"></span>
+  <button id="gizle-dugme" type="button" aria-pressed="false" title="Diğer blokları gizle"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="7" height="18" rx="1" fill="currentColor" fill-opacity=".85"/><rect x="2" y="9" width="5" height="12" rx="1" stroke-dasharray="2 2"/><rect x="18" y="7" width="4" height="14" rx="1" stroke-dasharray="2 2"/></svg><span>Diğer blokları gizle</span></button>
   <div id="ekstra"><button id="ekstra-dugme" type="button" aria-expanded="false">Gereksiz bilgiler ▾</button>
     <div id="ekstra-liste"><button type="button" data-k="oto" role="menuitemcheckbox" aria-checked="false">Dairelerin otopark renkleri</button>
       <button type="button" data-k="havuz" role="menuitemcheckbox" aria-checked="false">Açık havuza olan mesafe</button>
@@ -409,6 +425,10 @@
 <div id="alt"><a href="mailto:mail@5-levent.com">mail@5-levent.com</a></div>
 <div id="hobi">Hobi projesidir</div>
 <div id="lejant-oto" class="gizli"></div>
+<div id="gunes-filtre" class="gizli" role="group" aria-label="Güneş süzgeci">
+  <button type="button" data-f="hepsi">Hepsi</button><button type="button" data-f="uc">En az – En çok</button>
+  <button type="button" data-f="ust">3.400 saat üstü</button><button type="button" data-f="alt">500 saat altı</button>
+</div>
 <div id="yukleniyor"><div>Korupark 3B yükleniyor…</div><div class="cubuk"><i id="yuk-cubuk"></i></div><div id="yuk-yazi" style="font-size:12px;font-weight:600;color:#64748b"></div></div>
 
 <script src="/assets/site-3b/three.min.js?v=r160"></script>
@@ -1359,7 +1379,7 @@ function otoKapat(sessiz) {
 $('mod-park').onclick = () => { parkGorunur = !parkGorunur; parkGorunurlukUygula(); };
 $('mb-asagi').onclick = () => katAdim(-1); $('mb-yukari').onclick = () => katAdim(1);
 function modBant(metin, oto) { $('mod-park').classList.add('gizli'); $('mod-kat').classList.add('gizli'); $('mod-yazi').textContent = metin; $('mod-bant').classList.add('acik'); $('mod-bant').classList.toggle('oto', oto); $('mod-bant').style.background = ''; }
-function modKapat() { planKapat(); otoKapat(); $('mod-bant').classList.remove('acik'); }
+function modKapat() { planKapat(); otoKapat(); $('mod-bant').classList.remove('acik'); if (typeof digerGizleUygula === 'function') digerGizleUygula(); }
 $('mod-kapat').onclick = modKapat;
 function kaideGoster() {
   const k = M.kaide; secimTemizle(); bilgiAcik = true; setTimeout(durum);
@@ -1377,14 +1397,24 @@ function geriAdim() {                       // daire seçiliyse daireyi bırak (
 // "Gereksiz bilgiler": küçük katmanlar. İlki: her daire, otopark yerinin bulunduğu katın renginde
 $('ekstra-dugme').onclick = e => { e.stopPropagation(); const a = $('ekstra-liste').classList.toggle('acik'); $('ekstra-dugme').setAttribute('aria-expanded', a); };
 addEventListener('click', e => { if (!$('ekstra').contains(e.target)) { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); } });
-function ekstraKapat() { katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('ekstra-dugme').classList.remove('aktif');
+let lejantDar = false;
+function ekstraKapat() { katman = { tur: 'yok', lejant: {}, durumlar: {} }; $('lejant-oto').classList.add('gizli'); $('gunes-filtre').classList.add('gizli'); document.body.classList.remove('filtreli'); $('ekstra-dugme').classList.remove('aktif');
   document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', false)); hepsiniBoya(); }
 function ekstraAc(tur, lejant, durumlar, baslik, sira, ek = '') {
   katman = { tur, lejant, durumlar }; hepsiniBoya(); $('ekstra-dugme').classList.add('aktif');
   document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', b.dataset.k === tur));
   const sayi = {}; for (const v of Object.values(durumlar)) sayi[v] = (sayi[v] || 0) + 1;
-  $('lejant-oto').innerHTML = `<b>${baslik}</b>` + sira.map(k => `<div><i style="background:${lejant[k].renk}"></i>${lejant[k].ad}<span>${sayi[k] || 0}</span></div>`).join('') + ek;
-  $('lejant-oto').classList.remove('gizli');
+  $('lejant-oto').innerHTML = `<div class="lj-bas"><b>${baslik}</b><span class="ok">${lejantDar ? '▸' : '▾'}</span></div><div class="lj-govde">`
+    + sira.map(k => `<div><i style="background:${lejant[k].renk}"></i>${lejant[k].ad}<span>${sayi[k] || 0}</span></div>`).join('') + ek + '</div>';
+  $('lejant-oto').classList.remove('gizli'); $('lejant-oto').classList.toggle('dar', lejantDar);
+  $('lejant-oto').querySelector('.lj-bas').onclick = () => { lejantDar = !lejantDar; $('lejant-oto').classList.toggle('dar', lejantDar); $('lejant-oto').querySelector('.ok').textContent = lejantDar ? '▸' : '▾'; };
+  const gf = tur === 'gunes'; $('gunes-filtre').classList.toggle('gizli', !gf); document.body.classList.toggle('filtreli', gf);
+  $('lejant-oto').querySelectorAll('.liste a').forEach(a => a.onclick = () => sec(a.dataset.kod));
+}
+// en yakın / en uzak listesi (havuz, kapı, ticari)
+function uclar(deger, fmt, ust = 'En yakın 10 daire', alt = 'En uzak 10 daire') {
+  const s = Object.keys(DAIRE).filter(k => deger(k) != null).sort((a, b) => deger(a) - deger(b)), sat = k => `<a data-kod="${k}">${k}<em>${fmt(deger(k))}</em></a>`;
+  return `<div class="liste"><b>${ust}</b>${s.slice(0, 10).map(sat).join('')}<b>${alt}</b>${s.slice(-10).reverse().map(sat).join('')}</div>`;
 }
 function otoRenkKatmani() {
   const lejant = {}, durumlar = {};
@@ -1392,7 +1422,10 @@ function otoRenkKatmani() {
   for (const [kod, d] of Object.entries(DAIRE)) { const y = (d.oto || []).map(n => OTO.yer[n]).find(Boolean); if (y) durumlar[kod] = OTO.kotlar[y[2]]; }
   const yok = Object.keys(DAIRE).length - Object.keys(durumlar).length;
   ekstraAc('oto', lejant, durumlar, 'Dairelerin otopark rengi', OTO.kotlar.slice().reverse(),
-    yok ? `<div><i style="background:#fff;border:1px solid #cbd5e1"></i>Yer yok<span>${yok}</span></div>` : '');
+    (yok ? `<div><i style="background:#fff;border:1px solid #cbd5e1"></i>Yer yok<span>${yok}</span></div>` : '')
+    + '<div class="liste"><b>Blok başına</b>' + BLOK_SIRA.map(b => { const say = {}; for (const [k, v] of Object.entries(durumlar)) if (k.startsWith(b + '-')) say[v] = (say[v] || 0) + 1;
+      return `<div style="display:block;padding:2px 0"><b style="display:inline;text-transform:none;letter-spacing:0;color:#0f172a;margin:0 6px 0 0">${b}</b>` + OTO.kotlar.slice().reverse().filter(ks => say[ks])
+        .map(ks => `<span style="margin:0 6px 0 0;padding:0;color:#334155"><i style="display:inline-block;width:9px;height:9px;border-radius:2px;background:${otoRenk(ks).hex};margin-right:3px"></i>${say[ks]}</span>`).join('') + '</div>'; }).join('') + '</div>');
 }
 // Açık havuza ortalama varış süresi (kestirim). Havuza tek yol: C3'ün zemin katından (+51,65) çıkıp havuz asansörü ya da merdiveniyle
 // iki kot inmek (+45,15). C bloklarından: asansörle zemin kata, podyumda C3'e yürü. A ve B bloklarından: asansörle zemine, bahçeden
@@ -1412,7 +1445,8 @@ function havuzKatmani() {
   const lejant = {}, durumlar = {}; HAVUZ_KADEME.forEach(([, renk, ad], i) => lejant['k' + i] = { ad, renk });
   for (const kod of Object.keys(DAIRE)) { const s = havuzSuresi(kod); DAIRE[kod].havuz = s; durumlar[kod] = 'k' + HAVUZ_KADEME.findIndex(([ust]) => s < ust); }
   ekstraAc('havuz', lejant, durumlar, 'Açık havuza ortalama süre', HAVUZ_KADEME.map((_, i) => 'k' + i),
-    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">Havuza yalnız C3 zemin kat çıkışından, asansör ya da merdivenle iki kot inilerek gidilir; asansör + yürüme kestirimi.</div>');
+    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">Havuza yalnız C3 zemin kat çıkışından, asansör ya da merdivenle iki kot inilerek gidilir; asansör + yürüme kestirimi.</div>'
+    + uclar(k => DAIRE[k].havuz, v => v.toFixed(1).replace('.', ',') + ' dk'));
 }
 // Site çıkış kapısına uzaklık (kestirim, metre): daireden asansöre yürüme + otopark katında asansörden araca yürüme (kuş uçuşu × 1,3)
 // + araçla: yerden otopark rampasına (OSM parking_entrance, A–B1 arası; kuş uçuşu × 1,4) + kat başına 45 m rampa (en üst kat +57,65'ten)
@@ -1433,7 +1467,8 @@ function kapiKatmani() {
   const lejant = {}, durumlar = {}; KAPI_KADEME.forEach(([, renk, ad], i) => lejant['k' + i] = { ad, renk });
   for (const kod of Object.keys(DAIRE)) { const u = kapiUzaklik(kod); DAIRE[kod].kapi = u; if (u) durumlar[kod] = 'k' + KAPI_KADEME.findIndex(([ust]) => u.y + u.a < ust); }
   ekstraAc('kapi', lejant, durumlar, 'Site çıkış kapısına uzaklık', KAPI_KADEME.map((_, i) => 'k' + i),
-    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">Evden araca yürüme + araçla otopark rampası ve giriş kapısına; kestirim.</div>');
+    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">Evden araca yürüme + araçla otopark rampası ve giriş kapısına; kestirim.</div>'
+    + uclar(k => DAIRE[k].kapi ? DAIRE[k].kapi.y + DAIRE[k].kapi.a : null, v => Math.round(v / 5) * 5 + ' m'));
 }
 // Ticari alanlara (A blok ticari kaide) yürüyüş mesafesi (kestirim, metre): daireden asansöre + bloğun asansöründen kaidenin en yakın noktasına
 // kuş uçuşu × 1,3 (asansördeki dikey yol sayılmaz). En yakın olanın adı ipucunda.
@@ -1449,30 +1484,44 @@ function ticariKatmani() {
   const lejant = {}, durumlar = {}; TICARI_KADEME.forEach(([, renk, ad], i) => lejant['k' + i] = { ad, renk });
   for (const kod of Object.keys(DAIRE)) { const t = ticariMesafe(kod); DAIRE[kod].ticari = t; durumlar[kod] = 'k' + TICARI_KADEME.findIndex(([ust]) => t.m < ust); }
   ekstraAc('ticari', lejant, durumlar, 'Ticari alanlara yürüyüş (A_blok)', TICARI_KADEME.map((_, i) => 'k' + i),
-    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">A blok ticari alanlarına (zemin ve asma kat işyerleri) en yakın noktaya; asansörden sonraki yürüme, kestirim.</div>');
+    '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">A blok ticari alanlarına (zemin ve asma kat işyerleri) en yakın noktaya; asansörden sonraki yürüme, kestirim.</div>'
+    + uclar(k => DAIRE[k].ticari?.m, v => Math.round(v / 5) * 5 + ' m'));
 }
 // ── güneş: gölgeli hesap üreteçte (gunes.py); 52 hafta × saat×10, M.gunes.kodlar sırasıyla
 const GUNES = (() => { const b = atob(M.gunes.h), u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i);
   const m = {}; M.gunes.kodlar.forEach((k, i) => m[k] = u.subarray(i * 52, i * 52 + 52)); return m; })();
 const SPEKTRUM = ['#1e3a8a', '#2563eb', '#0d9488', '#65a30d', '#eab308', '#f97316'];   // az → çok
 const fmtSay = n => Math.round(n).toLocaleString('tr-TR');
-function kademeli(tur, baslik, deger, kademe, ad, ek = '', liste = null) {
+function kademeli(tur, baslik, deger, kademe, ad, ek = '', liste = null, suzgec = null) {
+  // suzgec: { secili: Set(kod) | null (hepsi), bolumler: [[başlık, [kod…]]] } — yalnız seçili daireler boyanır, liste bölümleri gösterilir
   const lejant = {}, durumlar = {}; kademe.forEach(([, renk, a], i) => lejant['k' + i] = { ad: a, renk });
-  for (const kod of Object.keys(DAIRE)) { const v = deger(kod); if (v == null) continue; durumlar[kod] = 'k' + kademe.findIndex(([ust]) => v < ust); }
+  for (const kod of Object.keys(DAIRE)) { const v = deger(kod); if (v == null || (suzgec?.secili && !suzgec.secili.has(kod))) continue; durumlar[kod] = 'k' + kademe.findIndex(([ust]) => v < ust); }
   let lst = '';
-  if (liste) {
-    const s = Object.keys(DAIRE).filter(k => deger(k) != null).sort((a, b) => deger(b) - deger(a)), sat = k => `<a data-kod="${k}">${k}<em>${liste(deger(k))}</em></a>`;
+  const sat = k => `<a data-kod="${k}">${k}<em>${liste(deger(k))}</em></a>`;
+  if (suzgec?.bolumler) lst = suzgec.bolumler.length ? `<div class="liste">${suzgec.bolumler.map(([b, L]) => `<b>${b}</b>${L.map(sat).join('') || '<span style="color:var(--soluk)">yok</span>'}`).join('')}</div>` : '';
+  else if (liste) {
+    const s = Object.keys(DAIRE).filter(k => deger(k) != null).sort((a, b) => deger(b) - deger(a));
     lst = `<div class="liste"><b>En çok</b>${s.slice(0, 10).map(sat).join('')}<b>En az</b>${s.slice(-10).reverse().map(sat).join('')}</div>`;
   }
   ekstraAc(tur, lejant, durumlar, baslik, kademe.map((_, i) => 'k' + i), ek + lst);
   $('lejant-oto').querySelectorAll('.liste a').forEach(a => a.onclick = () => sec(a.dataset.kod));
 }
-function gunesKatmani() {
+let gunesFiltre = 'hepsi';
+function gunesKatmani(f = gunesFiltre) {
+  gunesFiltre = f; document.querySelectorAll('#gunes-filtre button').forEach(b => b.classList.toggle('aktif', b.dataset.f === f));
+  const s = Object.keys(DAIRE).filter(k => DAIRE[k].gunes != null).sort((a, b) => DAIRE[b].gunes - DAIRE[a].gunes);
+  const SZ = {
+    hepsi: { secili: null, bolumler: [] },
+    uc: { secili: new Set([...s.slice(0, 10), ...s.slice(-10)]), bolumler: [['En çok güneş alan 10 daire', s.slice(0, 10)], ['En az güneş alan 10 daire', s.slice(-10).reverse()]] },
+    ust: (() => { const L = s.filter(k => DAIRE[k].gunes >= 3400); return { secili: new Set(L), bolumler: [[`3.400 saat üstü · ${L.length} daire`, L]] }; })(),
+    alt: (() => { const L = s.filter(k => DAIRE[k].gunes < 500).reverse(); return { secili: new Set(L), bolumler: [[`500 saat altı · ${L.length} daire`, L]] }; })(),
+  }[f];
   kademeli('gunes', 'Güneş alma süresi · yılda', k => DAIRE[k].gunes, [[1000, SPEKTRUM[0], '1.000 saat altı'], [1600, SPEKTRUM[1], '1.000–1.600'],
     [2200, SPEKTRUM[2], '1.600–2.200'], [2800, SPEKTRUM[3], '2.200–2.800'], [3400, SPEKTRUM[4], '2.800–3.400'], [Infinity, SPEKTRUM[5], '3.400 saat üstü']], null,
     '<div style="color:var(--soluk);font-size:11px;max-width:230px;display:block;margin-top:3px">Dairenin herhangi bir cephesine doğrudan güneş düşen saatler; blokların ve komşu binaların gölgesi hesaba katıldı, arazi katılmadı.</div>',
-    v => fmtSay(v) + ' sa');
+    v => fmtSay(v) + ' sa', SZ);
 }
+document.querySelectorAll('#gunes-filtre button').forEach(b => b.onclick = () => { if (katman.tur === 'gunes') { if (b.dataset.f !== 'hepsi') lejantDar = false; gunesKatmani(b.dataset.f); } });
 function manzaraKatmani() {
   kademeli('manzara', 'Manzara açıklığı', k => DAIRE[k].manzara, [[200, SPEKTRUM[0], '200 m altı'], [300, SPEKTRUM[1], '200–300 m'], [400, SPEKTRUM[2], '300–400 m'],
     [500, SPEKTRUM[3], '400–500 m'], [580, SPEKTRUM[4], '500–580 m'], [Infinity, SPEKTRUM[5], 'açık (580 m+)']], null,
@@ -1522,9 +1571,19 @@ function gunesGrafik(kod) {
   $('gunes-not').innerHTML = `Yılda ≈ <b>${fmtSay(DAIRE[kod].gunes)} saat</b> doğrudan güneş · kışın günde ${mn.toFixed(1).replace('.', ',')} sa, yazın ${mx.toFixed(1).replace('.', ',')} sa · 744 daire içinde ${sira}. sırada.
     <span style="color:var(--cok-soluk)">Kesikli çizgi: gün uzunluğu.</span>`;
 }
-const EKSTRA = { oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: gunesKatmani, manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
+const EKSTRA = { oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: () => gunesKatmani('hepsi'), manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
 if (new URLSearchParams(location.search).has('deneme') && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) document.body.classList.add('deneme');   // deneme katmanları yalnız yerel önizlemede
 document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
+// diğer blokları gizle: seçili blok dışındakiler silüet (soluk, yarı saydam)
+let digerGizli = false;
+function digerGizleUygula() {
+  const b = secili ? UNITE[KOD_ID[secili]].blok : odakBlok;
+  $('gizle-dugme').setAttribute('aria-pressed', digerGizli && !!b); const ya = digerGizli && b ? 'Diğer blokları göster' : 'Diğer blokları gizle';
+  $('gizle-dugme').querySelector('span').textContent = ya; $('gizle-dugme').title = ya;
+  if (mod.plan || mod.oto) return;   // kat planı / otopark kipleri kendi soldurmasını yönetir
+  soldur(digerGizli && b ? BLOK_SIRA.filter(x => x !== b) : [], 0.1);
+}
+$('gizle-dugme').onclick = () => { digerGizli = !digerGizli; digerGizleUygula(); };
 $('ana').onclick = () => { $('paylas-pop').classList.remove('acik'); if (katman.tur !== 'yok') ekstraKapat(); $('ekstra-liste').classList.remove('acik'); secimTemizle(); const g = GORUS.genel; uc(genelHedef(), { az: g[2], el: g[3], uz: genelUz() }); };
 $('d-git').onclick = () => { if (!secili) return; modKapat(); daireyeGit(secili); };
 $('d-plan').onclick = () => { if (!secili || mod.plan) return; { const u = UNITE[KOD_ID[secili]]; planAc(u.blok, u.kat); } };
@@ -1553,7 +1612,8 @@ function durum() {
   $('blok-kart').classList.toggle('gizli', !(odakBlok && !secili));
   if (odakBlok && !secili) blokKartDoldur(odakBlok);
   if (!bilgiAcik) $('bos-kart').classList.toggle('gizli', !!(secili || odakBlok));   // blok/daire seçiliyken yönerge kartı yer kaplamasın
-  if (d === 'sec-yok') panelBoyu(1);
+  if (d === 'sec-yok') { panelBoyu(1); if (digerGizli) { digerGizli = false; } }
+  digerGizleUygula();
   $('genislet').style.display = secili ? '' : 'none';   // blok künyesi kısa: yalnız Küçült
   if (!secili && boy === 2) panelBoyu(1);
   $('tek-ad').textContent = secili || (odakBlok ? `${odakBlok} blok` : bilgiAcik ? 'A blok ticari kaide' : '');
