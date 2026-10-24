@@ -190,7 +190,7 @@
   #gunes-filtre button small { font-weight: 600; opacity: .7; }
   #gunes-filtre button.aktif { background: rgba(15,23,42,.88); color: #fff; }
   #lejant-oto .lj-bas { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
-  #lejant-oto .lj-bas b { margin: 0; } #lejant-oto .lj-bas .ok { margin-left: auto; color: var(--soluk); font-weight: 800; }
+  #lejant-oto .lj-bas b { margin: 0; } #lejant-oto .lj-bas .ok { margin-left: auto; flex: none; color: #334155; font-weight: 700; font-size: 11.5px; border: 1px solid #cbd5e1; border-radius: 7px; padding: 2px 7px; background: #fff; }
   #lejant-oto.dar .lj-govde { display: none; } #lejant-oto .liste { display: block; margin-top: 6px; border-top: 1px solid var(--cizgi); padding-top: 5px; }
   #lejant-oto .liste b { margin-top: 6px; } #lejant-oto .liste a { width: 100%; }
   #lejant-oto .liste a { display: flex; gap: 6px; padding: 2px 0; color: #0f172a; text-decoration: none; cursor: pointer; font-variant-numeric: tabular-nums; }
@@ -1414,10 +1414,10 @@ function ekstraAc(tur, lejant, durumlar, baslik, sira, ek = '') {
   katman = { tur, lejant, durumlar }; hepsiniBoya(); $('ekstra-dugme').classList.add('aktif');
   document.querySelectorAll('#ekstra-liste button').forEach(b => b.setAttribute('aria-checked', b.dataset.k === tur));
   const sayi = {}; for (const v of Object.values(durumlar)) sayi[v] = (sayi[v] || 0) + 1;
-  $('lejant-oto').innerHTML = `<div class="lj-bas"><b>${baslik}</b><span class="ok">${lejantDar ? '▸' : '▾'}</span></div><div class="lj-govde">`
+  $('lejant-oto').innerHTML = `<div class="lj-bas"><b>${baslik}</b><span class="ok">${lejantDar ? 'Aç ▾' : 'Kapat ✕'}</span></div><div class="lj-govde">`
     + sira.filter(k => sayi[k] || !Object.keys(durumlar).length).map(k => `<div><i style="background:${lejant[k].renk}"></i>${lejant[k].ad}<span>${sayi[k] || 0}</span></div>`).join('') + ek + '</div>';
   $('lejant-oto').classList.remove('gizli'); $('lejant-oto').classList.toggle('dar', lejantDar);
-  $('lejant-oto').querySelector('.lj-bas').onclick = () => { lejantDar = !lejantDar; $('lejant-oto').classList.toggle('dar', lejantDar); $('lejant-oto').querySelector('.ok').textContent = lejantDar ? '▸' : '▾'; };
+  $('lejant-oto').querySelector('.lj-bas').onclick = () => { lejantDar = !lejantDar; $('lejant-oto').classList.toggle('dar', lejantDar); $('lejant-oto').querySelector('.ok').textContent = lejantDar ? 'Aç ▾' : 'Kapat ✕'; };
   document.body.classList.toggle('kible-acik', tur === 'kible'); $('kible-cb').checked = tur === 'kible';
   const gf = tur === 'gunes'; $('gunes-filtre').classList.toggle('gizli', !gf); document.body.classList.toggle('filtreli', gf);
   $('lejant-oto').querySelectorAll('.liste a').forEach(a => a.onclick = () => sec(a.dataset.kod));
@@ -1616,7 +1616,7 @@ async function kibleCiz() {
     }
     const [cx, cy] = merkezi(polys), dk = [Math.sin(KIBLE * Math.PI / 180), Math.cos(KIBLE * Math.PI / 180)];
     kibleEt.push(etiket('kible', `Kıble ${yazi}`, V3(cx + dk[0] * 9, cy + dk[1] * 9, z + 4), { tur: 'kible' }));
-    if (innerWidth <= 760 && !lejantDar) { lejantDar = true; $('lejant-oto').classList.add('dar'); const o = $('lejant-oto').querySelector('.ok'); if (o) o.textContent = '▸'; }
+    if (innerWidth <= 760 && !lejantDar) { lejantDar = true; $('lejant-oto').classList.add('dar'); const o = $('lejant-oto').querySelector('.ok'); if (o) o.textContent = 'Aç ▾'; }
     uc(V3(cx, cy, z), { az: KIBLE_AZ, el: 58, uz: 62 * uzOlcek() });   // daire: hafif çapraz, kıble üstte
   } else if (odakBlok) {   // blok: çatıda büyük ok
     const B = BLOK[odakBlok], c = merkezi([B.dis]); kibleOk(c, 30, 3.2, B.cati + 3);
@@ -1636,7 +1636,7 @@ function kibleKatmani() {
 }
 const EKSTRA = { kible: kibleKatmani, oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: () => gunesKatmani('hepsi'), manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
 if (new URLSearchParams(location.search).has('deneme') && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) document.body.classList.add('deneme');   // deneme katmanları yalnız yerel önizlemede
-document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
+document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { lejantDar = false; $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
 // diğer blokları gizle: seçili blok dışındakiler silüet (soluk, yarı saydam)
 let digerGizli = false;
 function digerGizleUygula() {
