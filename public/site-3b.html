@@ -197,7 +197,6 @@
   #lejant-oto .liste a { display: flex; gap: 6px; padding: 2px 0; color: #0f172a; text-decoration: none; cursor: pointer; font-variant-numeric: tabular-nums; }
   #lejant-oto .liste a:hover { color: var(--vurgu); } #lejant-oto .liste a em { margin-left: auto; font-style: normal; color: var(--soluk); padding-left: 10px; }
   #ekstra-liste button small { font-weight: 600; color: var(--soluk); margin-left: 4px; }
-  #ekstra-liste button.deneme { display: none; } body.deneme #ekstra-liste button.deneme { display: flex; }
   #lejant-oto b { display: block; font-size: 11px; color: var(--soluk); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
   #lejant-oto .lj-govde > div:not(.liste) { display: flex; align-items: center; gap: 7px; padding: 1px 0; } #lejant-oto .lj-govde { display: block; } #lejant-oto i { width: 13px; height: 13px; border-radius: 3px; flex: none; }
   #lejant-oto span { margin-left: auto; padding-left: 10px; color: var(--soluk); font-variant-numeric: tabular-nums; }
@@ -325,7 +324,7 @@
   <div id="gorusler"></div>
 </div>
 <button type="button" id="hakkinda">ℹ️ Hakkında</button>
-<div id="surum" aria-label="Sürüm">ver.26.1024.1729</div>
+<div id="surum" aria-label="Sürüm">ver.26.1024.1732</div>
 <div id="zoom" role="group" aria-label="Yakınlaştırma"><button id="z-art" type="button" aria-label="Yakınlaştır">+</button><button id="z-eks" type="button" aria-label="Uzaklaştır">−</button></div>
 <div id="hakkinda-pop" role="dialog" aria-modal="true" aria-labelledby="hk-baslik"><div class="kutu">
   <a class="gh" href="https://github.com/niedy707/5levent-korupark-3d" target="_blank" rel="noopener">
@@ -370,7 +369,7 @@
       <button type="button" data-k="arsa" role="menuitemcheckbox" aria-checked="false">Arsa payı / brüt m² oranı</button>
       <button type="button" data-k="bahce" role="menuitemcheckbox" aria-checked="false">Bahçe ve teras tahsisli daireler</button>
       <button type="button" data-k="kible" role="menuitemcheckbox" aria-checked="false">Kıble yönü</button>
-      <button type="button" data-k="ototur" role="menuitemcheckbox" aria-checked="false" class="deneme">Otopark yerlerinin durumu <small>(deneme)</small></button></div></div>
+      <button type="button" data-k="ototur" role="menuitemcheckbox" aria-checked="false">Otopark yerlerinin durumu</button></div></div>
 </div>
 <button id="pusula" type="button" title="Kuzey yukarı (kuşbakışı)" aria-label="Pusula"><svg viewBox="0 0 40 40"><path d="M20 5 L27 22 L20 18 L13 22 Z" fill="#dc2626"/><path d="M20 35 L13 18 L20 22 L27 18 Z" fill="#94a3b8"/></svg><b>K</b></button>
 
@@ -1561,7 +1560,7 @@ function bahceKatmani() {
     '<div class="liste">' + Object.keys(durumlar).sort((a, b) => a.localeCompare(b, 'tr', { numeric: true })).map(k => `<a data-kod="${k}">${k}<em>${DAIRE[k].tahsis || ''}</em></a>`).join('') + '</div>');
   $('lejant-oto').querySelectorAll('.liste a').forEach(a => a.onclick = () => sec(a.dataset.kod));
 }
-// DENEME: otopark yerlerinin durumu (iki yerli dairelerde yan yana / arka arkaya / ayrı)
+// otopark yerlerinin durumu (iki yerli dairelerde yan yana / arka arkaya / ayrı)
 function otoTurKatmani() {
   const AD = { tek: ['Tek yer', '#94a3b8'], yan_yana: ['İki yer yan yana', '#16a34a'], arka_arkaya_olasi: ['İki yer arka arkaya', '#f59e0b'], ayrik: ['İki yer ayrı', '#dc2626'], farkli_kot: ['İki yer farklı katta', '#7c3aed'] };
   const lejant = {}, durumlar = {}; for (const [k, [ad, renk]] of Object.entries(AD)) lejant[k] = { ad, renk };
@@ -1638,7 +1637,6 @@ function kibleKatmani() {
   kibleCiz();
 }
 const EKSTRA = { kible: kibleKatmani, oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: () => gunesKatmani('hepsi'), manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
-if (new URLSearchParams(location.search).has('deneme') && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) document.body.classList.add('deneme');   // deneme katmanları yalnız yerel önizlemede
 // liste varsayılanı: güneş, otopark rengi ve kıble açık; öbür katmanlarda kapalı başlar ("Aç ▾" ile açılır)
 const LISTE_KAPALI = new Set(['havuz', 'kapi', 'ticari', 'manzara', 'arsa', 'bahce']);
 document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { lejantDar = LISTE_KAPALI.has(b.dataset.k); $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
