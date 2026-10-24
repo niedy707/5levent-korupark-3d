@@ -74,3 +74,11 @@ Değişiklikten sonra: `bash araclar/site-3b/yayin-kopyala.sh` (dosyaları `~/Pr
 kişi adını "kullanıcı"ya çevirir, ad/e-posta/IP/anahtar denetimi yapar; denetim düşerse durur) → o klasörde commit + push
 (yazar `mail@5-levent.com`). README/LICENSE kaynağı `yayin/`. Kopyada Yönetim Planı PDF'i yok: `plan_ic.py` PDF yoksa
 `kaynak/plan-meta.json` + hazır `plan-sNN` dosyalarıyla çalışır (kopyadan `uret.py` aynı `model.json`'u üretir, 24.10.2026'da denendi).
+
+## Gereksiz bilgiler katmanları (24.10.2026)
+
+Menü (seçim yokken, Blok seç'in yanında): otopark rengi · havuza süre (yalnız C3 zemin çıkışı) · çıkış kapısına uzaklık ·
+A blok ticari yürüyüş · **güneş alma** · **manzara açıklığı** · arsa payı/brüt m² · bahçe-teras tahsisi.
+Güneş ve manzara üreteçte hesaplanır (`gunes.py`, ~30 sn): cephe noktaları, blok + komşu bina gölgesi (arazi hariç), 52 hafta × 20 dk;
+model.json `gunes.h` = 52 hafta × saat×10 (base64). Daire kartında haftalık güneş grafiği. "Otopark yerlerinin durumu" katmanı
+**deneme**: yalnız yerel önizlemede `?deneme` ile görünür (kullanıcı onayı bekliyor).

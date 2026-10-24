@@ -172,6 +172,13 @@
   #ekstra-liste button[aria-checked="true"] { background: var(--vurgu); color: #fff; }
   #lejant-oto { position: fixed; left: 376px; bottom: 28px; z-index: 4; background: rgba(255,255,255,.88); border: 1px solid var(--cizgi); border-radius: 12px; padding: 8px 10px;
                 font-size: 12.5px; box-shadow: 0 4px 14px rgba(15,23,42,.1); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+  #lejant-oto { max-height: calc(100dvh - 140px); overflow-y: auto; }
+  #lejant-oto { max-width: 270px; } #lejant-oto .liste { display: block; margin-top: 6px; border-top: 1px solid var(--cizgi); padding-top: 5px; }
+  #lejant-oto .liste b { margin-top: 6px; } #lejant-oto .liste a { width: 100%; }
+  #lejant-oto .liste a { display: flex; gap: 6px; padding: 2px 0; color: #0f172a; text-decoration: none; cursor: pointer; font-variant-numeric: tabular-nums; }
+  #lejant-oto .liste a:hover { color: var(--vurgu); } #lejant-oto .liste a em { margin-left: auto; font-style: normal; color: var(--soluk); padding-left: 10px; }
+  #ekstra-liste button small { font-weight: 600; color: var(--soluk); margin-left: 4px; }
+  #ekstra-liste button.deneme { display: none; } body.deneme #ekstra-liste button.deneme { display: flex; }
   #lejant-oto b { display: block; font-size: 11px; color: var(--soluk); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
   #lejant-oto div { display: flex; align-items: center; gap: 7px; padding: 1px 0; } #lejant-oto i { width: 13px; height: 13px; border-radius: 3px; flex: none; }
   #lejant-oto span { margin-left: auto; padding-left: 10px; color: var(--soluk); font-variant-numeric: tabular-nums; }
@@ -331,7 +338,12 @@
     <div id="ekstra-liste"><button type="button" data-k="oto" role="menuitemcheckbox" aria-checked="false">Dairelerin otopark renkleri</button>
       <button type="button" data-k="havuz" role="menuitemcheckbox" aria-checked="false">Açık havuza olan mesafe</button>
       <button type="button" data-k="kapi" role="menuitemcheckbox" aria-checked="false">Site çıkış kapısına olan uzaklık</button>
-      <button type="button" data-k="ticari" role="menuitemcheckbox" aria-checked="false">Ticari alanlara yürüyüş mesafesi (A_blok)</button></div></div>
+      <button type="button" data-k="ticari" role="menuitemcheckbox" aria-checked="false">Ticari alanlara yürüyüş mesafesi (A_blok)</button>
+      <button type="button" data-k="gunes" role="menuitemcheckbox" aria-checked="false">Güneş alma süresi</button>
+      <button type="button" data-k="manzara" role="menuitemcheckbox" aria-checked="false">Manzara açıklığı</button>
+      <button type="button" data-k="arsa" role="menuitemcheckbox" aria-checked="false">Arsa payı / brüt m² oranı</button>
+      <button type="button" data-k="bahce" role="menuitemcheckbox" aria-checked="false">Bahçe ve teras tahsisli daireler</button>
+      <button type="button" data-k="ototur" role="menuitemcheckbox" aria-checked="false" class="deneme">Otopark yerlerinin durumu <small>(deneme)</small></button></div></div>
 </div>
 <button id="pusula" type="button" title="Kuzey yukarı (kuşbakışı)" aria-label="Pusula"><svg viewBox="0 0 40 40"><path d="M20 5 L27 22 L20 18 L13 22 Z" fill="#dc2626"/><path d="M20 35 L13 18 L20 22 L27 18 Z" fill="#94a3b8"/></svg><b>K</b></button>
 
@@ -371,6 +383,11 @@
         <button class="dugme buyuk-ac" id="plan-buyuk-ac" type="button">⤢ Büyük aç <small>(yeni sekme)</small></button>
         <div class="kat-adim gizli" id="kat-adim"><button id="kat-asagi" type="button" aria-label="Alt kat">▼</button><span id="kat-yazi"></span><button id="kat-yukari" type="button" aria-label="Üst kat">▲</button></div>
       </div>
+      <div class="bolum" id="b-gunes">
+        <h3>Güneş alma · yıl boyu</h3>
+        <canvas class="kesit" id="gunes2d" width="640" height="260"></canvas>
+        <div class="not" id="gunes-not" style="margin-top:6px"></div>
+      </div>
       <div class="bolum" id="b-oto">
         <h3>Otopark</h3>
         <div class="parklar" id="parklar"></div>
@@ -396,7 +413,7 @@
 
 <script src="/assets/site-3b/three.min.js?v=r160"></script>
 <script type="module">
-const SURUM = '55a817b9';
+const SURUM = '8b77ed2e';
 const A = (f) => `/assets/site-3b/${f}?v=${SURUM}`;
 const $ = (id) => document.getElementById(id);
 const yukCubuk = $('yuk-cubuk'), yukYazi = $('yuk-yazi');
@@ -958,7 +975,7 @@ function ustundeIste(x, y) {
     if (v && v.id !== undefined) {
       const u = UNITE[v.id], d = katman.durumlar?.[u.kod];
       ip.innerHTML = (!mod.plan && u.blok !== (secili ? UNITE[KOD_ID[secili]].blok : odakBlok)) ? `${u.blok} blok<i>tıkla: bloğu seç</i>`
-        : `${u.kod} · ${KAT_ADI(u.kat)}` + (katman.tur === 'havuz' ? `<i>havuza ≈ ${DAIRE[u.kod].havuz.toFixed(1).replace('.', ',')} dk</i>` : katman.tur === 'ticari' ? `<i>${DAIRE[u.kod].ticari.ad}: ≈ ${Math.round(DAIRE[u.kod].ticari.m / 5) * 5} m</i>` : katman.tur === 'kapi' && DAIRE[u.kod].kapi ? `<i>kapıya ≈ ${Math.round((DAIRE[u.kod].kapi.y + DAIRE[u.kod].kapi.a) / 10) * 10} m (yürüme ${Math.round(DAIRE[u.kod].kapi.y)} + araç ${Math.round(DAIRE[u.kod].kapi.a)})</i>` : d && katman.lejant?.[d] ? `<i>${katman.lejant[d].ad}</i>` : '');
+        : `${u.kod} · ${KAT_ADI(u.kat)}` + (katman.tur === 'gunes' ? `<i>yılda ≈ ${fmtSay(DAIRE[u.kod].gunes)} saat güneş</i>` : katman.tur === 'manzara' ? `<i>açıklık ≈ ${DAIRE[u.kod].manzara} m</i>` : katman.tur === 'arsa' && arsaSapma(u.kod) != null ? `<i>ortalamaya göre ${(arsaSapma(u.kod) > 0 ? '+' : '') + arsaSapma(u.kod).toFixed(1).replace('.', ',')}%</i>` : katman.tur === 'havuz' ? `<i>havuza ≈ ${DAIRE[u.kod].havuz.toFixed(1).replace('.', ',')} dk</i>` : katman.tur === 'ticari' ? `<i>${DAIRE[u.kod].ticari.ad}: ≈ ${Math.round(DAIRE[u.kod].ticari.m / 5) * 5} m</i>` : katman.tur === 'kapi' && DAIRE[u.kod].kapi ? `<i>kapıya ≈ ${Math.round((DAIRE[u.kod].kapi.y + DAIRE[u.kod].kapi.a) / 10) * 10} m (yürüme ${Math.round(DAIRE[u.kod].kapi.y)} + araç ${Math.round(DAIRE[u.kod].kapi.a)})</i>` : d && katman.lejant?.[d] ? `<i>${katman.lejant[d].ad}</i>` : '');
       ip.style.display = 'block'; ip.style.left = x + 'px'; ip.style.top = y + 'px'; tuval.style.cursor = isaretModu() ? 'crosshair' : 'pointer';
     } else if (v && v.kaide) { ip.textContent = 'A blok ticari kaide (işyerleri)'; ip.style.display = 'block'; ip.style.left = x + 'px'; ip.style.top = y + 'px'; tuval.style.cursor = 'pointer'; }
     else { ip.style.display = 'none'; tuval.style.cursor = ''; }
@@ -1116,6 +1133,7 @@ function kartDoldur(kod) {
     ['Alan', alan ? alan + ' m²' : '—'],
     ['Arsa payı', d.arsa ? `${d.arsa.toLocaleString('tr-TR')} / 9.183.440` : '—']];
   if (d.tahsis) satir.push(['Tahsisli', d.tahsis]);
+  if (d.gunes != null) satir.push(['Güneş', `yılda ≈ ${fmtSay(d.gunes)} saat`]);
   $('k-bilgi').innerHTML = satir.map(([a, b]) => `<dt>${a}</dt><dd>${b}</dd>`).join('');
   const yl = d.oto || [];
   $('parklar').innerHTML = yl.length ? yl.map(no => { const y = OTO.yer[no]; const ks = y ? OTO.kotlar[y[2]] : '?'; const ka = otoKatAdi(u.blok, ks);
@@ -1126,7 +1144,7 @@ function kartDoldur(kod) {
   $('d-oto').disabled = !yl.length;
   document.querySelectorAll('.park').forEach(b => b.onclick = () => { seciliPark = b.dataset.no; otoAc(true); });
   seciliPark = yl[0] || null;
-  tarifYaz(kod);
+  tarifYaz(kod); gunesGrafik(kod);
   const pl = M.planlar[String(BLOK[u.blok].katlar.find(k => k.no === u.kat).plan)];
   plan2d(kod); oto2d(kod);
 }
@@ -1433,7 +1451,79 @@ function ticariKatmani() {
   ekstraAc('ticari', lejant, durumlar, 'Ticari alanlara yürüyüş (A_blok)', TICARI_KADEME.map((_, i) => 'k' + i),
     '<div style="color:var(--soluk);font-size:11px;max-width:220px;display:block;margin-top:3px">A blok ticari alanlarına (zemin ve asma kat işyerleri) en yakın noktaya; asansörden sonraki yürüme, kestirim.</div>');
 }
-const EKSTRA = { oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani };
+// ── güneş: gölgeli hesap üreteçte (gunes.py); 52 hafta × saat×10, M.gunes.kodlar sırasıyla
+const GUNES = (() => { const b = atob(M.gunes.h), u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i);
+  const m = {}; M.gunes.kodlar.forEach((k, i) => m[k] = u.subarray(i * 52, i * 52 + 52)); return m; })();
+const SPEKTRUM = ['#1e3a8a', '#2563eb', '#0d9488', '#65a30d', '#eab308', '#f97316'];   // az → çok
+const fmtSay = n => Math.round(n).toLocaleString('tr-TR');
+function kademeli(tur, baslik, deger, kademe, ad, ek = '', liste = null) {
+  const lejant = {}, durumlar = {}; kademe.forEach(([, renk, a], i) => lejant['k' + i] = { ad: a, renk });
+  for (const kod of Object.keys(DAIRE)) { const v = deger(kod); if (v == null) continue; durumlar[kod] = 'k' + kademe.findIndex(([ust]) => v < ust); }
+  let lst = '';
+  if (liste) {
+    const s = Object.keys(DAIRE).filter(k => deger(k) != null).sort((a, b) => deger(b) - deger(a)), sat = k => `<a data-kod="${k}">${k}<em>${liste(deger(k))}</em></a>`;
+    lst = `<div class="liste"><b>En çok</b>${s.slice(0, 10).map(sat).join('')}<b>En az</b>${s.slice(-10).reverse().map(sat).join('')}</div>`;
+  }
+  ekstraAc(tur, lejant, durumlar, baslik, kademe.map((_, i) => 'k' + i), ek + lst);
+  $('lejant-oto').querySelectorAll('.liste a').forEach(a => a.onclick = () => sec(a.dataset.kod));
+}
+function gunesKatmani() {
+  kademeli('gunes', 'Güneş alma süresi · yılda', k => DAIRE[k].gunes, [[1000, SPEKTRUM[0], '1.000 saat altı'], [1600, SPEKTRUM[1], '1.000–1.600'],
+    [2200, SPEKTRUM[2], '1.600–2.200'], [2800, SPEKTRUM[3], '2.200–2.800'], [3400, SPEKTRUM[4], '2.800–3.400'], [Infinity, SPEKTRUM[5], '3.400 saat üstü']], null,
+    '<div style="color:var(--soluk);font-size:11px;max-width:230px;display:block;margin-top:3px">Dairenin herhangi bir cephesine doğrudan güneş düşen saatler; blokların ve komşu binaların gölgesi hesaba katıldı, arazi katılmadı.</div>',
+    v => fmtSay(v) + ' sa');
+}
+function manzaraKatmani() {
+  kademeli('manzara', 'Manzara açıklığı', k => DAIRE[k].manzara, [[200, SPEKTRUM[0], '200 m altı'], [300, SPEKTRUM[1], '200–300 m'], [400, SPEKTRUM[2], '300–400 m'],
+    [500, SPEKTRUM[3], '400–500 m'], [580, SPEKTRUM[4], '500–580 m'], [Infinity, SPEKTRUM[5], 'açık (580 m+)']], null,
+    '<div style="color:var(--soluk);font-size:11px;max-width:230px;display:block;margin-top:3px">Dairenin en açık cephesinden, cepheye dik ±70° içinde önündeki ilk binaya ortalama uzaklık (600 m ile sınırlı).</div>',
+    v => v + ' m');
+}
+// arsa payı / brüt m²: site ortalamasına göre sapma (%)
+const ARSA_ORAN = (() => { let a = 0, b = 0; for (const d of Object.values(DAIRE)) if (d.arsa && d.brut) { a += d.arsa; b += d.brut; } return a / b; })();
+const arsaSapma = k => { const d = DAIRE[k]; return d.arsa && d.brut ? (d.arsa / d.brut / ARSA_ORAN - 1) * 100 : null; };
+function arsaKatmani() {
+  kademeli('arsa', 'Arsa payı / brüt m² · ortalamaya göre', arsaSapma, [[-10, '#2563eb', '%10\'dan çok düşük'], [-3, '#93c5fd', '%3–10 düşük'], [3, '#e5e7eb', 'ortalama (±%3)'],
+    [10, '#fca5a5', '%3–10 yüksek'], [Infinity, '#dc2626', '%10\'dan çok yüksek']], null,
+    `<div style="color:var(--soluk);font-size:11px;max-width:230px;display:block;margin-top:3px">Arsa payı ÷ brüt m², site ortalamasına (${(ARSA_ORAN).toFixed(2).replace('.', ',')} pay/m²) göre; Ek-4. Alanı okunamayan ${Object.keys(DAIRE).filter(k => arsaSapma(k) == null).length} daire boyanmadı.</div>`,
+    v => (v > 0 ? '+' : '') + v.toFixed(1).replace('.', ',') + '%');
+}
+function bahceKatmani() {
+  const lejant = { bahce: { ad: 'Bahçe tahsisli', renk: '#16a34a' }, teras: { ad: 'Teras tahsisli', renk: '#f59e0b' } }, durumlar = {};
+  for (const t of M.tahsis) durumlar[t.kod] = t.tur === 'bahçe' ? 'bahce' : 'teras';
+  ekstraAc('bahce', lejant, durumlar, 'Bahçe ve teras tahsisi', ['bahce', 'teras'],
+    '<div class="liste">' + Object.keys(durumlar).sort((a, b) => a.localeCompare(b, 'tr', { numeric: true })).map(k => `<a data-kod="${k}">${k}<em>${DAIRE[k].tahsis || ''}</em></a>`).join('') + '</div>');
+  $('lejant-oto').querySelectorAll('.liste a').forEach(a => a.onclick = () => sec(a.dataset.kod));
+}
+// DENEME: otopark yerlerinin durumu (iki yerli dairelerde yan yana / arka arkaya / ayrı)
+function otoTurKatmani() {
+  const AD = { tek: ['Tek yer', '#94a3b8'], yan_yana: ['İki yer yan yana', '#16a34a'], arka_arkaya_olasi: ['İki yer arka arkaya', '#f59e0b'], ayrik: ['İki yer ayrı', '#dc2626'], farkli_kot: ['İki yer farklı katta', '#7c3aed'] };
+  const lejant = {}, durumlar = {}; for (const [k, [ad, renk]] of Object.entries(AD)) lejant[k] = { ad, renk };
+  for (const [kod, d] of Object.entries(DAIRE)) if (d.oto_tur && AD[d.oto_tur]) durumlar[kod] = d.oto_tur;
+  ekstraAc('ototur', lejant, durumlar, 'Otopark yerlerinin durumu', Object.keys(AD),
+    '<div style="color:var(--soluk);font-size:11px;max-width:230px;display:block;margin-top:3px">Ek-3 krokisinden: iki yeri olan dairelerde yerlerin birbirine göre konumu. "Arka arkaya" krokide aynı hizada, bir araç boyu arayla.</div>');
+}
+function gunesGrafik(kod) {
+  const tv = $('gunes2d'), g = tv.getContext('2d'), h = GUNES[kod], W = tv.width, H = tv.height, ml = 46, mr = 12, mt = 16, mb = 34;
+  g.clearRect(0, 0, W, H); g.fillStyle = '#fff'; g.fillRect(0, 0, W, H); if (!h) return;
+  const ust = 16, x = i => ml + (W - ml - mr) * i / 51, y = v => H - mb - (H - mt - mb) * v / ust;
+  g.strokeStyle = '#e2e8f0'; g.lineWidth = 1; g.fillStyle = '#64748b'; g.font = '600 14px Inter, sans-serif'; g.textAlign = 'right';
+  for (let v = 0; v <= ust; v += 4) { g.beginPath(); g.moveTo(ml, y(v)); g.lineTo(W - mr, y(v)); g.stroke(); g.fillText(v + ' sa', ml - 6, y(v) + 5); }
+  g.textAlign = 'center'; ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara'].forEach((a, i) => g.fillText(a, x(i * 52 / 12 + 2), H - 12));
+  // gün uzunluğu (üst sınır, soluk) — 41° enlem yaklaşık
+  g.beginPath(); for (let i = 0; i < 52; i++) { const d = 7 * i + 4, dek = -23.44 * Math.cos(2 * Math.PI * (d + 10) / 365) * Math.PI / 180;
+    const gu = 24 / Math.PI * Math.acos(-Math.tan(41.09 * Math.PI / 180) * Math.tan(dek)); i ? g.lineTo(x(i), y(gu)) : g.moveTo(x(i), y(gu)); }
+  g.strokeStyle = '#cbd5e1'; g.setLineDash([5, 4]); g.lineWidth = 2; g.stroke(); g.setLineDash([]);
+  g.beginPath(); for (let i = 0; i < 52; i++) { const v = h[i] / 10; i ? g.lineTo(x(i), y(v)) : g.moveTo(x(i), y(v)); }
+  g.lineTo(x(51), y(0)); g.lineTo(x(0), y(0)); g.closePath(); g.fillStyle = 'rgba(234,179,8,.18)'; g.fill();
+  g.beginPath(); for (let i = 0; i < 52; i++) { const v = h[i] / 10; i ? g.lineTo(x(i), y(v)) : g.moveTo(x(i), y(v)); }
+  g.strokeStyle = '#ca8a04'; g.lineWidth = 3; g.stroke();
+  const say = [...h], mn = Math.min(...say) / 10, mx = Math.max(...say) / 10, sira = Object.keys(DAIRE).filter(k => DAIRE[k].gunes > DAIRE[kod].gunes).length + 1;
+  $('gunes-not').innerHTML = `Yılda ≈ <b>${fmtSay(DAIRE[kod].gunes)} saat</b> doğrudan güneş · kışın günde ${mn.toFixed(1).replace('.', ',')} sa, yazın ${mx.toFixed(1).replace('.', ',')} sa · 744 daire içinde ${sira}. sırada.
+    <span style="color:var(--cok-soluk)">Kesikli çizgi: gün uzunluğu.</span>`;
+}
+const EKSTRA = { oto: otoRenkKatmani, havuz: havuzKatmani, kapi: kapiKatmani, ticari: ticariKatmani, gunes: gunesKatmani, manzara: manzaraKatmani, arsa: arsaKatmani, bahce: bahceKatmani, ototur: otoTurKatmani };
+if (new URLSearchParams(location.search).has('deneme') && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) document.body.classList.add('deneme');   // deneme katmanları yalnız yerel önizlemede
 document.querySelectorAll('#ekstra-liste button').forEach(b => b.onclick = () => { $('ekstra-liste').classList.remove('acik'); $('ekstra-dugme').setAttribute('aria-expanded', false); if (katman.tur === b.dataset.k) ekstraKapat(); else EKSTRA[b.dataset.k](); });
 $('ana').onclick = () => { $('paylas-pop').classList.remove('acik'); if (katman.tur !== 'yok') ekstraKapat(); $('ekstra-liste').classList.remove('acik'); secimTemizle(); const g = GORUS.genel; uc(genelHedef(), { az: g[2], el: g[3], uz: genelUz() }); };
 $('d-git').onclick = () => { if (!secili) return; modKapat(); daireyeGit(secili); };

@@ -568,6 +568,18 @@ for w in OSM["binalar"]:
     komsu.append({"p": yuvarla(p, 1), "z": round(z, 2), "h": yuk, "t": t.get("building")})
 print("komşu bina:", len(komsu))
 
+# ───────────────────────── 9a. güneş alma ve manzara açıklığı (gölgeli; gunes.py) ─────────────────────────
+import gunes, time as _t
+_t0 = _t.time()
+G_KOD, G_HAFTA, G_MANZARA = gunes.hesapla(bloklar, kaide, komsu)
+for kod, h, mz in zip(G_KOD, G_HAFTA, G_MANZARA):
+    DAIRE[kod]["gunes"] = round(float(h.sum() * 7), 0)           # yıllık saat (hafta günü × 7)
+    DAIRE[kod]["manzara"] = int(round(mz))
+GUNES_M = {"kodlar": G_KOD, "h": base64.b64encode(np.clip(np.round(G_HAFTA * 10), 0, 255).astype(np.uint8).tobytes()).decode(),
+           "not": "52 hafta × saat (×10), her haftanın çarşambası; gölgeli, arazi hariç"}
+print(f"güneş/manzara: {len(G_KOD)} daire · {_t.time() - _t0:.0f} sn · yıllık saat {G_HAFTA.sum(1).min() * 7:.0f}…{G_HAFTA.sum(1).max() * 7:.0f}"
+      f" · manzara {G_MANZARA.min():.0f}…{G_MANZARA.max():.0f} m")
+
 
 # ───────────────────────── 9b. otopark (Ek-3 krokileri → site) ─────────────────────────
 # Krokilerdeki kesikli blok izleri (B2, B1: +45.15 paftası; C1: +54.65 paftası) ↔ OSM izlerinin alan merkezleri, en küçük kareler.
@@ -623,6 +635,8 @@ print(f"otopark yönü: {sum(1 for v in HUCRE.values() if v is not None)}/{len(O
 oto_daire = {d["daire"]: d["yerler"] for d in OTO["daireler"] if d["yerler"]}
 for kod, yl in oto_daire.items():
     if kod in DAIRE: DAIRE[kod]["oto"] = yl
+for d in OTO["daireler"]:   # iki yerli dairelerde yerlerin durumu: yan_yana · arka_arkaya_olasi · ayrik · farkli_kot (tek yerli: tek)
+    if d["daire"] in DAIRE and d.get("cift_sinif"): DAIRE[d["daire"]]["oto_tur"] = d["cift_sinif"]
 RENK_HEX = {"Turuncu": "#f97316", "Yeşil": "#16a34a", "Kırmızı": "#dc2626", "Mavi": "#2563eb", "Mor": "#7c3aed"}
 _renkler = json.load(open(f"{DEPO}/data/blok-kat-daire/otopark-kat-eslesme.json", encoding="utf-8"))["renkler"]
 OTOPARK_M = {"renk": {v["kot"].lstrip("+"): {"ad": ad, "hex": RENK_HEX[ad]} for ad, v in _renkler.items()}, "kotlar": KOTLAR, "kat": oto_kat, "yer": oto_yer, "eslesme": {b: {v["kot"].lstrip("+"): int(k) for k, v in x.items()} for b, x in OTO_ES.items()},
@@ -659,7 +673,7 @@ model = {
     "havuz": {**{k: yuvarla(v) for k, v in HAVUZ.items()}, "kot": HAVUZ_KOT}, "sezlong": [[round(a, 1), round(b_, 1), c] for a, b_, c in SEZLONG],
     "semsiye": yuvarla(SEMSIYE, 1), "sahalar": [{**s, "z": round(kot(*s["merkez"]), 2)} for s in SAHALAR], "gobek": GOBEK,
     "podyum": yuvarla(PODYUM), "site": yuvarla(SITE), "agac": agac, "komsu": komsu, "etiket": etiket,
-    "halka": yuvarla(HALKA), "otopark": OTOPARK_M,
+    "halka": yuvarla(HALKA), "otopark": OTOPARK_M, "gunes": GUNES_M,
     # ticari alanlar (yürüme mesafesi katmanı): yalnız A blok ticari kaide (A-160…178)
     "ticari": [{"ad": "A blok ticari alanlar", "p": kaide["p"], "kot": ZEMIN["A"]}],   # kullanıcı: "kasıt A blok ticari alanlardır"
     "duvar": {k: (yuvarla(v) if isinstance(v, list) else v) for k, v in DUVAR.items()},
